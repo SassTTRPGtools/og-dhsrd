@@ -116,7 +116,7 @@
 	<span class="og-title">匕首心</span>
 	<span class="og-subtitle">系統參考文件</span>
 </h1>
-<p class="small text-center">version 0.99u (2025-08-09)</p>
+<p class="small text-center">version 0.99v (2025-08-10)</p>
 <ul class="list-inline text-center">
 	<li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="https://daggerheart.com">Daggerheart Official</a></li>
 	<li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="https://github.com/callmepartario/og-dhsrd">Github</a></li>
@@ -126,19 +126,22 @@
 <div class="row">
 	<div class="col-12 col-md-6">
 		<h2 id="introduction">前言<a class="og-h-anchor" href="#introduction" title="Permalink" aria-hidden="true"></a></h2>
-		<p class="h6">歡迎閱讀者&mdash;</p>
+		<p class="h6">歡迎&mdash;</p>
 		<p><strong>Old Gus 的《匕首心》系統參考文件（OG-DHSRD）</strong> 是 <a href="https://www.daggerheart.com/srd/">《匕首心》系統參考文件 1.0</a> 的超文字版本（2025 年 6 月 26 日修訂），&copy; Critical Role, LLC，依據 <a href="http://www.darringtonpress.com/license">Darrington Press 社群遊戲授權條款（DPCGL）</a>發布。此前未經他人修改。</p>
 		<div class="text-center mb-3" aria-hidden="true">
 			<a href="http://www.darringtonpress.com/license"><img class="og-fig-lg d-light" src="images/DH_CGL_logos_final_full_color.svg" alt="Logo: Daggerheart Compatible"></a>
 			<a href="http://www.darringtonpress.com/license"><img class="og-fig-lg d-dark" src="images/DH_CGL_logos_final_white_full_color.svg" alt="Logo: Daggerheart Compatible"></a>
 		</div>
-		<p><strong>本文件已經過編輯與精簡。</strong> 你可以用本版本快速在線查詢<a href="#define-daggerheart">《匕首心》</a>規則、與他人分享，或將文字複製到適合你的角色卡中。但請注意，這裡的內容並非「原規則文字」。</p>
-		<p>OG-DHSRD 並非 <a href="https://www.daggerheart.com/buy/">《匕首心》核心規則書</a>的替代品，核心規則書中包含世界觀設定、更多遊戲範例與寶貴的遊玩建議──更不用說精美的插圖，以及令人沉醉的紙張與書膠香氣。</p>
+		<p><strong>本文件已經過編輯與精簡。</strong> 你可以用本版本快速線上查詢<a href="#define-daggerheart">《匕首心》</a>規則、與他人分享，或將文字複製到適合你的角色卡中。但請注意，這裡的內容並非「原規則文字」。</p>
+		<p>OG-DHSRD 並非 <a href="https://www.daggerheart.com/buy/">《匕首心》核心規則書</a>的替代品，核心規則書中包含世界觀設定、更多遊戲範例與寶貴的遊玩建議──更不用說精美的插圖，以及令人沉醉書香氣息。</p>
 		<p>感謝 Darrington Press 提供如此精彩的資源，也感謝你的閱讀──願本文件為你與夥伴帶來無數快樂的冒險！</p>
 		<p>&mdash;Old Gus</p>
 		<ul class="list-inline">
 			<li class="list-inline-item"><a href="mailto:parartio.flynn@gmail.com">partario.flynn@gmail.com</a></li>
 			<li class="list-inline-item"><a rel="me" href="https://dice.camp/@oldgus">@oldgus@dice.camp</a></li>
+		</ul>
+		<ul class="list-inline">
+			<li class="list-inline-item">繁體中文編輯者：<a href="mailto:pechin1219@gmail.com">Sass</a></a></li>
 		</ul>
 	</div>
 	<div class="col-12 col-md-6">
@@ -146,13 +149,13 @@
 		<dl>
 			<dt>整合《匕首心》內容</dt>
 			<dd>將 <a href="https://www.daggerheart.com/srd/">《匕首心》SRD</a> 精簡成更完整且篇幅更少的主題，並整合 <a href="https://www.daggerheart.com/srd/">《匕首心》SRD</a> 與 <a href="https://www.daggerheart.com/downloads/">《匕首心》勘誤</a>的更新。提供對應 <a href="https://www.daggerheart.com/buy/">《匕首心》核心規則書</a>的頁碼參考，並以編註方式補充任何不一致之處。</dd>
-			<dt>使用簡明語言</dt>
-			<dd>以<a href="https://www.plainlanguage.gov/guidelines/">簡明語言</a>編修解說、指令、定義與流程，使其完整、清晰、一致且精簡。同時保留 <a href="https://www.daggerheart.com/buy/">《匕首心》核心規則書</a>的精神。修正疑似錯字，並保留<a href="#define-character-creation">角色選項</a>、<a href="#define-domain-card">領域卡</a>與<a href="#define-adversary">資料塊</a>的原文內容。</dd>
+			<dt>使用平實語言</dt>
+			<dd>以<a href="https://www.plainlanguage.gov/guidelines/">平實語言</a>編修解說、指令、定義與流程，使其完整、清晰、一致且精簡。同時保留 <a href="https://www.daggerheart.com/buy/">《匕首心》核心規則書</a>的精神。修正疑似錯字，並保留<a href="#define-character-creation">角色選項</a>、<a href="#define-domain-card">領域卡</a>與<a href="#define-adversary">資料塊</a>的原文內容。</dd>
 			<dt>以玩家為先</dt>
-			<dd>將資訊組織為方便未接觸過桌上角色扮演遊戲（TTRPG）的人使用，並直接對玩家書寫──「你」指<strong>你這位玩家──或你的玩家角色（PC）</strong>。「遊戲主持人」指<strong>Game Master（GM）</strong>。</dd>
+			<dd>將資訊組織為方便未接觸過桌上角色扮演遊戲（TTRPG）的人使用，並直接對玩家書寫──「你」指<strong>你這位玩家──或你的玩家角色</strong>。「遊戲主持人」指<strong>Game Master（GM）</strong>。</dd>
 			<dt>提升可及性與包容性</dt>
 			<dd>避免引用讀者可能沒有或無法使用的角色卡或實體卡牌。補充英制與公制的單位轉換。提供行動裝置友好格式、大量超連結、快速參考的工具提示，以及<a href="#key-terms">關鍵術語</a>、<a href="#define-optional-rules">選用規則</a>與<a href="#gm-tools">遊戲主持人工具</a>索引。</dd>
-			<dt>100% 人工編製</dt>
+			<dt>100%手工編篡</dt>
 			<dd>本工具的製作未使用任何演算法機器學習或大型語言模型。</dd>
 		</dl>
 		<div class="og-ed pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
@@ -166,7 +169,7 @@
 		<div id="define-daggerheart">
 			<h3 id="daggerheart">什麼是《匕首心》？<a class="og-h-anchor" href="#daggerheart" title="Permalink" aria-hidden="true"></a></h3>
 			<ul class="og-list-inline og-ref og-omit"><li>第 4 頁</li><li>第 8 頁</li></ul>
-			<p><strong>《匕首心》</strong>是一款由 1 名<strong>遊戲主持人（GM）</strong>與 2&ndash;5 名玩家參與的桌上角色扮演遊戲，每位玩家操控一名<strong>玩家角色（PC）</strong>。遊戲可以在單場（稱為「單場遊戲」）內完成，也可以連續多場（稱為「戰役」）進行。一場遊戲通常耗時 2&ndash;4 小時。<a href="#define-combat">戰鬥</a>是遊戲的重要部分。</p>
+			<p><strong>《匕首心》</strong>是一款由 1 名<strong>遊戲主持人</strong>與 2&ndash;5 名玩家參與的桌上角色扮演遊戲，每位玩家操控一名<strong>玩家角色（PC）</strong>。遊戲可以在單場（稱為「單場遊戲」）內完成，也可以連續多場（稱為「戰役」）進行。一場遊戲通常耗時 2&ndash;4 小時。<a href="#define-combat">戰鬥</a>是遊戲的重要部分。</p>
 			<h4 class="h6">如何遊玩《匕首心》</h4>
 			<ul class="og-list-disc">
 				<li>遊戲主持人描述情境、敘述事件，並操控<a href="#define-npc">非玩家角色</a>、<a href="#define-adversary">敵人</a>與玩家角色會遭遇的障礙。</li>
@@ -1865,7 +1868,7 @@
 				</div>
 			</div>
 			<ul class="list-unstyled">
-				<li><p><strong><em>鳥瞰視野：</em></strong>你可隨意飛行。每次<a href="#define-downtime">休整</a>一次，在空中時可向 GM 詢問關於下方場景的一個問題而不需擲骰。首次依據該資訊進行的檢定獲得<a href="#define-advantage">優勢</a>。</p></li>
+				<li><p><strong><em>鳥瞰視野：</em></strong>你可隨意飛行。每次<a href="#define-downtime">休整</a>一次，在空中時可向主持人詢問關於下方場景的一個問題而不需擲骰。首次依據該資訊進行的檢定獲得<a href="#define-advantage">優勢</a>。</p></li>
 				<li><p><strong><em>中空骨骼：</em></strong>你的<a href="#define-hit-point">傷害閾值</a>減少 2。</p></li>
 			</ul>
 		</div></div>
@@ -1933,7 +1936,7 @@
 				</div>
 			</div>
 			<ul class="list-unstyled">
-				<li><p><strong><em>鳥瞰視野：</em></strong>你可隨意飛行。每次<a href="#define-downtime">休整</a>一次，在空中時可向 GM 詢問關於下方場景的一個問題而不需擲骰。首次依據該資訊進行的檢定獲得<a href="#define-advantage">優勢</a>。</p></li>
+				<li><p><strong><em>鳥瞰視野：</em></strong>你可隨意飛行。每次<a href="#define-downtime">休整</a>一次，在空中時可向主持人詢問關於下方場景的一個問題而不需擲骰。首次依據該資訊進行的檢定獲得<a href="#define-advantage">優勢</a>。</p></li>
 				<li><p><strong><em>載運：</em></strong>你可在移動時攜帶至多兩名自願的盟友。</p></li>
 			</ul>
 		</div></div>
@@ -2118,7 +2121,7 @@
 			</div>
 			<ul class="list-unstyled">
 				<li><p><strong><em>毀滅重擊：</em></strong>當你對近戰範圍內的目標造成<a href="#define-hit-point">嚴重</a>傷害時，可<strong><a href="#define-stress">標記 1 點壓力</a></strong>迫使其額外標記 1 格<a href="#define-hit-point">生命值</a>。</p></li>
-				<li><p><strong><em>巨步：</em></strong>可移動至遠距而不需擲骰，並因體型龐大（由 GM 判斷）無視崎嶇地形。</p></li>
+				<li><p><strong><em>巨步：</em></strong>可移動至遠距而不需擲骰，並因體型龐大（由主持人判斷）無視崎嶇地形。</p></li>
 			</ul>
 		</div></div>
 	</div>
@@ -2249,7 +2252,7 @@
 			</ul>
 			<h6>基礎特性</h6>
 			<ul class="list-unstyled">
-				<li><p><strong><em>夥伴：</em></strong> 你擁有一位由你選擇的動物<a href="#define-beastbound-companion">夥伴</a>（由 GM 裁定）。除非你另有指示，牠會一直伴你左右。</p><p>請使用<a href="https://www.daggerheart.com/downloads/">遊俠夥伴表</a>。當你<a href="#define-level">升級</a>時，亦可為你的夥伴選擇一項<a href="#define-beastbound-companion-advancement">升級選項</a>。</p></li>
+				<li><p><strong><em>夥伴：</em></strong> 你擁有一位由你選擇的動物<a href="#define-beastbound-companion">夥伴</a>（由主持人裁定）。除非你另有指示，牠會一直伴你左右。</p><p>請使用<a href="https://www.daggerheart.com/downloads/">遊俠夥伴表</a>。當你<a href="#define-level">升級</a>時，亦可為你的夥伴選擇一項<a href="#define-beastbound-companion-advancement">升級選項</a>。</p></li>
 			</ul>
 		</div>
 		<h6>進階特性</h6>
@@ -2284,7 +2287,7 @@
 		</ul>
 		<h6>精通特性</h6>
 		<ul class="list-unstyled">
-			<li><p><strong><em>頂級獵殺者：</em></strong> 在對你的<em>專注目標</em>進行<a href="#define-attack-roll">攻擊擲骰</a>前，你可以<strong><a href="#define-hope">花費 1 希望點</a></strong>。若該次<a href="#define-attack-roll">攻擊</a>成功，你可從 GM 的<a href="#define-fear">恐懼點</a>池中移除 1 點恐懼。</p></li>
+			<li><p><strong><em>頂級獵殺者：</em></strong> 在對你的<em>專注目標</em>進行<a href="#define-attack-roll">攻擊擲骰</a>前，你可以<strong><a href="#define-hope">花費 1 希望點</a></strong>。若該次<a href="#define-attack-roll">攻擊</a>成功，你可從主持人的<a href="#define-fear">恐懼點</a>池中移除 1 點恐懼。</p></li>
 		</ul>
 	</div>
 </div>
@@ -2303,7 +2306,7 @@
 	</div>
 	<dl>
 		<dt>夥伴基礎</dt>
-		<dd>與 GM 協作選擇動物類型、名字，並創造兩個<a href="#define-experience">經歷</a>。</dd>
+		<dd>與主持人協作選擇動物類型、名字，並創造兩個<a href="#define-experience">經歷</a>。</dd>
 		<dt>使用施法擲骰、希望點與經歷</dt>
 		<dd>進行一次<strong><a href="#define-spellcast-roll">施法擲骰</a></strong>以指揮夥伴進行<a href="#define-action">行動</a>，並可<strong><a href="#define-hope">花費 1 希望點</a></strong>，加入相關<a href="#define-beastbound-companion">夥伴</a><a href="#define-experience">經歷</a>的<a href="#define-procedure">調整值</a>。若取得<a href="#define-action-roll">希望成功</a>，且你的下一個<a href="#define-action">行動</a>延續了夥伴的成功，你該次擲骰獲得<a href="#define-advantage">優勢</a>。</dd>
 		<dt>使用夥伴攻擊</dt>
@@ -4464,7 +4467,7 @@
 				<li class="fw-bold">等級 9 利刃能力</li>
 				<li class="fw-bold">回想費用：3<span class="og-recall" aria-hidden="true">&#9889;</span></li>
 				<li class="mt-3">
-					<p>每次<a href="#define-long-rest">長休</a>期間限一次，<strong><a href="#define-hope">花費 1 點希望點</a></strong>進行一次<a href="#define-attack-roll">攻擊擲骰</a>。GM 會告訴你在<a href="#define-range">射程</a>內此攻擊會命中的目標，從中選擇一個，迫使其標記 5 點<a href="#define-hit-point">生命點</a>。</p>
+					<p>每次<a href="#define-long-rest">長休</a>期間限一次，<strong><a href="#define-hope">花費 1 點希望點</a></strong>進行一次<a href="#define-attack-roll">攻擊擲骰</a>。主持人會告訴你在<a href="#define-range">射程</a>內此攻擊會命中的目標，從中選擇一個，迫使其標記 5 點<a href="#define-hit-point">生命點</a>。</p>
 				</li>
 			</ul>
 		</div></div></div>
@@ -4615,14 +4618,14 @@
 				<li class="fw-bold">5 級骸骨能力</li>
 				<li class="fw-bold">回想費用：1<span class="og-recall" aria-hidden="true">&#9889;</span></li>
 				<li class="mt-3">
-					<p>當觀察一個生物時，你可以對其進行一次<strong><a href="#define-trait-roll">本能擲骰</a></strong>。成功時，<strong><a href="#define-hope">花費 1 希望點</a></strong>並向 GM 詢問目標的下列資訊之一：</p>
+					<p>當觀察一個生物時，你可以對其進行一次<strong><a href="#define-trait-roll">本能擲骰</a></strong>。成功時，<strong><a href="#define-hope">花費 1 希望點</a></strong>並向主持人詢問目標的下列資訊之一：</p>
 					<ul class="og-list-disc">
 						<li>其未標記的<a href="#define-hit-point">生命點</a>與<a href="#define-stress">壓力點</a>。</li>
 						<li>其<a href="#define-difficulty">難度</a>與<a href="#define-hit-point">傷害閾值</a>。</li>
 						<li>其戰術與標準攻擊的傷害骰。</li>
 						<li>其特性與<a href="#define-experience">經歷</a>。</li>
 					</ul>
-					<p>此外，若擲骰成功，你可以<strong><a href="#define-stress">標記 1 壓力點</a></strong>，從 GM 的<a href="#define-fear">恐懼池</a>中移除 1 點恐懼。</p>
+					<p>此外，若擲骰成功，你可以<strong><a href="#define-stress">標記 1 壓力點</a></strong>，從主持人的<a href="#define-fear">恐懼池</a>中移除 1 點恐懼。</p>
 				</li>
 			</ul>
 		</div></div></div>
@@ -6827,7 +6830,7 @@
     <p class="og-questions">漂泊之民往往難以看透、寬宏、風趣、可靠、精明且不拘一格。</p>
     <h4 class="h6">社群特性</h4>
     <ul class="list-unstyled">
-        <li><p><strong><em>遊牧行囊：</em></strong> 將一個<strong><em>遊牧行囊</em></strong>加入你的物品欄。每場遊戲可<strong><a href="#define-hope">花費 1 希望點</a></strong>，從此行囊中取出一件對當前情況有幫助的普通物品，並與 GM 一同決定該物品為何。</p></li>
+        <li><p><strong><em>遊牧行囊：</em></strong> 將一個<strong><em>遊牧行囊</em></strong>加入你的物品欄。每場遊戲可<strong><a href="#define-hope">花費 1 希望點</a></strong>，從此行囊中取出一件對當前情況有幫助的普通物品，並與主持人一同決定該物品為何。</p></li>
     </ul>
 </div>
 <hr>
@@ -7332,7 +7335,7 @@
 		</div>	
 	</div>
 	<ul class="og-list-inline og-ref og-omit"><li>頁面 112</li><li>頁面 115</li><li>勘誤</li></ul>
-	<p><strong>裝備</strong>包括<a href="#define-weapon">武器</a>、<a href="#define-armor">裝甲</a>、<a href="#define-loot">戰利品</a>、<a href="#define-consumable">消耗品</a>、<a href="#define-gold">金幣</a>，以及其他由 GM 提供、你在獲得<a href="#define-level">等級</a>時可取得的物品。</p>
+	<p><strong>裝備</strong>包括<a href="#define-weapon">武器</a>、<a href="#define-armor">裝甲</a>、<a href="#define-loot">戰利品</a>、<a href="#define-consumable">消耗品</a>、<a href="#define-gold">金幣</a>，以及其他由主持人提供、你在獲得<a href="#define-level">等級</a>時可取得的物品。</p>
 </div>
 
 <hr>
@@ -7357,7 +7360,7 @@
 		<dt>投擲武器</dt>
 		<dd>你可以進行一次<a href="#define-finesse">靈巧</a><a href="#define-attack-roll">攻擊擲骰</a>，將使用中武器投擲至<a href="#define-range">臨近範圍</a>內，成功則造成該武器的<a href="#define-damage-roll">傷害</a>。一旦投擲後，該武器即不再是使用中狀態。</dd>
 		<dt>徒手攻擊</dt>
-		<dd>除非 GM 另有允許，否則使用<a href="#define-strength">力量</a>或<a href="#define-finesse">靈巧</a>進行<a href="#define-attack-roll">攻擊擲骰</a>，並造成<strong>d4</strong><a href="#define-damage-type">物理傷害</a>。</dd>
+		<dd>除非主持人另有允許，否則使用<a href="#define-strength">力量</a>或<a href="#define-finesse">靈巧</a>進行<a href="#define-attack-roll">攻擊擲骰</a>，並造成<strong>d4</strong><a href="#define-damage-type">物理傷害</a>。</dd>
 	</dl>
 	<div class="og-ed pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
 		<p><strong>編者註 &mdash;</strong> 雙持的規則是透過選擇具有<strong><em>雙持</em></strong>屬性的<a href="#weapons-secondary-tier-1">副武器</a>，配合主武器的<a href="#define-damage-roll">傷害擲骰</a>來運作。將你的武器名稱、外觀或風格化調整成符合角色概念的樣式通常是個好主意。</p>
@@ -9348,7 +9351,7 @@
 		<dt>裝備護甲</dt>
 		<dd>你不能在身處危險或承受壓力時裝備護甲，且不能裝備高於你<a href="#define-tier">階級</a>的護甲。你一次只能裝備一套護甲。每套護甲都有其獨立的護甲槽。如果你更換護甲，需記錄該護甲已標記的護甲槽。你不能將護甲存放在物品欄中。</dd>
 		<dt>護甲值與護甲槽</dt>
-		<dd>你的<strong>護甲值</strong>等於所裝備護甲的<strong>基礎值</strong>，加上來自你的<a class="#define-ancestry">種族</a>、<a href="#define-class">職業</a>、<a href="#define-subclass">子職業</a>特性以及<a href="#define-domain-card">領域卡</a>的任何<a href="#define-procedure">調整值</a>（最高不超過 12）。當<a href="#define-damage-roll">受到的傷害</a>會使你標記<a href="#define-hit-point">生命點</a>時，你可以改為標記一個<strong>護甲槽</strong>。若你的護甲值獲得<a href="#define-temporary">暫時</a>加值，你可用的護甲槽也會增加相同數量。當該效果結束時，清除等同於該加值數量的護甲槽。</dd>
+		<dd>你的<strong>護甲值</strong>等於所裝備護甲的<strong>基礎值</strong>，加上來自<a href="#define-ancestry">種族</a>、<a href="#define-class">職業</a>、<a href="#define-subclass">子職業</a>特性與<a href="#define-domain-card">領域卡</a>提供的任何<a href="#define-procedure">調整值</a>（最高不超過 12）。當<a href="#define-damage-roll">承受傷害</a>會導致你標記<a href="#define-hit-point">生命點</a>時，你可以改為標記一格<strong>護甲槽</strong>而不是<a href="#define-hit-point">生命點</a>。若你的護甲值獲得<a href="#define-temporary">暫時</a>加值，你的可用護甲槽會同等增加。當效果結束時，清除與該加值數量相同的護甲槽。</dd>
 		<dt>基礎閾值</dt>
 		<dd>當穿戴時，一套護甲的基礎閾值決定了你的重度與嚴重<a href="#define-hit-point">傷害閾值</a>。在每個值上加上你的<a href="#define-level">等級</a>。</dd>
 		<dt>特性</dt>
@@ -10200,11 +10203,11 @@
 				<li>10 袋金幣等於 1 箱</li>
 			</ul>
 			<p>你不能攜帶超過 1 箱，因此在獲得更多之前，你必須先花掉一些，或將其存放在某處。</p>
-			<p>是否要追蹤金幣的細節，由遊戲主持人（GM）與玩家共同決定。若你不想追蹤金幣，在玩家角色（PC）購買新物品時，GM 可以允許他們從事先準備好的適合物品清單中挑選一至兩樣。</p>
+			<p>是否要追蹤金幣的細節，由遊戲主持人與玩家共同決定。若你不想追蹤金幣，在玩家角色（PC）購買新物品時，主持人可以允許他們從事先準備好的適合物品清單中挑選一至兩樣。</p>
 		</div>
 		<div class="og-topbar">
 			<div id="define-optional-rule-gold">
-				<h4 id="optional-rule-gold-coins">選擇性規則：金幣硬幣<a class="og-h-anchor" href="#optional-rule-gold-coins" title="Permalink" aria-hidden="true"></a></h4>
+				<h4 id="optional-rule-gold-coins">可選規則：金幣硬幣<a class="og-h-anchor" href="#optional-rule-gold-coins" title="Permalink" aria-hidden="true"></a></h4>
 				<ul class="og-list-inline og-ref og-omit"><li>頁碼 104</li></ul>
 				<p>如果你的團隊想更細緻地追蹤金幣，可以加入硬幣作為最小的單位。依照既定比例，10 枚硬幣等於 1 把。</p>
 			</div>
@@ -10213,7 +10216,7 @@
 	<div class="col-12 col-md-6">
 		<h4 id="average-costs">平均價格<a class="og-h-anchor" href="#average-costs" title="Permalink" aria-hidden="true"></a></h4>
 		<ul class="og-list-inline og-ref og-omit"><li>頁碼 165</li></ul>
-		<p>GM 可以調整以下商品與服務的價格，以更符合劇情基調、主題或背景設定：</p>
+		<p>主持人可以調整以下商品與服務的價格，以更符合劇情基調、主題或背景設定：</p>
 		<div class="table-responsive"><table class="table table-light table-striped table-sm mb-3">
 			<caption>平均價格</caption>
 			<thead>
@@ -10281,7 +10284,7 @@
 <div class="alert ps-4 pb-0 og-omit">
 	<h3 id="key-terms">關鍵術語<a class="og-h-anchor" href="#key-terms" title="Permalink" aria-hidden="true"></a></h3>
 	<ul class="og-list-inline og-ref og-omit"><li>編輯補充</li></ul>
-	<p>&dagger; &mdash; <em>表示<a href="#define-optional-rule">選擇性規則</a>。</em></p>
+	<p>&dagger; &mdash; <em>表示<a href="#optional-rules">可選規則</a>。</em></p>
 	<ul class="list-unstyled og-qr-compact">
 		<li><a href="#define-action">行動</a></li>
 		<li><a href="#define-action-roll">動作擲骰</a></li>
@@ -10359,12 +10362,12 @@
 		<li><a href="#define-subclass">基礎特性</a></li>
 		<li><a href="#define-fungril">孢菌人</a></li>
 		<li><a href="#define-galapa">龜人</a></li>
-		<li><a href="#define-daggerheart">遊戲主持人（GM）</a></li>
+		<li><a href="#define-daggerheart">遊戲主持人</a></li>
 		<li><a href="#define-giant">巨人</a></li>
 		<li><a href="#define-goblin">哥布林</a></li>
-		<li><a href="#define-gm-move">GM 行動</a></li>
-		<li><a href="#define-spotlight">GM 輪次</a></li>
-		<li><a href="#define-action-roll">GM 骰</a></li>
+		<li><a href="#define-gm-move">主持人行動</a></li>
+		<li><a href="#define-spotlight">主持人輪次</a></li>
+		<li><a href="#define-action-roll">主持人擲骰</a></li>
 		<li><a href="#define-gold">金幣</a></li>
 		<li><a href="#define-grace">優雅</a></li>
 		<li><a href="#define-group-action-roll">團隊動作擲骰</a></li>
@@ -10389,7 +10392,7 @@
 		<li><a href="#define-long-rest">長休</a></li>
 		<li><a href="#define-loot">戰利品</a></li>
 		<li><a href="#define-loreborne">博識之民</a></li>
-		<li><a href="#define-damage-roll">魔法傷害（mag）</a></li>
+		<li><a href="#define-damage-roll">魔法傷害</a></li>
 		<li><a href="#define-subclass">精通特性</a></li>
 		<li><a href="#define-hit-point">重度傷害</a></li>
 		<li><a href="#define-optional-rule-massive-damage">極大量傷害</a>&dagger;</li>
@@ -10489,11 +10492,11 @@
 			<ul class="og-list-inline og-ref og-omit"><li>頁碼 88</li></ul>
 			<p><strong>核心遊戲循環</strong>是推動每個場景（無論在<a href="#define-combat">戰鬥</a>內外）的流程。</p>
 			<h4 class="h6">步驟 1：設定場景</h4>
-			<p>GM 描述情境，建立周遭環境，以及任何危險、<a href="#define-npc">非玩家角色</a>或玩家角色（PC）會注意到的重要細節。</p>
+			<p>主持人描述情境，建立周遭環境，以及任何危險、<a href="#define-npc">非玩家角色</a>或玩家角色（PC）會注意到的重要細節。</p>
 			<h4 class="h6">步驟 2：提問與回答</h4>
-			<p>玩家提問以更深入探索場景，收集資訊以決定他們的<a href="#define-action">行動</a>。GM 根據玩家角色已知或容易獲得的資訊回答，或向玩家提出問題。</p>
+			<p>玩家提問以更深入探索場景，收集資訊以決定他們的<a href="#define-action">行動</a>。主持人根據玩家角色已知或容易獲得的資訊回答，或向玩家提出問題。</p>
 			<h4 class="h6">步驟 3：拓展故事</h4>
-			<p>隨著場景發展，PC 會採取<a href="#define-action">行動</a>──解決問題、克服障礙、揭開謎團。若動作沒有失敗的可能（或失敗會讓故事變得無趣），則自動成功。若動作結果未知，GM 會要求進行<a href="#define-action-roll">動作擲骰</a>。無論結果如何，結局都會成為故事的一部分，並由 GM 敘述 PC 的行動如何改變現況。</p>
+			<p>隨著場景發展，玩家角色會採取<a href="#define-action">行動</a>──解決問題、克服障礙、揭開謎團。若動作沒有失敗的可能（或失敗會讓故事變得無趣），則自動成功。若動作結果未知，主持人會要求進行<a href="#define-action-roll">動作擲骰</a>。無論結果如何，結局都會成為故事的一部分，並由主持人敘述玩家角色的行動如何改變現況。</p>
 			<h4 class="h6">步驟 4：回到步驟 1</h4>
 			<p>此流程重複進行，直到由機制觸發場景結束，或自然地結束。</p>
 		</div>
@@ -10502,7 +10505,7 @@
 		<div id="define-hope-and-fear">
 			<h4 id="hope-and-fear">希望與恐懼<a class="og-h-anchor" href="#hope-and-fear" title="Permalink" aria-hidden="true"></a></h4>
 			<ul class="og-list-inline og-ref og-omit"><li>頁碼 90</li></ul>
-			<p><a href="#define-hope">希望</a>與<a href="#define-fear">恐懼</a>代表塑造你們故事事件的宇宙力量。希望為 PC 的能力與特性提供動力，而恐懼則為 GM 及其控制的<a href="#define-adversary">敵人</a>與<a href="#define-environment">環境</a>提供動力。</p>
+			<p><a href="#define-hope">希望</a>與<a href="#define-fear">恐懼</a>代表塑造你們故事事件的宇宙力量。希望為玩家角色的能力與特性提供動力，而恐懼則為主持人及其控制的<a href="#define-adversary">敵人</a>與<a href="#define-environment">環境</a>提供動力。</p>
 		</div>
 		<h4 id="player-princieples-and-best-practices">玩家守則與最佳實踐<a class="og-h-anchor" href="#player-princieples-and-best-practices" title="Permalink" aria-hidden="true"></a></h4>
 		<ul class="og-list-inline og-ref og-omit"><li>頁碼 9</li></ul>
@@ -10536,20 +10539,20 @@
 		<div id="define-golden-rule">
 			<h4 id="the-golden-rule">黃金法則<a class="og-h-anchor" href="#the-golden-rule" title="Permalink" aria-hidden="true"></a></h4>
 			<ul class="og-list-inline og-ref og-omit"><li>頁碼 7</li></ul>
-			<p><a href="#define-daggerheart">《匕首心》</a>中最重要的規則是──讓遊戲成為你自己的。規則旨在幫助你享受遊戲體驗，但每個人解讀規則與講述故事的方式都不同。規則不應妨礙你想講述的故事、想扮演的角色或想展開的冒險。若玩家與 GM 同意更改，規則中的任何內容都可以忽略或調整。</p>
+			<p><a href="#define-daggerheart">《匕首心》</a>中最重要的規則是──讓遊戲成為你自己的。規則旨在幫助你享受遊戲體驗，但每個人解讀規則與講述故事的方式都不同。規則不應妨礙你想講述的故事、想扮演的角色或想展開的冒險。若玩家與主持人同意更改，規則中的任何內容都可以忽略或調整。</p>
 		</div>
 	</div>
 	<div class="col-12 col-md-6">
 		<div id="define-ruling">
 			<h4 id="rulings-over-rules">裁定優先於規則<a class="og-h-anchor" href="#rulings-over-rules" title="Permalink" aria-hidden="true"></a></h4>
 			<ul class="og-list-inline og-ref og-omit"><li>頁碼 7</li></ul>
-			<p><a href="#define-daggerheart">《匕首心》</a>重視裁定高於規則。規則對許多問題提供解答，但無法回答所有問題。當有疑慮時，GM 會作出與敘事相符的裁定。</p>
-			<p>在以敘事為核心的遊戲中，一切應回歸故事本身。GM 擁有權限與責任，對規則的應用進行裁定，使其有趣、合理，並符合故事發展。</p>
+			<p><a href="#define-daggerheart">《匕首心》</a>重視裁定高於規則。規則對許多問題提供解答，但無法回答所有問題。當有疑慮時，主持人會作出與敘事相符的裁定。</p>
+			<p>在以敘事為核心的遊戲中，一切應回歸故事本身。主持人擁有權限與責任，對規則的應用進行裁定，使其有趣、合理，並符合故事發展。</p>
 		</div>
 	</div>
 </div>
 <div class="og-sidebar pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
-	<p>例如，抓鉤類<a href="#define-weapon">武器</a>可以將目標拉近你身邊。若你嘗試用它拉動一座城堡，雖然武器描述並未禁止，但這並不合理。GM 可能會裁定你只能拉下一些磚塊，或是將自己拉向城牆。</p>
+	<p>例如，抓鉤類<a href="#define-weapon">武器</a>可以將目標拉近你身邊。若你嘗試用它拉動一座城堡，雖然武器描述並未禁止，但這並不合理。主持人可能會裁定你只能拉下一些磚塊，或是將自己拉向城牆。</p>
 </div>
 
 <hr>
@@ -10603,16 +10606,16 @@
 			<ul>
 				<li>轉向故事中自然會關注的對象或事物</li>
 				<li>轉向一段時間未獲得聚焦的角色</li>
-				<li>依照觸發的機制決定下一個聚焦的對象──例如，當你在<a href="#define-action-roll">動作擲骰</a>中失敗時，聚焦會轉向 GM 進行一次 GM 輪次</li>
+				<li>依照觸發的機制決定下一個聚焦的對象──例如，當你在<a href="#define-action-roll">動作擲骰</a>中失敗時，聚焦會轉向主持人進行一次 主持人輪次</li>
 			</ul>
-			<h4 class="h6">GM 輪次</h4>
-			<p>當 GM 擁有<a href="#define-spotlight">聚焦</a>時，你不能使用需要消耗資源的特性，或進行擲骰，除非另有說明──例如，某些特性允許你進行<a href="#define-reaction-roll">反應擲骰</a>以打斷<a href="#define-adversary">敵人</a>的<a href="#define-attack-roll">攻擊擲骰</a>或<a href="#define-damage-roll">傷害擲骰</a>。</p>
+			<h4 class="h6">主持人輪次</h4>
+			<p>當主持人擁有<a href="#define-spotlight">聚焦</a>時，你不能使用需要消耗資源的特性，或進行擲骰，除非另有說明──例如，某些特性允許你進行<a href="#define-reaction-roll">反應擲骰</a>以打斷<a href="#define-adversary">敵人</a>的<a href="#define-attack-roll">攻擊擲骰</a>或<a href="#define-damage-roll">傷害擲骰</a>。</p>
 		</div>
 	</div>
 	<div class="col-12 col-md-6">
 		<div class="og-topbar">
 			<div id="define-optional-rule-spotlight-tracker-tool">
-				<h4 id="optional-rule-spotlight-tracker-tool">選擇性規則：聚焦追蹤工具<a class="og-h-anchor" href="#optional-rule-spotlight-tracker-tool" title="Permalink" aria-hidden="true"></a></h4>
+				<h4 id="optional-rule-spotlight-tracker-tool">可選規則：聚焦追蹤工具<a class="og-h-anchor" href="#optional-rule-spotlight-tracker-tool" title="Permalink" aria-hidden="true"></a></h4>
 				<ul class="og-list-inline og-ref og-omit"><li>頁碼 89</li></ul>
 				<p>如果團隊偏好更傳統的<strong>行動經濟</strong>，可以使用指示物來追蹤玩家獲得<a href="#define-spotlight">聚焦</a>的次數。</p>
 				<p>在場次或場景開始時，為每位玩家放置一定數量的指示物（建議：3 個），每當你採取一次<a href="#define-action">行動</a>，移除一個指示物。若聚焦將轉移給沒有指示物的玩家，則轉移給其他人。</p>
@@ -10638,7 +10641,7 @@
 			<ul class="og-list-inline og-ref og-omit"><li>頁碼 90</li><li>頁碼 94</li><li>頁碼 148</li><li>頁碼 149</li><li>頁碼 160</li></ul>
 			<p>若<a href="#define-action">舉動</a>成功是微不足道的，或失敗會令人感到無聊，則自動成功。當舉動具有挑戰性或風險時，會觸發<strong>動作擲骰</strong>。</p>
 			<h5 class="h6">二元骰</h5>
-			<p>動作擲骰需要兩顆不同的<strong>d12</strong>，稱為<strong>二元骰</strong>。一顆代表<a href="#define-hope">希望</a>，另一顆代表<a href="#define-fear">恐懼</a>。擲出二元骰，將結果相加，並套用相關的<a href="#define-procedure">調整值</a>。接著比較<strong>希望骰</strong>與<strong>恐懼骰</strong>的結果，並說出哪一顆較高。GM 會將總和與<a href="#define-difficulty">難度</a>比較，以決定結果。</p>
+			<p>動作擲骰需要兩顆不同的<strong>d12</strong>，稱為<strong>二元骰</strong>。一顆代表<a href="#define-hope">希望</a>，另一顆代表<a href="#define-fear">恐懼</a>。擲出二元骰，將結果相加，並套用相關的<a href="#define-procedure">調整值</a>。接著比較<strong>希望骰</strong>與<strong>恐懼骰</strong>的結果，並說出哪一顆較高。主持人會將總和與<a href="#define-difficulty">難度</a>比較，以決定結果。</p>
 			<div class="table-responsive"><table class="table table-light table-striped table-sm mb-3">
 				<caption>二元骰結果</caption>
 				<thead>
@@ -10652,22 +10655,22 @@
 					<tr>
 						<th class="fw-normal" scope="row">達到或超過</th>
 						<td><strong>希望成功：</strong>你獲得 1 點<a href="#define-hope">希望</a>。</td>
-						<td><strong>恐懼成功：</strong>你的成功伴隨代價或複雜情況。GM 獲得 1 點<a href="#define-fear">恐懼</a>並獲得<a href="#define-spotlight">聚焦</a>。</td>
+						<td><strong>恐懼成功：</strong>你的成功伴隨代價或複雜情況。主持人獲得 1 點<a href="#define-fear">恐懼</a>並獲得<a href="#define-spotlight">聚焦</a>。</td>
 					</tr>
 					<tr>
 						<th class="fw-normal" scope="row">低於</th>
-						<td><strong>希望失敗：</strong>輕微後果。你獲得 1 點<a href="#define-hope">希望</a>，GM 獲得<a href="#define-spotlight">聚焦</a>。</td>
-						<td><strong>恐懼失敗：</strong>重大後果。GM 獲得 1 點<a href="#define-fear">恐懼</a>並獲得<a href="#define-spotlight">聚焦</a>。</td>
+						<td><strong>希望失敗：</strong>輕微後果。你獲得 1 點<a href="#define-hope">希望</a>，主持人獲得<a href="#define-spotlight">聚焦</a>。</td>
+						<td><strong>恐懼失敗：</strong>重大後果。主持人獲得 1 點<a href="#define-fear">恐懼</a>並獲得<a href="#define-spotlight">聚焦</a>。</td>
 					</tr>
 				</tbody>
 			</table></div>
 			<h5 class="h6">關鍵成功</h5>
 			<p>如果你的二元骰結果相同，則為<strong>關鍵成功（爆擊）</strong>，這是一種特殊的<strong>希望成功</strong>。除了獲得 1 點<a href="#define-hope">希望</a>外，結果超乎預期，並且你可以清除 1 點<a href="#define-stress">壓力點</a>。若該擲骰為<a href="#define-attack-roll">攻擊擲骰</a>，則造成<a href="#define-damage-roll">致命傷害</a>。</p>
-			<h5 class="h6">GM 的骰子</h5>
-			<p>當<a href="#define-adversary">敵人</a>與 PC 對抗時，GM 會擲出<strong>GM 的骰子</strong>──一顆<strong>d20</strong>──而不是<a href="#define-action-roll">二元骰</a>，並套用適當的<a href="#define-procedure">調整值</a>。</p>
+			<h5 class="h6">主持人擲骰</h5>
+			<p>當<a href="#define-adversary">敵人</a>與玩家對抗時，主持人會進行<strong>主持人擲骰</strong>──一顆<strong>d20</strong>──而不是<a href="#define-action-roll">二元骰</a>，並套用適當的<a href="#define-procedure">調整值</a>。</p>
 			<div class="og-sidebar pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
 				<p>獲得<a href="#define-advantage">優勢或劣勢</a>，或是希望骰或恐懼骰大小的變化，會對結果產生顯著影響──例如透過<a href="#define-highborne">高城之民</a>或<a href="#define-orderborne">結社之民</a>的社群特性。詳細資訊請參見<a href="#duality-dice-benchmark">二元骰基準</a>。</p>
-				<p>敵人通常不會進行動作擲骰（攻擊擲骰除外），但如果 GM 判定敵人的行動有失敗的可能，他們會要求 PC 進行<a href="#define-reaction-roll">反應擲骰</a>。在少數情況下──例如執行 PC 無法影響的戲劇性或困難任務時──GM 可能會要求敵人進行動作擲骰。詳細資訊請參見<a href="#adversary-benchmark-success">敵人成功基準</a>。</p>
+				<p>敵人通常不會進行動作擲骰（攻擊擲骰除外），但如果主持人判定敵人的行動有失敗的可能，他們會要求玩家角色進行<a href="#define-reaction-roll">反應擲骰</a>。在少數情況下──例如執行玩家角色無法影響的戲劇性或困難任務時──主持人可能會要求敵人進行動作擲骰。詳細資訊請參見<a href="#adversary-benchmark-success">敵人成功基準</a>。</p>
 			</div>
 		</div>
 	</div>
@@ -10678,9 +10681,9 @@
 			<ul class="og-list-inline og-ref og-omit"><li>頁碼 92</li><li>頁碼 93</li><li>頁碼 94</li><li>頁碼 95</li></ul>
 			<p>以下步驟更詳細地說明如何進行<a href="#define-action-roll">動作擲骰</a>：</p>
 			<h5 class="h6">步驟 1：選擇合適的屬性</h5>
-			<p>某些<a href="#define-action">動作</a>與效果會在描述中指明適用的<a href="#define-trait">屬性</a>。否則，由 GM 指派適用的屬性（或多個屬性）。若有多個屬性，從中選擇一個。</p>
+			<p>某些<a href="#define-action">動作</a>與效果會在描述中指明適用的<a href="#define-trait">屬性</a>。否則，由主持人指派適用的屬性（或多個屬性）。若有多個屬性，從中選擇一個。</p>
 			<h5 class="h6">步驟 2：決定難度</h5>
-			<p>某些<a href="#define-action">動作</a>會指定<a href="#define-difficulty">難度</a>。否則，由 GM 決定難度，並可選擇是否告知玩家。無論如何，GM 應該說明失敗的後果。</p>
+			<p>某些<a href="#define-action">動作</a>會指定<a href="#define-difficulty">難度</a>。否則，由主持人決定難度，並可選擇是否告知玩家。無論如何，主持人應該說明失敗的後果。</p>
 			<h5 class="h6">步驟 3：套用獎勵骰與調整值</h5>
 			<p>套用適當的獎勵骰與調整值，例如你<a href="#define-experience">運用經歷</a>，或擁有<a href="#define-advantage">優勢</a>時。</p>
 			<h5 class="h6">步驟 4：擲骰</h5>
@@ -10692,9 +10695,9 @@
 				<p>例如，你以相關<a href="#define-trait">屬性</a> +1 且無其他調整值進行<a href="#define-action-roll">動作擲骰</a>，擲出<a href="#define-action-roll">二元骰</a>，希望骰為 12、恐懼骰為 1。你接著宣告：「我擲出了 14，獲得希望點！」</p>
 			</div>
 			<h5 class="h6">步驟 5：結算結果</h5>
-			<p>每次擲出二元骰，場景都會有所變化──不會出現「什麼事都沒發生」的擲骰。你與 GM 共同協作<span class="og-omit">──以及其他玩家──</span><a href="#define-resolving">結算該動作</a>。</p>
+			<p>每次擲出二元骰，場景都會有所變化──不會出現「什麼事都沒發生」的擲骰。你與主持人共同協作<span class="og-omit">──以及其他玩家──</span><a href="#define-resolving">結算該動作</a>。</p>
 			<div class="og-sidebar pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
-				<p>更多關於情況結算的資訊，請參閱<a href="#key-terms">關鍵術語</a>、<a href="#additional-rules">額外規則</a>、<a href="#resolving-actions">結算動作</a>與<a href="#optional-rules">選擇性規則</a>。</p>
+				<p>更多關於情況結算的資訊，請參閱<a href="#key-terms">關鍵術語</a>、<a href="#additional-rules">額外規則</a>、<a href="#resolving-actions">結算動作</a>與<a href="#optional-rules">可選規則</a>。</p>
 			</div>
 		</div>
 	</div>
@@ -11019,7 +11022,7 @@
 			</div>
 			<dl>
 				<dt>施法屬性</dt>
-				<dd>若某個特性說明你使用<a href="#define-subclass">施法屬性</a>造成傷害，則你擲出的骰數等於該屬性值。若你的<a href="#define-subclass">施法屬性</a>為 +0 或更低，則不擲任何骰。當你獲得<a href="#define-level">等級</a>時，可以購買一次<a href="#define-advancement">升級選項</a>來提升<a href="#trait">屬性</a>。</dd>
+				<dd>若某個特性說明你使用<a href="#define-subclass">施法屬性</a>造成傷害，則你擲出的骰數等於該屬性值。若你的<a href="#define-subclass">施法屬性</a>為 +0 或更低，則不擲任何骰。當你獲得<a href="#define-level">等級</a>時，可以購買一次<a href="#define-advancement">升級選項</a>來提升<a href="#define-trait">屬性</a>。</dd>
 				<dt>傷害骰</dt>
 				<dd>傷害骰依照骰面數量遞增的<strong>階級</strong>排列：<strong>d4</strong>、<strong>d6</strong>、<strong>d8</strong>、<strong>d10</strong>、<strong>d12</strong>、<strong>d20</strong>。</dd>
 			</dl>
@@ -11072,7 +11075,7 @@
 		<dt>嚴重傷害</dt>
 		<dd>若傷害達到或超過<strong>嚴重</strong>傷害閾值，標記 3 點生命點。</dd>
 		<dt>標記生命點</dt>
-		<dd>當<a href="#define-damage-roll">承受傷害</a>會導致你標記生命點時，你可以改為標記一個<a href="#define-armor">護甲槽</a>。某些特性能讓你改為標記<a href="#define-stress">壓力點</a>而不是生命點。</dd>
+		<dd>當<a href="#define-damage-roll">承受傷害</a>會導致你標記生命點時，你可以改為標記一格<a href="#define-armor">護甲槽</a>而不是生命點。某些特性允許你改為標記<a href="#define-stress">壓力點</a>而非生命點。某些特性則允許你標記額外的護甲槽——例如，<a href="#define-guardian-stalwart">堅毅鐵衛</a><a href="#define-guardian">守護者</a>的<strong><em>鋼鐵意志</em></strong>特性，以及<a href="#define-domain-card">領域卡</a>如<a href="#define-domain-card-brace">警戒防備</a>。</dd>
 		<dt>死亡與擊敗</dt>
 		<dd>當你標記最後一點生命點時，進行一次<a href="#define-death">死亡動作</a>。若<a href="#define-adversary">敵人</a>的最後一點生命點被標記，則該敵人被擊敗——無論是被制伏、綑綁、潰逃或擊殺，依情況而定。</dd>
 		<dt>清除生命點</dt>
@@ -11149,10 +11152,6 @@
 </div>
 <h4 class="h6">施加狀態的特性</h4>
 <ul class="og-list-inline og-ref og-omit"><li>編者補充</li></ul>
-<div class="og-sidebar pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
-	<p>每種<em>中毒</em>狀態雖然名稱相同，但效果各不相同。</p>
-</div>
-
 <div class="table-responsive"><table class="table table-light table-striped table-sm mb-3">
 	<caption>施加狀態的特性</caption>
 	<thead>
@@ -11273,7 +11272,9 @@
 		</tr>
 	</tbody>
 </table></div>
-
+<div class="og-sidebar pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
+	<p>更多狀態請參見<a href="#adversary-benchmarks-conditions">套用狀態的敵人</a>。</p>
+</div>
 <hr>
 <div id="define-range">
 	<h3 id="maps-range-and-movement">地圖、距離與移動<a class="og-h-anchor" href="#maps-range-and-movement" title="Permalink" aria-hidden="true"></a></h3>
@@ -11479,17 +11480,17 @@
 <h2 id="gm-guidance">遊戲主持人指引<a class="og-h-anchor" href="#gm-guidance" title="Permalink" aria-hidden="true"></a></h2>
 <h3 id="running-an-adventure">運行冒險<a class="og-h-anchor" href="#running-an-adventure" title="Permalink" aria-hidden="true"></a></h3>
 <ul class="og-list-inline og-ref og-omit"><li>第 140 頁</li></ul>
-<p><strong>遊戲主持人（GM）</strong>負責引導敘事並扮演玩家角色所處的世界。本節提供遊戲主持人運行<a href="#define-daggerheart">《匕首心》</a>的建議。</p>
+<p><strong>遊戲主持人</strong>負責引導敘事並扮演玩家角色所處的世界。本節提供遊戲主持人運行<a href="#define-daggerheart">《匕首心》</a>的建議。</p>
 <p>以下三個部分將提供在<strong>運行冒險</strong>時應遵循的<a href="#gm-principles">原則</a>、<a href="#gm-practices">做法</a>，以及應避免的<a href="#pitfalls-to-avoid">陷阱</a>。</p>
 <hr>
 <h4 id="gm-principles">遊戲主持人原則<a class="og-h-anchor" href="#gm-principles" title="Permalink" aria-hidden="true"></a></h4>
 <ul class="og-list-inline og-ref og-omit"><li>第 142 頁</li></ul>
-<p>這些<strong>遊戲主持人原則</strong>是 GM 的指路明燈——當陷入疑惑時，應回到這些原則。</p>
+<p>這些<strong>遊戲主持人原則</strong>是主持人的指路明燈——當陷入疑惑時，應回到這些原則。</p>
 <dl>
 	<dt>從虛構開始並結束於虛構</dt>
 	<dd>用劇情推動機制，再將機制結果回扣到劇情。</dd>
 	<dt>隨時合作，尤其是在衝突中</dt>
-	<dd>玩家角色是戰役的主角；玩家與 GM 之間的對立應只存在於劇情中。</dd>
+	<dd>玩家角色是戰役的主角；玩家與主持人之間的對立應只存在於劇情中。</dd>
 	<dt>讓世界充滿生命、奇觀與危險</dt>
 	<dd>展現多彩的文化、帶領玩家角色前往奇妙之地，並引入危險的生物。</dd>
 	<dt>提出問題並納入答案</dt>
@@ -11640,10 +11641,10 @@
 		<li>在<a href="https://www.daggerheart.com/buy/">《匕首心》核心規則書</a>（第 136 頁）的遊戲示例中，這些詞彙似乎等同於「聚焦轉移」。而在<a href="https://www.daggerheart.com/srd/">《匕首心》系統參考文件 1.0</a>（第 36 與 64 頁）中，對於希望失敗與恐懼失敗的結果，明確提及了聚焦轉移，但對恐懼成功的結果則未提及。</li>
 		<li>如果「<a href="#define-adversary">敵人</a>發動攻擊」總是恐懼成功、希望失敗與恐懼失敗的回應，那可能會削弱玩家對<a href="#define-action-roll">動作擲骰</a>結果差異的感受。</li>
 		<li>許多<a href="#define-gm-move-examples">遊戲主持人動作範例</a>並不需要轉移<a href="#define-spotlight">聚焦</a>——例如標記<a href="#define-stress">壓力點</a>。</li>
-		<li>有時候，延後執行遊戲主持人動作會更好——尤其是那些需要消耗<a href="#define-fear">恐懼點</a>的動作。GM 可能會選擇累積恐懼點，並將後果延至敘事中更合適的時機。</li>
-		<li>也有時候，GM 所做的動作會「軟」到幾乎與<a href="#define-fear">恐懼點</a>無關。這些動作不應消耗恐懼點，有些甚至可能會讓玩家角色獲得<a href="#define-hope">希望點</a>。</li>
+		<li>有時候，延後執行遊戲主持人動作會更好——尤其是那些需要消耗<a href="#define-fear">恐懼點</a>的動作。主持人可能會選擇累積恐懼點，並將後果延至敘事中更合適的時機。</li>
+		<li>也有時候，主持人所做的動作會「軟」到幾乎與<a href="#define-fear">恐懼點</a>無關。這些動作不應消耗恐懼點，有些甚至可能會讓玩家角色獲得<a href="#define-hope">希望點</a>。</li>
 	</ul>
-	<p>最終，GM 必須透過製作<a href="#define-gm-moves">遊戲主持人動作</a>來贏得玩家的信任與尊重，這些動作應該：</p>
+	<p>最終，主持人必須透過製作<a href="#define-gm-moves">遊戲主持人動作</a>來贏得玩家的信任與尊重，這些動作應該：</p>
 	<ul class="og-list-disc">
 		<li>有趣、合乎邏輯且基於劇情</li>
 		<li>能恰當回應<a href="#define-action-roll">動作擲骰</a>的結果</li>
@@ -12611,42 +12612,42 @@
 		<div id="define-fear">
 			<h3 id="fear">恐懼<a class="og-h-anchor" href="#fear" title="Permalink" aria-hidden="true"></a></h3>
 			<ul class="og-list-inline og-ref og-omit"><li>第 91 頁</li><li>第 153 頁</li><li>第 154 頁</li></ul>
-			<p>遊戲主持人（GM）以與玩家角色（PC）數量相同的<strong>恐懼</strong>值開始遊戲。與<a href="#define-hope">希望</a>相同，恐懼會在場次之間延續。GM 在以下情況獲得恐懼（最多累積至 12 點）：</p>
+			<p>遊戲主持人以與玩家角色（PC）數量相同的<strong>恐懼</strong>值開始遊戲。與<a href="#define-hope">希望</a>相同，恐懼會在場次之間延續。主持人在以下情況獲得恐懼（最多累積至 12 點）：</p>
 			<ul class="og-list-disc">
-				<li>當一名 PC <a href="#define-action-roll">擲出恐懼結果</a>時</li>
-				<li>當 PC 進行<a href="#define-downtime">短休</a>、<a href="#define-long-rest">長休</a>或延長<a href="#define-downtime">休整</a>時</li>
+				<li>當一名玩家角色<a href="#define-action-roll">擲出恐懼結果</a>時</li>
+				<li>當玩家角色進行<a href="#define-downtime">短休</a>、<a href="#define-long-rest">長休</a>或延長<a href="#define-downtime">休整</a>時</li>
 				<li>當觸發條件發生時，例如<a href="#define-adversary-bear">熊</a>的攻擊成功</li>
 			</ul>
-			<p>GM 應該設法讓玩家知道當前的恐懼值。</p>
+			<p>主持人應該設法讓玩家知道當前的恐懼值。</p>
 			<p class="h6">花費恐懼</p>
 			<dl>
 				<dt>奪取聚焦（1 點恐懼）</dt>
-				<dd>將<a href="#define-spotlight">聚焦</a>轉向 GM，以進行一次<a href="#define-gm-move">GM 行動</a>。</dd>
-				<dt>額外進行一次 GM 行動（1 點恐懼）</dt>
-				<dd>在將<a href="#define-spotlight">聚焦</a>交回 PC 前，再進行一次<a href="#define-gm-move">GM 行動</a>。</dd>
+				<dd>將<a href="#define-spotlight">聚焦</a>轉向主持人，以進行一次<a href="#define-gm-move">主持人行動</a>。</dd>
+				<dt>額外進行一次 主持人行動（1 點恐懼）</dt>
+				<dd>在將<a href="#define-spotlight">聚焦</a>交回玩家角色前，再進行一次<a href="#define-gm-move">主持人行動</a>。</dd>
 				<dt>運用經歷（1+ 點恐懼）</dt>
-				<dd>將<a href="#define-adversary">敵人</a>的<a href="#define-experience">經歷</a>加作其<a href="#define-action-roll">動作擲骰</a>的加值，或作為 PC 對其<a href="#define-action-roll">動作擲骰</a>的減值。</dd>
+				<dd>將<a href="#define-adversary">敵人</a>的<a href="#define-experience">經歷</a>加作其<a href="#define-action-roll">動作擲骰</a>的加值，或作為玩家角色對其<a href="#define-action-roll">動作擲骰</a>的減值。</dd>
 				<dt>啟用恐懼特性（1+ 點恐懼）</dt>
 				<dd>許多<a href="#define-adversary">敵人</a>與<a href="#define-environment">環境</a>擁有需要花費恐懼啟用的<a href="#define-adversary-feature">敵人特性</a>。</dd>
 				<dt>終止暫時效果（1 點恐懼）</dt>
 				<dd>終止一項<a href="#define-temporary">暫時</a>的職業特性、法術或其他效果。</dd>
 				<dt>創造重大複雜情況（1+ 點恐懼）</dt>
-				<dd>即興創造一次強力的<a href="#define-gm-move">GM 行動</a>，例如增加更多<a href="#define-adversary">敵人</a>，或讓某個敵人做出意料之外的行動，如施放造成巨大傷害的強力法術、啟動強力神器、或變身為更強大的形態。也可以是<a href="#define-environment">環境</a>施加重大影響。</dd>
+				<dd>即興創造一次強力的<a href="#define-gm-move">主持人行動</a>，例如增加更多<a href="#define-adversary">敵人</a>，或讓某個敵人做出意料之外的行動，如施放造成巨大傷害的強力法術、啟動強力神器、或變身為更強大的形態。也可以是<a href="#define-environment">環境</a>施加重大影響。</dd>
 			</dl>
 		</div>
 		<div class="og-sidebar pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
-			<p>GM 應避免用恐懼去抵消或「抹消」PC 的行動──尤其是在這些行動尚未對場景產生影響前。相反地，GM 應使用恐懼推動故事發展。更多內容請參閱<a href="#define-resolving">解決行動</a>。</p>
+			<p>主持人應避免用恐懼去抵消或「抹消」玩家角色的行動──尤其是在這些行動尚未對場景產生影響前。相反地，主持人應使用恐懼推動故事發展。更多內容請參閱<a href="#define-resolving">解決行動</a>。</p>
 		</div>
 	</div>
 	<div class="col-12 col-md-6">
 		<div id="define-spending-fear">
 			<h4 id="dramatic-tension">戲劇張力<a class="og-h-anchor" href="#dramatic-tension" title="Permalink" aria-hidden="true"></a></h4>
 			<ul class="og-list-inline og-ref og-omit"><li>第 155 頁</li></ul>
-			<p>場景的戲劇張力與 GM 在該場景中花費的<a href="#define-fear">恐懼</a>量成正比。當 GM 擁有大量<a href="#define-fear">恐懼</a>時，可以在一次<a href="#define-gm-move">GM 行動</a>中花費多點恐懼，創造更強烈的衝擊。</p>
+			<p>場景的戲劇張力與主持人在該場景中花費的<a href="#define-fear">恐懼</a>量成正比。當主持人擁有大量<a href="#define-fear">恐懼</a>時，可以在一次<a href="#define-gm-move">主持人行動</a>中花費多點恐懼，創造更強烈的衝擊。</p>
 			<ul class="og-list-disc">
 				<li><strong>快速花費：</strong>在玩家反應前花費<a href="#define-fear">恐懼</a></li>
 				<li><strong>頻繁花費：</strong>每次<a href="#define-spotlight">聚焦</a>轉向你時花費<a href="#define-fear">恐懼</a></li>
-				<li><strong>大量花費：</strong>花費<a href="#define-fear">恐懼</a>連續進行多次<a href="#define-gm-move">GM 行動</a></li>
+				<li><strong>大量花費：</strong>花費<a href="#define-fear">恐懼</a>連續進行多次<a href="#define-gm-move">主持人行動</a></li>
 			</ul>
 			<p>下表為每種場景建議的<a href="#define-fear">恐懼</a>花費量：</p>
 			<div class="table-responsive"><table class="table table-light table-striped table-sm mb-3">
@@ -12661,7 +12662,7 @@
 				<tbody>
 					<tr>
 						<th class="fw-normal">偶發</th>
-						<td>在情緒激烈場景後，PC 之間的閒談；收集情報；在當地市集補給；<a href="#define-downtime">休整</a>期間的休息。</td>
+						<td>在情緒激烈場景後，玩家角色之間的閒談；收集情報；在當地市集補給；<a href="#define-downtime">休整</a>期間的休息。</td>
 						<td class="text-center og-nowrap">0&ndash;1</td>
 					</tr>
 					<tr>
@@ -12692,26 +12693,26 @@
 
 <hr>
 <div id="define-gm-move">
-	<h3 id="gm-moves">GM 行動<a class="og-h-anchor" href="#gm-moves" title="Permalink" aria-hidden="true"></a></h3>
+	<h3 id="gm-moves">主持人行動<a class="og-h-anchor" href="#gm-moves" title="Permalink" aria-hidden="true"></a></h3>
 	<ul class="og-list-inline og-ref og-omit"><li>第 89 頁</li><li>第 149 頁</li><li>第 150 頁</li><li>第 153 頁</li><li>第 154 頁</li></ul>
-	<p>GM 會根據 PC 的<a href="#define-action">行動</a>來做出<strong>GM 行動</strong>以改變故事。每當 PC 在<a href="#define-action-roll">動作擲骰</a>中失敗，或<a href="#define-action-roll">擲出恐懼結果</a>時，當 GM 獲得<a href="#define-spotlight">聚焦</a>時便會進行一次 GM 行動。若聚焦處於空檔狀態，例如玩家轉向 GM 詢問接下來發生什麼事，GM 也可以不花費恐懼直接進行一次行動。</p>
+	<p>主持人會根據玩家角色的<a href="#define-action">行動</a>來做出<strong>主持人行動</strong>以改變故事。每當玩家角色在<a href="#define-action-roll">動作擲骰</a>中失敗，或<a href="#define-action-roll">擲出恐懼結果</a>時，當主持人獲得<a href="#define-spotlight">聚焦</a>時便會進行一次 主持人行動。若聚焦處於空檔狀態，例如玩家轉向主持人詢問接下來發生什麼事，主持人也可以不花費恐懼直接進行一次行動。</p>
 	<h4 class="h6">較軟與較硬的行動</h4>
 	<ul class="og-list-inline og-ref og-omit"><li>第 151 頁</li></ul>
-	<p>GM 行動的頻率與嚴厲程度應反映故事的類型與基調，並回應 PC 的<a href="#define-action">行動</a>及其<a href="#define-action-roll">動作擲骰</a>結果。</p>
+	<p>主持人行動的頻率與嚴厲程度應反映故事的類型與基調，並回應玩家角色的<a href="#define-action">行動</a>及其<a href="#define-action-roll">動作擲骰</a>結果。</p>
 	<dl>
 		<dt>較軟的行動</dt>
-		<dd>較軟的行動對玩家的影響較小──它會提供團隊新的場景資訊，並給予他們回應的機會。當 PC <a href="#define-action-roll">擲出希望結果</a>時，使用較軟的行動回應。</dd>
+		<dd>較軟的行動對玩家的影響較小──它會提供團隊新的場景資訊，並給予他們回應的機會。當玩家角色<a href="#define-action-roll">擲出希望結果</a>時，使用較軟的行動回應。</dd>
 		<dt>較硬的行動</dt>
-		<dd>較硬的行動更嚴厲、影響更大或更直接──PC 無法打斷、改變或預先預測結果。當 PC <a href="#define-action-roll">擲出恐懼結果</a>時，使用較硬的行動回應。</dd>
+		<dd>較硬的行動更嚴厲、影響更大或更直接──玩家角色無法打斷、改變或預先預測結果。當玩家角色<a href="#define-action-roll">擲出恐懼結果</a>時，使用較硬的行動回應。</dd>
 	</dl>
 </div>
 <div class="og-topbar">
 	<div id="define-gm-move-examples">
-		<h4 id="example-gm-moves">GM 行動範例<a class="og-h-anchor" href="#example-gm-moves" title="Permalink" aria-hidden="true"></a></h4>
+		<h4 id="example-gm-moves">主持人行動範例<a class="og-h-anchor" href="#example-gm-moves" title="Permalink" aria-hidden="true"></a></h4>
 		<ul class="og-list-inline og-ref og-omit"><li>第 152 頁</li><li>第 153 頁</li></ul>
 		<div class="row">
 			<div class="col-12 col-md-6">
-				<h5 class="h6">較軟的 GM 行動</h5>
+				<h5 class="h6">較軟的 主持人行動</h5>
 				<ul class="og-list-disc">
 					<li>某個<a href="#define-npc">非玩家角色</a>採取行動</li>
 					<li>世界做出反應</li>
@@ -12724,10 +12725,10 @@
 				</ul>
 			</div>
 			<div class="col-12 col-md-6">
-				<h5 class="h6">較硬的 GM 行動</h5>
+				<h5 class="h6">較硬的 主持人行動</h5>
 				<ul class="og-list-disc">
 					<li>將<a href="#define-spotlight">聚焦</a>放在某個<a href="#define-adversary">敵人</a>身上，讓其進行一次<a href="#define-adversary-action">敵人動作</a></li>
-					<li>PC 必須<strong><a href="#define-stress">標記 1 壓力點</a></strong></li>
+					<li>玩家角色必須<strong><a href="#define-stress">標記 1 壓力點</a></strong></li>
 					<li><a href="#define-environment">環境</a>發生變化</li>
 					<li>造成附帶傷害</li>
 					<li>隊伍行動的後果到來</li>
@@ -12746,13 +12747,13 @@
 	<h4 id="story-beats">故事節點<a class="og-h-anchor" href="#story-beats" title="Permalink" aria-hidden="true"></a></h4>
 	<ul class="og-list-inline og-ref og-omit"><li>第 173 頁</li></ul>
 	<p><strong>故事節點</strong>是改變敘事走向的時刻——無論是世界的變化、重要的行動或反應、情感上的揭露，或是關鍵的決策。與玩家輪流進行——你先敘述你的節點，然後讓他們回應，並用他們的節點推動場景向前。</p>
-	<p>在準備場次時，GM 應規劃能夠為每個場景或情節賦予形狀的節點，而不是預先編寫具體細節或結果。</p>
+	<p>在準備場次時，主持人應規劃能夠為每個場景或情節賦予形狀的節點，而不是預先編寫具體細節或結果。</p>
 </div>
 <div class="row">
 	<div class="col-12 col-md-6">
 		<h5 id="setting-scenes">設定場景<a class="og-h-anchor" href="#setting-scenes" title="Permalink" aria-hidden="true"></a></h5>
 		<ul class="og-list-inline og-ref og-omit"><li>第 177 頁</li></ul>
-		<p>GM 應告訴玩家他們需要知道的資訊。描述應涵蓋所有感官——不僅是視覺與聽覺，還包括嗅覺、味覺、觸覺、溫度、濕度與時間。GM 應努力在關鍵時刻分享一些獨特或出乎意料的世界細節，包括：</p>
+		<p>主持人應告訴玩家他們需要知道的資訊。描述應涵蓋所有感官——不僅是視覺與聽覺，還包括嗅覺、味覺、觸覺、溫度、濕度與時間。主持人應努力在關鍵時刻分享一些獨特或出乎意料的世界細節，包括：</p>
 		<ul class="og-list-disc">
 			<li>場次開始時</li>
 			<li>抵達新地點時</li>
@@ -12762,11 +12763,11 @@
 		<ul class="og-list-inline og-ref og-omit"><li>第 176 頁</li></ul>
 		<p>保持玩家參與的方法包括：</p>
 		<ul class="og-list-disc">
-			<li>輪流將焦點轉向不同的 PC</li>
+			<li>輪流將焦點轉向不同的玩家角色</li>
 			<li>將故事元素串聯起來</li>
 			<li>引導安靜的玩家參與</li>
 			<li>鼓勵無引導式遊玩</li>
-			<li>讓 PC 面臨內在與外在衝突</li>
+			<li>讓玩家角色面臨內在與外在衝突</li>
 			<li>透過花費<a href="#define-fear">恐懼</a>提升緊張感</li>
 			<li>在<a href="#define-combat">戰鬥</a>中加入<a href="#define-random-objectives">非消耗型目標</a></li>
 			<li>使用多樣化的教學工具，例如事物的視覺化呈現</li>
@@ -13247,13 +13248,13 @@
 	<p class="h6">非玩家角色</p>
 	<ul class="og-list-inline og-ref og-omit"><li>第 166 頁</li></ul>
 	<p>在扮演非玩家角色時，遊戲主持人應努力依照<a href="#gm-principles">遊戲主持人守則</a>讓世界栩栩如生，並透過獨特的說話方式、能力、慾望與需求讓每位非玩家角色有所區別。</p>
-	<p>NPC 唯一必要的機制元素是<strong>姓名</strong>、<strong>描述</strong>與<strong>動機</strong>，但若你認為玩家角色可能會對他們採取<a href="#define-action">行動</a>，請為他們設定<a href="#define-difficulty">難度</a>。NPC 可透過修改合適的<a href="#adversary-stat-blocks">敵人資料欄</a>迅速轉變為<a href="#define-adversary">敵人</a>。</p>
+	<p>N玩家角色唯一必要的機制元素是<strong>姓名</strong>、<strong>描述</strong>與<strong>動機</strong>，但若你認為玩家角色可能會對他們採取<a href="#define-action">行動</a>，請為他們設定<a href="#define-difficulty">難度</a>。N玩家角色可透過修改合適的<a href="#adversary-stat-blocks">敵人資料欄</a>迅速轉變為<a href="#define-adversary">敵人</a>。</p>
 	<p>若非玩家角色在戰鬥中是盟友，他們不需要資料欄——只需將<a href="#define-spotlight">聚焦</a>放在他們的行動上，並描述他們的參與如何改變情節。若玩家角色在場景中利用了他們的幫助，則給予該角色<a href="#define-advantage">優勢</a>。即便非玩家角色沒有<a href="#define-hit-point">生命點</a>或<a href="#define-stress">壓力點</a>，若情節需要，他們仍可能受傷或死亡。</p>
 	<p>若重要的非玩家角色必須在機制上與系統互動，則為他們設計一個或多個具有特定觸發條件與效果的特性。</p>
 </div>
 
 <div class="og-topbar">
-	<h4 id="example-npc-feature">NPC 特性範例<a class="og-h-anchor" href="#example-npc-feature" title="Permalink" aria-hidden="true"></a></h4>
+	<h4 id="example-npc-feature">N玩家角色特性範例<a class="og-h-anchor" href="#example-npc-feature" title="Permalink" aria-hidden="true"></a></h4>
 	<ul class="og-list-inline og-ref og-omit"><li>第 167 頁</li></ul>
 	<div class="row">
 		<div class="col-12 col-md-6 col-lg-4">
@@ -13378,7 +13379,7 @@
 		<div id="define-adversary-action">
 			<h4 id="adversary-actions">敵人行動<a class="og-h-anchor" href="#adversary-actions" title="Permalink" aria-hidden="true"></a></h4>
 			<ul class="og-list-inline og-ref og-omit"><li>第 89 頁</li><li>第 100 頁</li><li>第 102 頁</li><li>第 148 頁</li><li>第 154 頁</li><li>第 194 頁</li></ul>
-			<p>當遊戲主持人獲得<a href="#define-spotlight">聚焦</a>時，可以進行一次<a href="#define-gm-move">GM 動作</a>以讓某個<a href="#define-adversary">敵人</a>成為焦點。主持人可以額外花費<a href="#define-fear">恐懼點</a>，讓額外的敵人獲得聚焦，並各自進行一次<strong>敵人行動</strong>，包括：</p>
+			<p>當遊戲主持人獲得<a href="#define-spotlight">聚焦</a>時，可以進行一次<a href="#define-gm-move">主持人動作</a>以讓某個<a href="#define-adversary">敵人</a>成為焦點。主持人可以額外花費<a href="#define-fear">恐懼點</a>，讓額外的敵人獲得聚焦，並各自進行一次<strong>敵人行動</strong>，包括：</p>
 			<ul class="og-list-disc">
 				<li>移動至<a href="#define-range">近距</a>範圍並進行一次標準<a href="#define-attack-roll">攻擊</a></li>
 				<li>移動至<a href="#define-range">近距</a>範圍並使用一個<a href="#define-adversary-feature">敵人特性</a></li>
@@ -13476,7 +13477,7 @@
 </div>
 
 <h4 id="adversary-benchmarks">敵人基準<a class="og-h-anchor" href="#adversary-benchmarks" title="Permalink" aria-hidden="true"></a></h4>
-<ul class="og-list-inline og-ref og-omit"><li>第 208 頁</li><li>Editorial Addition</li></ul>
+<ul class="og-list-inline og-ref og-omit"><li>第 208 頁</li><li>編輯補充</li></ul>
 <p>下表顯示<a href="#define-adversary">敵人</a>數值的範圍與平均值。</p>
 <dl>
 	<dt>難度</dt>
@@ -13615,7 +13616,7 @@
 			<td class="text-center">d10&ndash;d12</td>
 			<td>
 				<ul class="og-list-disc mb-0">
-					<li>降低<a href="#define-attack">攻擊擲骰</a>調整值。</li>
+					<li>降低<a href="#define-attack-roll">攻擊擲骰</a>調整值。</li>
 					<li>提高<a href="#define-damage-roll">傷害擲骰</a>。</li>
 					<li>加入<a href="#define-adversary-feature-reaction">乘勝追擊</a>特性。</li>
 				</ul>
@@ -13783,7 +13784,7 @@
 	</tbody>
 </table></div>
 <div class="og-ed pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
-	<p><strong>編者註 &mdash;</strong> 更多建立敵人資料塊的指引可在 <a href="https://www.daggerheart.com/downloads/">《匕首心》自製內容工具包</a>中找到。像 <a href="https://anydice.com">anydice.com</a> 這類工具可以提供敵人<a href="#define-damage-roll">傷害擲骰</a>的範圍與平均值，方便你與 PC 的<a href="#define-hit-point">傷害閾值</a>以及他們可施加的<a href="#define-condtion">狀態</a>作比較。</p>
+	<p><strong>編者註 &mdash;</strong> 更多建立敵人資料塊的指引可在 <a href="https://www.daggerheart.com/downloads/">《匕首心》自製內容工具包</a>中找到。像 <a href="https://anydice.com">anydice.com</a> 這類工具可以提供敵人<a href="#define-damage-roll">傷害擲骰</a>的範圍與平均值，方便你與玩家角色的<a href="#define-hit-point">傷害閾值</a>以及他們可施加的<a href="#define-condtion">狀態</a>作比較。</p>
 </div>
 
 <hr>
@@ -15024,7 +15025,7 @@
             <ul class="list-unstyled og-list-hang">
                 <li><p><strong><em>扭曲的韌性&mdash;被動：</em></strong>實驗體對<a href="#define-damage-type">物理傷害</a><a href="#define-damage-type">具抗性</a>。</p></li>
                 <li><p><strong><em>以眾壓制&mdash;被動：</em></strong>當實驗體攻擊的目標<a href="#define-range">極近距離</a>內有其他敵人時，實驗體造成的傷害加倍。</p></li>
-                <li><p><strong><em>蹣跚突襲&mdash;動作：</em></strong><strong><a href="#define-stress">標記 1 壓力點</a></strong>，將實驗體<a href="#define-spotlight">聚焦</a>為額外的 GM 行動，而不需消耗<a href="#define-fear">恐懼點</a>。</p></li>
+                <li><p><strong><em>蹣跚突襲&mdash;動作：</em></strong><strong><a href="#define-stress">標記 1 壓力點</a></strong>，將實驗體<a href="#define-spotlight">聚焦</a>為額外的 主持人行動，而不需消耗<a href="#define-fear">恐懼點</a>。</p></li>
             </ul>
         </div>
     </div>
@@ -15431,7 +15432,7 @@
             </div>
             <h6>特性</h6>
             <ul class="list-unstyled og-list-hang">
-                <li><p><strong><em>不懈追擊 (2)&mdash;被動：</em></strong> 戈耳貢在每個 GM 回合中可被<a href="#define-spotlight">聚焦</a>最多兩次。花費<a href="#define-fear">恐懼點</a>以正常方式<a href="#define-spotlight">聚焦</a>牠。</p></li>
+                <li><p><strong><em>不懈追擊 (2)&mdash;被動：</em></strong> 戈耳貢在每個主持人回合中可被<a href="#define-spotlight">聚焦</a>最多兩次。花費<a href="#define-fear">恐懼點</a>以正常方式<a href="#define-spotlight">聚焦</a>牠。</p></li>
                 <li><p><strong><em>噬日之箭&mdash;被動：</em></strong> 當戈耳貢的普通攻擊成功時，目標會進入發光狀態直到場景結束，且不能進入<a href="#define-condition"><em>隱匿</em></a>狀態。對發光目標的攻擊擲骰具有優勢。</p></li>
                 <li><p><strong><em>蛇冠之擊&mdash;動作：</em></strong> 使用戈耳貢的護衛之蛇對<a href="#define-range">近戰範圍</a>內的一個目標進行<a href="#define-attack-roll">攻擊擲骰</a>。成功時，標記 1 點<a href="#define-stress">壓力點</a>造成<strong>2d10+4</strong><a href="#define-damage-type">物理傷害</a>，且該目標必須額外標記 1 點<a href="#define-stress">壓力點</a>。</p></li>
                 <li><p><strong><em>石化凝視&mdash;反應：</em></strong> 當戈耳貢在<a href="#define-range">近距離</a>內受到攻擊並承受傷害時，你可以<strong><a href="#define-fear">花費 1 恐懼點</a></strong>迫使攻擊者進行一次<a href="#define-instinct">本能</a><a href="#define-reaction-roll">反應擲骰</a>。失敗則開始石化，標記 1 點<a href="#define-hit-point">生命點</a>並啟動<a href="#define-countdown">石化倒計時（4）</a>。每當戈耳貢被攻擊時，該倒計時遞減。倒計時觸發時，目標必須進行一次<a href="#define-death">死亡行動</a>。若戈耳貢被擊敗，所有石化倒計時立即結束。</p></li>
@@ -15739,7 +15740,7 @@
             </div>
             <h6>特性</h6>
             <ul class="list-unstyled og-list-hang">
-                <li><p><strong><em>不懈追擊 (2)&mdash;被動：</em></strong> 高階神使在每個 GM 回合中可被<a href="#define-spotlight">聚焦</a>最多三次。花費<a href="#define-fear">恐懼點</a>以正常方式<a href="#define-spotlight">聚焦</a>牠。</p></li>
+                <li><p><strong><em>不懈追擊 (2)&mdash;被動：</em></strong> 高階神使在每個主持人回合中可被<a href="#define-spotlight">聚焦</a>最多三次。花費<a href="#define-fear">恐懼點</a>以正常方式<a href="#define-spotlight">聚焦</a>牠。</p></li>
                 <li><p><strong><em>神聖飛行&mdash;被動：</em></strong> 當高階神使處於飛行狀態時，可<strong><a href="#define-fear">花費 1 恐懼點</a></strong>將行動前的移動距離從<a href="#define-range">近距離</a>改為<a href="#define-range">遠距離</a>。</p></li>
                 <li><p><strong><em>審判&mdash;動作：</em></strong> <strong><a href="#define-fear">花費 1 恐懼點</a></strong>將一個目標標記為在其神眼中「有罪」，直到高階神使被擊敗。處於「有罪」的目標，在擲出<a href="#define-hope">希望</a>結果時不會獲得<a href="#define-hope">希望</a>，且高階神使對其成功的普通攻擊會造成<a href="#define-hit-point">嚴重</a>傷害而非普通傷害。同一時間只能標記一個目標。</p></li>
                 <li><p><strong><em>神光&mdash;動作：</em></strong> <strong><a href="#define-stress">標記 1 壓力點</a></strong>釋放一道神性的光束，照射至<a href="#define-range">極遠範圍</a>內至多二十個目標。目標必須進行一次<a href="#define-presence">風度</a><a href="#define-reaction-roll">反應擲骰</a>，若被標記為「有罪」則擁有<a href="#define-advantage">劣勢</a>。失敗者受到<strong>4d6+12</strong><a href="#define-damage-type">魔法傷害</a>，成功者承受一半傷害。</p></li>
@@ -17706,7 +17707,7 @@
             </div>
             <h6>特性</h6>
             <ul class="list-unstyled og-list-hang">
-                <li><p><strong><em>無情（2）—被動：</em></strong> 黑曜獵手在每回合 GM 的行動中最多可被<a href="#define-spotlight">聚焦</a>兩次。花費<a href="#define-fear">恐懼點</a>的規則照常適用。</p></li>
+                <li><p><strong><em>無情（2）—被動：</em></strong> 黑曜獵手在每回合主持人的行動中最多可被<a href="#define-spotlight">聚焦</a>兩次。花費<a href="#define-fear">恐懼點</a>的規則照常適用。</p></li>
                 <li><p><strong><em>飛行—被動：</em></strong> 當處於飛行狀態時，黑曜獵手獲得 +3<a href="#define-difficulty">難度</a>。</p></li>
                 <li><p><strong><em>黑曜鱗片—被動：</em></strong> 黑曜獵手對<a href="#define-damage-type">物理傷害</a>具有<a href="#define-damage-type">抗性</a>。</p></li>
                 <li><p><strong><em>雪崩之尾—動作：</em></strong> <strong><a href="#define-stress">標記 1 壓力點</a></strong>以攻擊所有<a href="#define-range">近距離</a>範圍內的目標。成功時造成<strong>4d6+4</strong><a href="#define-damage-type">物理傷害</a>，將其擊退至<a href="#define-range">遠距離</a>，並使其處於<a href="#define-condition"><em>脆弱</em></a>狀態直到下一次擲出<a href="#define-hope">希望</a>結果為止。</p></li>
@@ -17741,7 +17742,7 @@
             </div>
             <h6>特性</h6>
             <ul class="list-unstyled og-list-hang">
-                <li><p><strong><em>無情（3）—被動：</em></strong> 熔炎天災在每回合 GM 的行動中最多可被<a href="#define-spotlight">聚焦</a>三次。花費<a href="#define-fear">恐懼點</a>的規則照常適用。</p></li>
+                <li><p><strong><em>無情（3）—被動：</em></strong> 熔炎天災在每回合主持人的行動中最多可被<a href="#define-spotlight">聚焦</a>三次。花費<a href="#define-fear">恐懼點</a>的規則照常適用。</p></li>
                 <li><p><strong><em>龜裂鱗甲—被動：</em></strong> 當熔炎天災受到傷害時，擲出等同於已標記<a href="#define-hit-point">生命點</a>數量的 <strong>d6</strong>。每擲出 4 或以上，獲得 1<a href="#define-fear">恐懼點</a>。</p></li>
                 <li><p><strong><em>碎裂之力—動作：</em></strong> <strong><a href="#define-stress">標記 1 壓力點</a></strong>以攻擊<a href="#define-range">鄰近範圍</a>內的一個目標。若成功，該目標受到<strong>4d8+14</strong><a href="#define-damage-type">物理傷害</a>、失去 1<a href="#define-hope">希望點</a>並被擊退至<a href="#define-range">近距離</a>，熔炎天災清除 1<a href="#define-stress">壓力點</a>。</p></li>
                 <li><p><strong><em>熔岩噴發—動作：</em></strong> <strong><a href="#define-fear">花費 1 恐懼點</a></strong>令熔炎天災鱗片下噴出熔岩，覆蓋<a href="#define-range">鄰近範圍</a>內的區域。所有目標必須進行<a href="#define-agility">敏捷</a><a href="#define-reaction-roll">反應擲骰</a>，失敗者受到<strong>4d6+6</strong><a href="#define-damage-type">物理傷害</a>並被擊退至<a href="#define-range">近距離</a>。該區域將持續充滿熔岩（進入或在其中行動時受到 6 點<a href="#define-hit-point">生命點</a>傷害）。</p></li>
@@ -17776,7 +17777,7 @@
             </div>
             <h6>特性</h6>
             <ul class="list-unstyled og-list-hang">
-                <li><p><strong><em>無情（4）—被動：</em></strong> 暴君餘燼在每回合 GM 的行動中最多可被<a href="#define-spotlight">聚焦</a>四次。花費<a href="#define-fear">恐懼點</a>的規則照常適用。</p></li>
+                <li><p><strong><em>無情（4）—被動：</em></strong> 暴君餘燼在每回合主持人的行動中最多可被<a href="#define-spotlight">聚焦</a>四次。花費<a href="#define-fear">恐懼點</a>的規則照常適用。</p></li>
                 <li><p><strong><em>背水一戰—被動：</em></strong> <strong><a href="#define-stress">標記 1 壓力點</a></strong>即可替代花費<a href="#define-fear">恐懼點</a>以<a href="#define-spotlight">聚焦</a>暴君餘燼。</p></li>
                 <li><p><strong><em>受損雙翼—被動：</em></strong> 當飛行時，暴君餘燼獲得 +1<a href="#define-difficulty">難度</a>加值。</p></li>
                 <li><p><strong><em>化為灰燼—被動：</em></strong> 當玩家角色在暴君餘燼<a href="#define-range">近距離</a>範圍內擲出失敗時，失去 1<a href="#define-hope">希望點</a>，你獲得 1<a href="#define-fear">恐懼點</a>。若該角色無法失去<a href="#define-hope">希望點</a>，則必須標記 1<a href="#define-hit-point">生命點</a>。</p></li>
@@ -17907,7 +17908,7 @@
             </div>
             <h6>特性</h6>
             <ul class="list-unstyled og-list-hang">
-                <li><p><strong><em>無情（3）—被動：</em></strong> 青年冰龍在每回合 GM 的行動中最多可被<a href="#define-spotlight">聚焦</a>三次。花費<a href="#define-fear">恐懼點</a>的規則照常適用。</p></li>
+                <li><p><strong><em>無情（3）—被動：</em></strong> 青年冰龍在每回合主持人的行動中最多可被<a href="#define-spotlight">聚焦</a>三次。花費<a href="#define-fear">恐懼點</a>的規則照常適用。</p></li>
                 <li><p><strong><em>撕裂碾碎—被動：</em></strong> 若受到冰龍傷害的目標沒有標記<a href="#define-armor">護甲槽</a>以減免傷害，必須標記 1<a href="#define-stress">壓力點</a>。</p></li>
                 <li><p><strong><em>無望—被動：</em></strong> 當玩家角色在冰龍<a href="#define-range">遠距離</a>內以<a href="#define-fear">恐懼點</a>擲骰時，失去 1<a href="#define-hope">希望點</a>。</p></li>
                 <li><p><strong><em>暴風吐息—動作：</em></strong> <strong><a href="#define-fear">花費 2 恐懼點</a></strong>釋放覆蓋<a href="#define-range">近距離</a>範圍的冰風暴。該範圍內的所有目標必須進行<a href="#define-agility">敏捷</a><a href="#define-reaction-roll">反應擲骰</a>。失敗者受到<strong>4d6+5</strong><a href="#define-damage-type">魔法傷害</a>並被冰封<a href="#define-condition"><em>束縛</em></a>，直到成功進行<a href="#define-trait-roll">力量擲骰</a>掙脫。成功者必須標記 2<a href="#define-stress">壓力點</a>或承受一半傷害。</p></li>
@@ -17943,7 +17944,7 @@
             <ul class="list-unstyled og-list-hang">
                 <li><p><strong><em>獸群（2d6+5）—被動：</em></strong> 當殭屍軍團標記了一半或以上的<a href="#define-hit-point">生命點</a>時，標準攻擊改為造成<strong>2d6+5</strong><a href="#define-damage-type">物理傷害</a>。</p></li>
                 <li><p><strong><em>不屈—被動：</em></strong> 殭屍軍團具有<a href="#define-damage-type">物理傷害抗性</a>。</p></li>
-                <li><p><strong><em>無情（2）—被動：</em></strong> 殭屍軍團在每回合 GM 的行動中最多可被<a href="#define-spotlight">聚焦</a>兩次。花費<a href="#define-fear">恐懼點</a>的規則照常適用。</p></li>
+                <li><p><strong><em>無情（2）—被動：</em></strong> 殭屍軍團在每回合主持人的行動中最多可被<a href="#define-spotlight">聚焦</a>兩次。花費<a href="#define-fear">恐懼點</a>的規則照常適用。</p></li>
                 <li><p><strong><em>壓制—反應：</em></strong> 當殭屍軍團在<a href="#define-range">近戰</a>中因攻擊而受到<a href="#define-hit-point">輕傷</a>時，可標記 1<a href="#define-stress">壓力點</a>，對攻擊者進行一次具有<a href="#define-advantage">優勢</a>的標準攻擊。</p></li>
             </ul>
         </div>
@@ -17984,14 +17985,14 @@
 	<div class="col-12 col-md-6">
 		<h3 id="building-encounters">建立遭遇<a class="og-h-anchor" href="#building-encounters" title="Permalink" aria-hidden="true"></a></h3>
 		<ul class="og-list-inline og-ref og-omit"><li>第 174 頁</li><li>第 197 頁</li></ul>
-		<p>遊戲主持人（GM）以<a href="#define-adversary">敵人</a>、<a href="#define-combat">環境</a>與危害的形式創造的障礙，是提升有意義的張力戲劇的強大工具。利用戰鬥與行動，向玩家揭示有關故事發展、世界以及場景中角色的資訊。</p>
+		<p>遊戲主持人以<a href="#define-adversary">敵人</a>、<a href="#define-combat">環境</a>與危害的形式創造的障礙，是提升有意義的張力戲劇的強大工具。利用戰鬥與行動，向玩家揭示有關故事發展、世界以及場景中角色的資訊。</p>
 		<p>動態的戰鬥透過迫使玩家角色（PC）在衝突目標間抉擇，來製造懸念，同時觸動角色的動機與弱點，並創造淬鍊他們成為傳奇英雄的試煉爐。</p>
-		<p>在建立遭遇時，GM 應該自問：</p>
+		<p>在建立遭遇時，主持人應該自問：</p>
 		<ul class="og-list-disc">
 			<li>此遭遇的敘事功能是什麼？</li>
 			<li><a href="#define-npc">非玩家角色</a>與<a href="#define-adversary">敵人</a>的動機是什麼？</li>
 			<li><a href="#define-environment">環境</a>能如何讓遭遇鮮活起來？</li>
-			<li>敵人如何與 PC 的特性與特殊能力互動？</li>
+			<li>敵人如何與玩家角色的特性與特殊能力互動？</li>
 		</ul>
 		<h4 id="phased-battles">分階段戰鬥<a class="og-h-anchor" href="#phased-battles" title="Permalink" aria-hidden="true"></a></h4>
 		<ul class="og-list-inline og-ref og-omit"><li>第 180 頁</li></ul>
@@ -18055,7 +18056,7 @@
 			</thead>
 			<tbody>
 				<tr>
-					<th class="fw-normal" scope="row"><a href="#define-adversary-type">雜兵</a>（每位 PC 一名）</th>
+					<th class="fw-normal" scope="row"><a href="#define-adversary-type">雜兵</a>（每位玩家角色一名）</th>
 					<td class="text-center">1</td>
 				</tr>
 				<tr>
@@ -18088,9 +18089,9 @@
 </div>
 <h4 id="pc-benchmark-defense">玩家角色防禦基準<a class="og-h-anchor" href="#pc-benchmark-defense" title="Permalink" aria-hidden="true"></a></h4>
 <ul class="og-list-inline og-ref og-omit"><li>編輯補充</li></ul>
-<p><a href="#define-damage-roll">傷害擲骰</a>會與玩家角色（PC）因穿著<a href="#define-armor">護甲</a>而獲得的<a href="#define-hit-point">傷害閾值</a>進行比較。使用下列表格來判斷一次成功攻擊平均會讓 PC 標記多少<a href="#define-hit-point">生命點</a>或<a href="#define-armor">護甲槽</a>。由<a href="#define-ancestry">種族</a>、<a href="#define-class">職業</a>特性與<a href="#define-domain">領域卡</a>獲得的特性，可能會使這些基準值更高。相關資訊可參見<a href="#adversary-benchmarks">敵人基準</a>。</p>
+<p><a href="#define-damage-roll">傷害擲骰</a>會與玩家角色（PC）因穿著<a href="#define-armor">護甲</a>而獲得的<a href="#define-hit-point">傷害閾值</a>進行比較。使用下列表格來判斷一次成功攻擊平均會讓玩家角色標記多少<a href="#define-hit-point">生命點</a>或<a href="#define-armor">護甲槽</a>。由<a href="#define-ancestry">種族</a>、<a href="#define-class">職業</a>特性與<a href="#define-domain">領域卡</a>獲得的特性，可能會使這些基準值更高。相關資訊可參見<a href="#adversary-benchmarks">敵人基準</a>。</p>
 <div class="table-responsive og-omit"><table class="table table-light table-striped table-sm mb-3">
-	<caption>PC 防禦數值範圍</caption>
+	<caption>玩家角色防禦數值範圍</caption>
 	<thead>
 		<tr>
 			<th class="text-center og-nowrap" scope="col">位階</th>
@@ -18129,7 +18130,7 @@
 
 <h4 id="pc-benchmark-damage">玩家角色傷害基準<a class="og-h-anchor" href="#pc-benchmark-damage" title="Permalink" aria-hidden="true"></a></h4>
 <ul class="og-list-inline og-ref og-omit"><li>編輯補充</li></ul>
-<p>下列表格顯示使用<a href="#define-weapon">武器</a>時的<a href="#define-damage-roll">傷害擲骰</a>平均值。平均傷害取決於<a href="#define-attack-roll">攻擊擲骰</a><a href="#define-procedure">調整值</a>，以及 PC 提升<a href="#define-damage-roll">熟練值</a>的<a href="#define-advancement">升級選項</a>次數。相關資訊可參見<a href="#adversary-benchmarks">敵人基準</a>。</p>
+<p>下列表格顯示使用<a href="#define-weapon">武器</a>時的<a href="#define-damage-roll">傷害擲骰</a>平均值。平均傷害取決於<a href="#define-attack-roll">攻擊擲骰</a><a href="#define-procedure">調整值</a>，以及玩家角色提升<a href="#define-damage-roll">熟練值</a>的<a href="#define-advancement">升級選項</a>次數。相關資訊可參見<a href="#adversary-benchmarks">敵人基準</a>。</p>
 <dl>
 	<dt>短距離</dt>
 	<dd>近戰、臨近範圍或鄰近範圍。</dd>
@@ -18137,7 +18138,7 @@
 	<dd>遠距離或極遠範圍。</dd>
 </dl>
 <div class="table-responsive og-omit"><table class="table table-light table-striped table-sm mb-3">
-	<caption>PC 傷害數值範圍</caption>
+	<caption>玩家角色傷害數值範圍</caption>
 	<thead>
 		<tr>
 			<th class="text-center og-nowrap" scope="col">位階</th>
@@ -18188,7 +18189,7 @@
 			<p>環境代表場景中除了玩家角色（PC）與<a href="#define-adversary">敵人</a>之外的一切，例如物理空間、背景<a href="#define-npc">非玩家角色</a>以及自然力量。環境資料塊包括：</p>
 			<dl>
 				<dt>位階</dt>
-				<dd>此環境設計用來挑戰的 PC <a href="#define-tier">位階</a>。</dd>
+				<dd>此環境設計用來挑戰的玩家角色<a href="#define-tier">位階</a>。</dd>
 				<dt>類型</dt>
 				<dd>此環境最適合支援的<a href="#define-environment-type">場景類型</a>。</dd>
 				<dt>衝動</dt>
@@ -18198,7 +18199,7 @@
 				<dt>可能的敵人</dt>
 				<dd>建議加入場景的<a href="#define-adversary">敵人</a>。</dd>
 				<dt>特性</dt>
-				<dd>作為<a href="#define-gm-move">GM 行動</a>的選項。</dd>
+				<dd>作為<a href="#define-gm-move">主持人行動</a>的選項。</dd>
 				<dt>特性問題</dt>
 				<dd>提供情節鉤子、敘事推進與與其他故事要素的連結。</dd>
 			</dl>
@@ -18228,7 +18229,7 @@
 </div>
 <h4 id="environment-benchmarks">環境基準<a class="og-h-anchor" href="#environment-benchmarks" title="Permalink" aria-hidden="true"></a></h4>
 <ul class="og-list-inline og-ref og-omit"><li>第 242 頁</li></ul>
-<p>有時候，<a href="#define-environment">環境</a>的<a href="#define-tier">位階</a>可能不適合隊伍，或者 GM 可能會修改或替換一兩個特性，將其呈現為完全不同的環境。使用下列表格來調整資料塊，或直接創造全新的資料塊：</p>
+<p>有時候，<a href="#define-environment">環境</a>的<a href="#define-tier">位階</a>可能不適合隊伍，或者主持人可能會修改或替換一兩個特性，將其呈現為完全不同的環境。使用下列表格來調整資料塊，或直接創造全新的資料塊：</p>
 <div class="table-responsive og-omit"><table class="table table-light table-striped table-sm mb-3">
 	<caption>環境基準表</caption>
 	<thead>
@@ -18320,7 +18321,7 @@
 				</div>
 				<h6>特性</h6>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>蔓生戰場—被動：</em></strong>此地曾發生過一場戰鬥。PC 可以進行一次<a href="#define-trait-roll">本能擲骰</a>來辨識該戰鬥的證據。<a href="#define-action-roll">希望成功</a>可得知以下三項資訊全部，<a href="#define-action-roll">恐懼成功</a>則得知其中兩項。若失敗，PC 可標記 3 點<a href="#define-stress">壓力點</a>以得知其中一項，並在下一次調查此環境的<a href="#define-action-roll">動作擲骰</a>中獲得<a href="#define-advantage">優勢</a>。擁有相關背景或<a href="#define-experience">經歷</a>的 PC 還可額外得知一項細節，並對該場景提出一個後續問題，獲得真實（即使不一定完整）的答案。</p>
+					<li><p><strong><em>蔓生戰場—被動：</em></strong>此地曾發生過一場戰鬥。玩家角色可以進行一次<a href="#define-trait-roll">本能擲骰</a>來辨識該戰鬥的證據。<a href="#define-action-roll">希望成功</a>可得知以下三項資訊全部，<a href="#define-action-roll">恐懼成功</a>則得知其中兩項。若失敗，玩家角色可標記 3 點<a href="#define-stress">壓力點</a>以得知其中一項，並在下一次調查此環境的<a href="#define-action-roll">動作擲骰</a>中獲得<a href="#define-advantage">優勢</a>。擁有相關背景或<a href="#define-experience">經歷</a>的玩家角色還可額外得知一項細節，並對該場景提出一個後續問題，獲得真實（即使不一定完整）的答案。</p>
 						<ul class="og-list-disc">
 							<li>地面散落著戰鬥的痕跡（破碎的武器與樹枝、地面的劃痕）。</li>
 							<li>一截覆滿青苔的樹幹其實是一具樹人的屍體。</li>
@@ -18328,8 +18329,8 @@
 						</ul>
 					</li>
 					<li><p><strong><em>帶刺藤蔓—動作：</em></strong>選擇林地內的一個點。該點<a href="#define-range">臨近範圍</a>內的所有目標必須成功通過<a href="#define-agility">敏捷</a><a href="#define-reaction-roll">反應擲骰</a>，否則將承受<strong>1d8+3</strong>點<a href="#define-damage-type">物理傷害</a>並被帶刺藤蔓<a href="#define-condition"><em>束縛</em></a>。「<a href="#define-condition"><em>束縛</em></a>」狀態持續至目標成功進行一次<a href="#define-trait-roll">靈巧或力量擲骰</a>，或對藤蔓造成至少 6 點傷害為止。</p></li>
-					<li><p><strong><em>此地不容你等—動作：</em></strong><a href="#define-adversary-young-dryad">幼年樹精</a>、兩名<a href="#define-adversary-sylvan-soldier">木族戰士</a>，以及數量等同於 PC 數目的<a href="#define-adversary-minor-treant">小型樹人</a>現身，譴責並阻止隊伍的入侵。</p></li>
-					<li><p><strong><em>褻瀆者—動作：</em></strong><strong><a href="#define-fear">花費 1 恐懼點</a></strong>以召喚一名受暴力與不和諧餘韻吸引的低階混沌敵人。該敵人出現在距離一名指定 PC<a href="#define-range">遠距離</a>的位置，並立刻獲得<a href="#define-spotlight">焦點</a>。</p></li>
+					<li><p><strong><em>此地不容你等—動作：</em></strong><a href="#define-adversary-young-dryad">幼年樹精</a>、兩名<a href="#define-adversary-sylvan-soldier">木族戰士</a>，以及數量等同於玩家角色數目的<a href="#define-adversary-minor-treant">小型樹人</a>現身，譴責並阻止隊伍的入侵。</p></li>
+					<li><p><strong><em>褻瀆者—動作：</em></strong><strong><a href="#define-fear">花費 1 恐懼點</a></strong>以召喚一名受暴力與不和諧餘韻吸引的低階混沌敵人。該敵人出現在距離一名指定玩家角色<a href="#define-range">遠距離</a>的位置，並立刻獲得<a href="#define-spotlight">焦點</a>。</p></li>
 				</ul>
 			</div>
         </div>
@@ -18366,7 +18367,7 @@
 				<ul class="og-list-inline og-ref og-omit"><li>第 243 頁</li></ul>
 				<ul class="list-unstyled">
 					<li><strong><em>位階 1 <a href="#define-environment-type">事件</a></em></strong></li>
-					<li><em>由 PC 設下的伏擊，旨在讓毫無防備的敵人措手不及。</em></li>
+					<li><em>由玩家角色設下的伏擊，旨在讓毫無防備的敵人措手不及。</em></li>
 					<li><strong>衝動：</strong>撤退、集結、保護最<a href="#define-condition"><em>脆弱</em></a>的目標</li>
 				</ul>
 				<div class="og-topbar">
@@ -18379,7 +18380,7 @@
 				<h6>特性</h6>
 				<ul class="list-unstyled og-list-hang">
 					<li><p><strong><em>相對實力—被動：</em></strong>此環境的<a href="#define-difficulty">難度</a>等同於該場景中難度最高的<a href="#define-adversary">敵人</a>的<a href="#define-difficulty">難度</a>。</p></li>
-					<li><p><strong><em>他們從哪來的？—反應：</em></strong>當 PC 對毫無防備的敵人發動伏擊時，你失去 2 點<a href="#define-fear">恐懼點</a>，且 PC 所進行的第一個<a href="#define-attack-roll">攻擊擲骰</a>獲得<a href="#define-advantage">優勢</a>。</p></li>
+					<li><p><strong><em>他們從哪來的？—反應：</em></strong>當玩家角色對毫無防備的敵人發動伏擊時，你失去 2 點<a href="#define-fear">恐懼點</a>，且玩家角色所進行的第一個<a href="#define-attack-roll">攻擊擲骰</a>獲得<a href="#define-advantage">優勢</a>。</p></li>
 				</ul>
 			</div>
 		</div>
@@ -18403,10 +18404,10 @@
 				</div>
 				<h6>特性</h6>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>混沌魔法匯聚點—被動：</em></strong>當 PC 進行施法擲骰時，必須擲兩顆<a href="#define-action-roll">恐懼骰</a>並取較高結果。</p></li>
+					<li><p><strong><em>混沌魔法匯聚點—被動：</em></strong>當玩家角色進行施法擲骰時，必須擲兩顆<a href="#define-action-roll">恐懼骰</a>並取較高結果。</p></li>
 				</ul>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>靛焰—被動：</em></strong>PC 接近中央巨樹時，可以進行<a href="#define-trait-roll">知識擲骰</a>嘗試辨識吞噬此地的魔法。</p>
+					<li><p><strong><em>靛焰—被動：</em></strong>玩家角色接近中央巨樹時，可以進行<a href="#define-trait-roll">知識擲骰</a>嘗試辨識吞噬此地的魔法。</p>
 						<ul class="og-list-disc">
 							<li><strong>成功：</strong>得知以下三項細節。</li>
 							<li><strong>恐懼成功：</strong>得知其中兩項。</li>
@@ -18414,9 +18415,9 @@
 							<li><strong>細節：</strong>此為墮落魔法的產物。腐化經由覆灰的苔蘚蔓延，僅能透過自然魔法的儀式（需<a href="#define-countdown">進展倒計時（8）</a>）加以淨化。</li>
 						</ul>
 					</li>
-					<li><p><strong><em>糾纏藤蔓—動作：</em></strong>滿佈荊棘的活化藤蔓從灌木中抽出以困住 PC。目標必須成功通過<a href="#define-agility">敏捷</a><a href="#define-reaction-roll">反應擲骰</a>，否則將被<a href="#define-condition"><em>束縛</em></a>並陷入<a href="#define-condition"><em>脆弱</em></a>狀態，直到成功進行<a href="#define-trait-roll">靈巧或力量擲骰</a>，或對藤蔓造成至少 10 點傷害以清除兩種狀態。在嘗試掙脫時，目標會承受<strong>1d8+4</strong>點<a href="#define-damage-type">物理傷害</a>並失去 1 點<a href="#define-hope">希望點</a>。</p></li>
+					<li><p><strong><em>糾纏藤蔓—動作：</em></strong>滿佈荊棘的活化藤蔓從灌木中抽出以困住玩家角色。目標必須成功通過<a href="#define-agility">敏捷</a><a href="#define-reaction-roll">反應擲骰</a>，否則將被<a href="#define-condition"><em>束縛</em></a>並陷入<a href="#define-condition"><em>脆弱</em></a>狀態，直到成功進行<a href="#define-trait-roll">靈巧或力量擲骰</a>，或對藤蔓造成至少 10 點傷害以清除兩種狀態。在嘗試掙脫時，目標會承受<strong>1d8+4</strong>點<a href="#define-damage-type">物理傷害</a>並失去 1 點<a href="#define-hope">希望點</a>。</p></li>
 					<li><p><strong><em>焦炭構造體—動作：</em></strong>被靛焰包裹的扭曲野獸踐踏你所選擇的一個地點。該點<a href="#define-range">鄰近範圍</a>內的所有目標必須進行<a href="#define-agility">敏捷</a><a href="#define-reaction-roll">反應擲骰</a>。失敗者承受<strong>3d12+3</strong>點<a href="#define-damage-type">物理傷害</a>，成功者則承受一半傷害。</p></li>
-					<li><p><strong><em>嗆喉灰燼—反應：</em></strong><em><a href="#define-countdown">倒計時（循環 6）</a></em>。當 PC 進入燃燒的林心時，啟動倒計時。當倒計時觸發時，所有角色必須進行<a href="#define-strength">力量</a>或<a href="#define-instinct">本能</a><a href="#define-reaction-roll">反應擲骰</a>。失敗者承受<strong>4d6+5</strong>點<a href="#define-damage-type">直接物理傷害</a>，成功者承受一半傷害。防護面具或衣物可在<a href="#define-reaction-roll">反應擲骰</a>中獲得<a href="#define-advantage">優勢</a>。</p></li>
+					<li><p><strong><em>嗆喉灰燼—反應：</em></strong><em><a href="#define-countdown">倒計時（循環 6）</a></em>。當玩家角色進入燃燒的林心時，啟動倒計時。當倒計時觸發時，所有角色必須進行<a href="#define-strength">力量</a>或<a href="#define-instinct">本能</a><a href="#define-reaction-roll">反應擲骰</a>。失敗者承受<strong>4d6+5</strong>點<a href="#define-damage-type">直接物理傷害</a>，成功者承受一半傷害。防護面具或衣物可在<a href="#define-reaction-roll">反應擲骰</a>中獲得<a href="#define-advantage">優勢</a>。</p></li>
 				</ul>
 			</div>
 		</div>
@@ -18440,12 +18441,12 @@
 				</div>
 				<h6>特性</h6>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>天平傾斜—被動：</em></strong>PC 可以在互動中付出一把金幣，於<a href="#define-trait-roll">風度擲骰</a>獲得<a href="#define-advantage">優勢</a>。</p></li>
+					<li><p><strong><em>天平傾斜—被動：</em></strong>玩家角色可以在互動中付出一把金幣，於<a href="#define-trait-roll">風度擲骰</a>獲得<a href="#define-advantage">優勢</a>。</p></li>
 				</ul>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>意外發現—動作：</em></strong>向 PC 揭示某位商人擁有他們想要或需要的物品，例如來自家鄉的食物、稀有書籍、魔法材料、可疑的寶藏地圖，或是一把魔法鑰匙。</p></li>
-					<li><p><strong><em>順手牽羊—動作：</em></strong>一名盜賊試圖偷取 PC 的物品。PC 必須成功進行<a href="#define-trait-roll">本能擲骰</a>才能察覺，否則將失去 GM 指定的一件物品，而盜賊會逃至<a href="#define-range">鄰近範圍</a>。若要奪回被盜物品，PC 必須在盜賊完成<a href="#define-countdown">後果倒計時（4）</a>並逃回其藏身處前，先完成<a href="#define-countdown">進展倒計時（6）</a>以追上盜賊。</p></li>
-					<li><p><strong><em>人群阻隔—反應：</em></strong>當其中一名 PC 與隊伍分開時，人群移動切斷了他與隊伍的聯繫。</p></li>
+					<li><p><strong><em>意外發現—動作：</em></strong>向玩家角色揭示某位商人擁有他們想要或需要的物品，例如來自家鄉的食物、稀有書籍、魔法材料、可疑的寶藏地圖，或是一把魔法鑰匙。</p></li>
+					<li><p><strong><em>順手牽羊—動作：</em></strong>一名盜賊試圖偷取玩家角色的物品。玩家角色必須成功進行<a href="#define-trait-roll">本能擲骰</a>才能察覺，否則將失去主持人指定的一件物品，而盜賊會逃至<a href="#define-range">鄰近範圍</a>。若要奪回被盜物品，玩家角色必須在盜賊完成<a href="#define-countdown">後果倒計時（4）</a>並逃回其藏身處前，先完成<a href="#define-countdown">進展倒計時（6）</a>以追上盜賊。</p></li>
+					<li><p><strong><em>人群阻隔—反應：</em></strong>當其中一名玩家角色與隊伍分開時，人群移動切斷了他與隊伍的聯繫。</p></li>
 				</ul>
 			</div>
 		</div>
@@ -18470,9 +18471,9 @@
 				</div>
 				<h6>特性</h6>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>秘密入口—被動：</em></strong>PC 成功進行<a href="#define-trait-roll">本能或知識擲骰</a>即可找到或想起一條通往城堡的祕密通道。</p></li>
+					<li><p><strong><em>秘密入口—被動：</em></strong>玩家角色成功進行<a href="#define-trait-roll">本能或知識擲骰</a>即可找到或想起一條通往城堡的祕密通道。</p></li>
 					<li><p><strong><em>攻城武器（環境變化）—動作：</em></strong><em><a href="#define-countdown">後果倒計時（5）</a></em>。進攻方啟用攻城武器，試圖摧毀防守方的防禦工事。圍攻開始時啟動倒計時（若是長期圍城，改用<a href="#define-countdown">長期倒計時</a>）。當倒計時觸發時，防禦工事被突破，敵軍湧入。你獲得 2 點<a href="#define-fear">恐懼點</a>，並將場景切換至<a href="#define-environment-pitched-battle">激烈戰場</a>環境並<a href="#define-spotlight">聚焦</a>。</p></li>
-					<li><p><strong><em>增援部隊—動作：</em></strong>召喚 1 名<a href="#define-adversary-knight-of-the-realm">王國騎士</a>、數量等同於 PC 數目的 3 位階<a href="#define-adversary-type">雜兵</a>，以及你選擇的 2 名敵人，出現在距離指定 PC<a href="#define-range">遠距離</a>的位置作為增援。<a href="#define-adversary-knight-of-the-realm">王國騎士</a>立即獲得<a href="#define-spotlight">焦點</a>。</p></li>
+					<li><p><strong><em>增援部隊—動作：</em></strong>召喚 1 名<a href="#define-adversary-knight-of-the-realm">王國騎士</a>、數量等同於玩家角色數目的 3 位階<a href="#define-adversary-type">雜兵</a>，以及你選擇的 2 名敵人，出現在距離指定玩家角色<a href="#define-range">遠距離</a>的位置作為增援。<a href="#define-adversary-knight-of-the-realm">王國騎士</a>立即獲得<a href="#define-spotlight">焦點</a>。</p></li>
 					<li><p><strong><em>附帶傷害—反應：</em></strong>當一名敵人被擊敗時，你可以<strong><a href="#define-fear">花費 1 恐懼點</a></strong>，讓一發攻城武器的流彈擊中戰場上的某個點。該點<a href="#define-range">臨近範圍</a>內的所有目標必須進行<a href="#define-agility">敏捷</a><a href="#define-reaction-roll">反應擲骰</a>。
 						<ul class="og-list-disc">
 							<li>失敗者承受<strong>3d8+3</strong>點<a href="#define-damage-type">物理傷害</a>並標記 1 點<a href="#define-stress">壓力點</a>。</li>
@@ -18502,11 +18503,11 @@
 				</div>
 				<h6>特性</h6>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>不可能的構造—被動：</em></strong>上為下，下為右，右是一段樓梯。重力與方向不斷變化，穿越此界域本身就是一場奧德賽，需要完成<a href="#define-countdown">進展倒計時（8）</a>。若失敗，PC 必須額外標記 1 點<a href="#define-stress">壓力點</a>並承受擲骰的其他後果。</p></li>
-					<li><p><strong><em>此地將奪走你的全部—動作：</em></strong><em><a href="#define-countdown">倒計時（循環 14）</a></em>。啟動倒計時。當觸發時，所有 PC 必須成功進行<a href="#define-presence">風度</a><a href="#define-reaction-roll">反應擲骰</a>，否則其最高屬性暫時降低<strong>1d4</strong>點，除非他們標記等同該數值的<a href="#define-stress">壓力點</a>。若 PC 在<a href="#define-action-roll">關鍵成功</a>或逃離混沌界域後，會恢復失去的屬性值。</p></li>
+					<li><p><strong><em>不可能的構造—被動：</em></strong>上為下，下為右，右是一段樓梯。重力與方向不斷變化，穿越此界域本身就是一場奧德賽，需要完成<a href="#define-countdown">進展倒計時（8）</a>。若失敗，玩家角色必須額外標記 1 點<a href="#define-stress">壓力點</a>並承受擲骰的其他後果。</p></li>
+					<li><p><strong><em>此地將奪走你的全部—動作：</em></strong><em><a href="#define-countdown">倒計時（循環 14）</a></em>。啟動倒計時。當觸發時，所有玩家角色必須成功進行<a href="#define-presence">風度</a><a href="#define-reaction-roll">反應擲骰</a>，否則其最高屬性暫時降低<strong>1d4</strong>點，除非他們標記等同該數值的<a href="#define-stress">壓力點</a>。若玩家角色在<a href="#define-action-roll">關鍵成功</a>或逃離混沌界域後，會恢復失去的屬性值。</p></li>
 					<li><p><strong><em>解構—動作：</em></strong>失敗時承受<strong>4d10</strong>點<a href="#define-damage-type">直接魔法傷害</a>，成功則必須標記 1 點<a href="#define-stress">壓力點</a>。</p></li>
-					<li><p><strong><em>外域掠食者—動作：</em></strong><strong><a href="#define-fear">花費 1 恐懼點</a></strong>召喚 1 個<a href="#define-adversary-outer-realms-abomination">界外界憎惡體</a>、1 個<a href="#define-adversary-outer-realms-corruptor">界外界腐囊體</a>及<strong>2d6</strong>個<a href="#define-adversary-outer-realms-thrall">界外界仆從</a>，出現在距離指定 PC<a href="#define-range">鄰近範圍</a>的位置，無視邏輯與因果。立即<a href="#define-spotlight">聚焦</a>其中一名敵人，並可<strong><a href="#define-fear">額外花費 1 恐懼點</a></strong>使該敵人的普通攻擊自動成功。</p></li>
-					<li><p><strong><em>錯亂現實—反應：</em></strong>當<a href="#define-action-roll">擲骰結果帶有恐懼</a>時，你可以要求 PC 描述混沌界域喚起了何種恐懼幻象。PC 失去 1 點<a href="#define-hope">希望點</a>。若這是他最後的<a href="#define-hope">希望點</a>，你獲得 1 點<a href="#define-fear">恐懼點</a>。</p></li>
+					<li><p><strong><em>外域掠食者—動作：</em></strong><strong><a href="#define-fear">花費 1 恐懼點</a></strong>召喚 1 個<a href="#define-adversary-outer-realms-abomination">界外界憎惡體</a>、1 個<a href="#define-adversary-outer-realms-corruptor">界外界腐囊體</a>及<strong>2d6</strong>個<a href="#define-adversary-outer-realms-thrall">界外界仆從</a>，出現在距離指定玩家角色<a href="#define-range">鄰近範圍</a>的位置，無視邏輯與因果。立即<a href="#define-spotlight">聚焦</a>其中一名敵人，並可<strong><a href="#define-fear">額外花費 1 恐懼點</a></strong>使該敵人的普通攻擊自動成功。</p></li>
+					<li><p><strong><em>錯亂現實—反應：</em></strong>當<a href="#define-action-roll">擲骰結果帶有恐懼</a>時，你可以要求玩家角色描述混沌界域喚起了何種恐懼幻象。玩家角色失去 1 點<a href="#define-hope">希望點</a>。若這是他最後的<a href="#define-hope">希望點</a>，你獲得 1 點<a href="#define-fear">恐懼點</a>。</p></li>
 				</ul>
 			</div>
 		</div>
@@ -18531,7 +18532,7 @@
 				</div>
 				<h6>特性</h6>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>攀登—被動：</em></strong>攀登懸崖需要<a href="#define-countdown">進展倒計時（12）</a>。PC 進行攀爬的<a href="#define-action-roll">動作擲骰</a>時計時方式如下：</p>
+					<li><p><strong><em>攀登—被動：</em></strong>攀登懸崖需要<a href="#define-countdown">進展倒計時（12）</a>。玩家角色進行攀爬的<a href="#define-action-roll">動作擲骰</a>時計時方式如下：</p>
 						<ul class="og-list-disc">
 							<li><strong>關鍵成功：</strong>倒計時減 3</li>
 							<li><strong>希望成功：</strong>倒計時減 2</li>
@@ -18541,8 +18542,8 @@
 						</ul>
 						<p class="og-list-hang-none">當倒計時觸發時，隊伍成功到達懸崖頂端。</p>
 					</li>
-					<li><p><strong><em>遺留的岩釘—被動：</em></strong>之前的攀登者遺留了大型金屬岩釘，可幫助攀登。若 PC 使用岩釘攀登時<a href="#define-action-roll">動作擲骰</a>失敗，他們可以選擇標記 1 點<a href="#define-stress">壓力點</a>，而不是讓倒計時加 1。</p></li>
-					<li><p><strong><em>墜落—動作：</em></strong><strong><a href="#define-fear">花費 1 恐懼點</a></strong>使 PC 的抓握點斷裂，使其墜向地面。若在下一次行動前沒有人救援，他必須進行擲骰；倒計時在 8–12 時承受<strong>1d12</strong>點<a href="#define-damage-type">物理傷害</a>，4–7 時承受<strong>2d12</strong>，3 或以下時承受<strong>3d12</strong>。</p></li>
+					<li><p><strong><em>遺留的岩釘—被動：</em></strong>之前的攀登者遺留了大型金屬岩釘，可幫助攀登。若玩家角色使用岩釘攀登時<a href="#define-action-roll">動作擲骰</a>失敗，他們可以選擇標記 1 點<a href="#define-stress">壓力點</a>，而不是讓倒計時加 1。</p></li>
+					<li><p><strong><em>墜落—動作：</em></strong><strong><a href="#define-fear">花費 1 恐懼點</a></strong>使玩家角色的抓握點斷裂，使其墜向地面。若在下一次行動前沒有人救援，他必須進行擲骰；倒計時在 8–12 時承受<strong>1d12</strong>點<a href="#define-damage-type">物理傷害</a>，4–7 時承受<strong>2d12</strong>，3 或以下時承受<strong>3d12</strong>。</p></li>
 				</ul>
 			</div>
 		</div>
@@ -18567,21 +18568,21 @@
 				</div>
 				<h6>特性</h6>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>褻瀆之地&mdash;被動：</em></strong> 邪教徒將此地奉獻給墮落諸神，其污穢影響滲透其中。在此環境下，將 PC 的<a href="#define-action-roll">希望骰</a>降為 <strong>d10</strong>。此褻瀆可透過<a href="#define-countdown">進展倒計時（6）</a>移除。</p></li>
+					<li><p><strong><em>褻瀆之地&mdash;被動：</em></strong> 邪教徒將此地奉獻給墮落諸神，其污穢影響滲透其中。在此環境下，將玩家角色的<a href="#define-action-roll">希望骰</a>降為 <strong>d10</strong>。此褻瀆可透過<a href="#define-countdown">進展倒計時（6）</a>移除。</p></li>
 				</ul>
-				<p class="og-statblock-q og-omit"><em>PC 們最初是如何察覺此地有異常的？當希望被壓制時，哪些恐懼會重新浮現？</em></p>
+				<p class="og-statblock-q og-omit"><em>玩家角色們最初是如何察覺此地有異常的？當希望被壓制時，哪些恐懼會重新浮現？</em></p>
 				<ul class="list-unstyled og-list-hang">
 					<li><p><strong><em>褻神之力&mdash;動作：</em></strong> 儀式的一部分力量被轉移至某個邪教成員，以對抗入侵者。選擇一名敵人，令其獲得可怖魔力直至場景結束或被擊敗。獲得魔力的敵人立刻<a href="#define-spotlight">獲得聚焦</a>，並取得以下一項利益，若你<strong><a href="#define-fear">花費 1 恐懼點</a></strong>則可同時獲得三項：</p>
 						<ul class="og-list-disc">
 							<li>他們在所有攻擊上獲得<a href="#define-advantage">優勢</a>。</li>
 							<li>成功攻擊時額外造成 <strong>1d10</strong> 傷害。</li>
-							<li>他們獲得以下特性：<strong><em>無情（2）&mdash;被動：</em></strong> 該敵人在每個 GM 回合中可被<a href="#define-spotlight">聚焦</a>多次。正常花費<a href="#define-fear">恐懼點</a>以<a href="#define-spotlight">聚焦</a>他們。</li>
+							<li>他們獲得以下特性：<strong><em>無情（2）&mdash;被動：</em></strong> 該敵人在每個主持人回合中可被<a href="#define-spotlight">聚焦</a>多次。正常花費<a href="#define-fear">恐懼點</a>以<a href="#define-spotlight">聚焦</a>他們。</li>
 						</ul>
 					</li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>敵人的外貌有何改變？他們的攻擊會勾起哪些恐懼？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>召喚&mdash;反應：</em></strong> <em><a href="#define-countdown">倒計時（6）</a></em>。當 PC 進入場景或邪教開始進行召喚惡魔的儀式時，啟動倒計時。指定一名敵人領導儀式。當 PC<a href="#define-action-roll">擲出恐懼結果</a>時，倒計時減少。當觸發時，在領導者的<a href="#define-range">鄰近範圍</a>召喚一個小型惡魔。若領導者被擊敗，倒計時立即結束且無效果，因為儀式失敗。</p></li>
+					<li><p><strong><em>召喚&mdash;反應：</em></strong> <em><a href="#define-countdown">倒計時（6）</a></em>。當玩家角色進入場景或邪教開始進行召喚惡魔的儀式時，啟動倒計時。指定一名敵人領導儀式。當玩家角色<a href="#define-action-roll">擲出恐懼結果</a>時，倒計時減少。當觸發時，在領導者的<a href="#define-range">鄰近範圍</a>召喚一個小型惡魔。若領導者被擊敗，倒計時立即結束且無效果，因為儀式失敗。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>若他們成功召喚，邪教將如何利用這條被束縛的惡魔？接下來又會嘗試召喚什麼？</em></p>
 				<ul class="list-unstyled og-list-hang">
@@ -18615,7 +18616,7 @@
 				</ul>
 				<p class="og-statblock-q og-omit"><em>篡奪者還需要什麼：一位高階神使的心臟？古老樂曲的最後音符？兩位宿敵的忠誠？純潔靈魂的悲淚？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>神恩庇佑&mdash;被動：</em></strong> 當 PC<a href="#define-action-roll">關鍵成功</a>時，可以花費 2<a href="#define-hope">希望點</a>以恢復一個平時有限次使用的能力（例如每次休息一次、每場遊戲一次）。</p></li>
+					<li><p><strong><em>神恩庇佑&mdash;被動：</em></strong> 當玩家角色<a href="#define-action-roll">關鍵成功</a>時，可以花費 2<a href="#define-hope">希望點</a>以恢復一個平時有限次使用的能力（例如每次休息一次、每場遊戲一次）。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>當你對抗這場篡奪時，哪位神明庇佑了你？你獲得的新力量如何體現他們的影響？</em></p>
 				<ul class="list-unstyled og-list-hang">
@@ -18627,11 +18628,11 @@
 				</ul>
 				<p class="og-statblock-q og-omit"><em>哪位神明走向終結？祂的遺言是什麼？篡奪者的新力量如何顯現？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>終局開端&mdash;反應：</em></strong> 當「最後準備」的<a href="#define-countdown">長期倒計時</a>觸發時，篡奪者開始猛擊聖輝上界的大門。啟動<a href="#define-countdown">神權攻城倒計時（10）</a>。聚焦篡奪者以描述其攻擊，並將此倒計時減少 1。若篡奪者受到<a href="#define-hit-point">重度</a>或更高等級的傷害，則將倒計時增加 1。當其觸發時，篡奪者粉碎凡人界域與聖輝上界之間的屏障，屠殺眾神並取而代之。你獲得等同於篡奪者未標記<a href="#define-hit-point">生命點</a>數量的<a href="#define-fear">恐懼點</a>，並可立即免費使用「弒神者」特性額外進行一次 GM 行動。</p></li>
+					<li><p><strong><em>終局開端&mdash;反應：</em></strong> 當「最後準備」的<a href="#define-countdown">長期倒計時</a>觸發時，篡奪者開始猛擊聖輝上界的大門。啟動<a href="#define-countdown">神權攻城倒計時（10）</a>。聚焦篡奪者以描述其攻擊，並將此倒計時減少 1。若篡奪者受到<a href="#define-hit-point">重度</a>或更高等級的傷害，則將倒計時增加 1。當其觸發時，篡奪者粉碎凡人界域與聖輝上界之間的屏障，屠殺眾神並取而代之。你獲得等同於篡奪者未標記<a href="#define-hit-point">生命點</a>數量的<a href="#define-fear">恐懼點</a>，並可立即免費使用「弒神者」特性額外進行一次 主持人行動。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>當自然秩序被破壞，凡人界域如何扭曲掙扎？哪些凡人從遠方目睹了這場褻瀆？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>儀式之核&mdash;反應：</em></strong> 任何針對篡奪者的<a href="#define-action-roll">恐懼失敗</a>，PC 必須因魔力反噬而標記 <strong>1d4</strong><a href="#define-stress">壓力點</a>。</p></li>
+					<li><p><strong><em>儀式之核&mdash;反應：</em></strong> 任何針對篡奪者的<a href="#define-action-roll">恐懼失敗</a>，玩家角色必須因魔力反噬而標記 <strong>1d4</strong><a href="#define-stress">壓力點</a>。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>當努力無果時，過往失敗的幻象如何折磨你？篡奪者又如何扭曲這些記憶？</em></p>
 			</div>
@@ -18657,26 +18658,26 @@
 				</div>
 				<h6>特性</h6>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>療癒之所&mdash;被動：</em></strong> 在聖輝神殿中休息的 PC 自動清除所有<a href="#define-hit-point">生命點</a>。</p></li>
+					<li><p><strong><em>療癒之所&mdash;被動：</em></strong> 在聖輝神殿中休息的玩家角色自動清除所有<a href="#define-hit-point">生命點</a>。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>香薰氣味如何？侍僧唱誦的是何種歌聲？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>神聖指引&mdash;被動：</em></strong> 在聖輝神殿向神明祈禱的 PC 可進行一次<a href="#define-trait-roll">本能擲骰</a>以獲得答案。若所祈求的神在此神殿不受歡迎，該擲骰以<a href="#define-advantage">劣勢</a>進行。</p>
+					<li><p><strong><em>神聖指引&mdash;被動：</em></strong> 在聖輝神殿向神明祈禱的玩家角色可進行一次<a href="#define-trait-roll">本能擲骰</a>以獲得答案。若所祈求的神在此神殿不受歡迎，該擲骰以<a href="#define-advantage">劣勢</a>進行。</p>
 						<ul class="og-list-disc">
-							<li><strong>關鍵成功：</strong> PC 獲得明確資訊，並額外獲得 <strong>1d4</strong><a href="#define-hope">希望點</a>；若將所得異象與指引分享給隊伍，可分配此希望點。</li>
-							<li><strong>希望成功：</strong> PC 獲得明確資訊。</li>
-							<li><strong>恐懼成功：</strong> PC 獲得零碎的洞察與帶有情感印象的答案。</li>
-							<li><strong>任何失敗：</strong> PC 僅獲得模糊的片段，並可標記<a href="#define-stress">壓力點</a>以獲得一個無背景的清晰畫面。</li>
+							<li><strong>關鍵成功：</strong>玩家角色獲得明確資訊，並額外獲得 <strong>1d4</strong><a href="#define-hope">希望點</a>；若將所得異象與指引分享給隊伍，可分配此希望點。</li>
+							<li><strong>希望成功：</strong>玩家角色獲得明確資訊。</li>
+							<li><strong>恐懼成功：</strong>玩家角色獲得零碎的洞察與帶有情感印象的答案。</li>
+							<li><strong>任何失敗：</strong>玩家角色僅獲得模糊的片段，並可標記<a href="#define-stress">壓力點</a>以獲得一個無背景的清晰畫面。</li>
 						</ul>
 					</li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>當異象觸及你時感受如何？影像消逝後，何種情感仍在心中縈繞？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>不息的希望&mdash;反應：</em></strong> 每場景一次，每位 PC 可標記<a href="#define-stress">壓力點</a>，將一次<a href="#define-action-roll">恐懼結果</a>改為<a href="#define-action-roll">希望結果</a>。</p></li>
+					<li><p><strong><em>不息的希望&mdash;反應：</em></strong> 每場景一次，每位玩家角色可標記<a href="#define-stress">壓力點</a>，將一次<a href="#define-action-roll">恐懼結果</a>改為<a href="#define-action-roll">希望結果</a>。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>當恐懼逼近時，你會聯想到哪些情感或記憶？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>神聖譴責&mdash;反應：</em></strong> 當 PC 踰越界限、褻瀆或冒犯神職人員時，你可<strong><a href="#define-fear">花費 1 恐懼點</a></strong>召喚一名<a href="#define-adversary-high-seraph">高階神使</a>與 <strong>1d4</strong> 名<a href="#define-adversary-bladed-guard">持刀警衛</a>，出現在高階牧師的<a href="#define-range">近距離</a>範圍內以維護神意。</p></li>
+					<li><p><strong><em>神聖譴責&mdash;反應：</em></strong> 當玩家角色踰越界限、褻瀆或冒犯神職人員時，你可<strong><a href="#define-fear">花費 1 恐懼點</a></strong>召喚一名<a href="#define-adversary-high-seraph">高階神使</a>與 <strong>1d4</strong> 名<a href="#define-adversary-bladed-guard">持刀警衛</a>，出現在高階牧師的<a href="#define-range">近距離</a>範圍內以維護神意。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>他們攜帶哪些象徵其受膏的符號或徽記？誰領導了這支隊伍，又是什麼引領他們走上這條道路？</em></p>
 			</div>
@@ -18702,7 +18703,7 @@
 				</div>
 				<h6>特性</h6>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>塵封的知識&mdash;被動：</em></strong> 此城蘊藏無數待解的謎團。尋求這座墮落之城知識的 PC 可進行<a href="#define-trait-roll">本能或知識擲骰</a>來瞭解此地，並發現（可能鬧鬼的）戰利品。</p>
+					<li><p><strong><em>塵封的知識&mdash;被動：</em></strong> 此城蘊藏無數待解的謎團。尋求這座墮落之城知識的玩家角色可進行<a href="#define-trait-roll">本能或知識擲骰</a>來瞭解此地，並發現（可能鬧鬼的）戰利品。</p>
 						<ul class="og-list-disc">
 							<li><strong>關鍵成功：</strong> 獲得有價值的資訊與相關的實用物品。</li>
 							<li><strong>希望成功：</strong> 獲得有價值的資訊。</li>
@@ -18717,13 +18718,13 @@
 				</ul>
 				<p class="og-statblock-q og-omit"><em>他們的軀體傷痕透露了何種死因？是何未竟之事將他們束縛在凡人界域？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>死巷&mdash;動作：</em></strong> 往昔時代的幽魂顯化出過去的場景，例如街頭慶典、市政會議或竊盜行動。這些鬧鬼現象會改變城市的布局，封鎖 PC 身後的道路、迫使繞道，或呈現挑戰，例如在竊盜行動中誤認他們為競爭盜賊。</p></li>
+					<li><p><strong><em>死巷&mdash;動作：</em></strong> 往昔時代的幽魂顯化出過去的場景，例如街頭慶典、市政會議或竊盜行動。這些鬧鬼現象會改變城市的布局，封鎖玩家角色身後的道路、迫使繞道，或呈現挑戰，例如在竊盜行動中誤認他們為競爭盜賊。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>幽魂想從你這裡得到什麼？你需要他們提供什麼？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>昔日末日&mdash;動作：</em></strong> <strong><a href="#define-fear">花費 1 恐懼點</a></strong>顯化曾摧毀此城的災厄回聲。啟動<a href="#define-countdown">進展倒計時（5）</a>，災厄在 PC 周圍重演。為完成倒計時並逃離劫難，PC 必須克服如肆虐的大火、暴走的人群、崩塌的建築或碎裂的街道等威脅，同時回想歷史並尋找線索以避開必然的結局。</p></li>
+					<li><p><strong><em>昔日末日&mdash;動作：</em></strong> <strong><a href="#define-fear">花費 1 恐懼點</a></strong>顯化曾摧毀此城的災厄回聲。啟動<a href="#define-countdown">進展倒計時（5）</a>，災厄在玩家角色周圍重演。為完成倒計時並逃離劫難，玩家角色必須克服如肆虐的大火、暴走的人群、崩塌的建築或碎裂的街道等威脅，同時回想歷史並尋找線索以避開必然的結局。</p></li>
 				</ul>
-				<p class="og-statblock-q og-omit"><em>這是否就是導致城市被遺棄的災厄？關於此災厄已知什麼，能如何幫助 PC 逃脫？</em></p>
+				<p class="og-statblock-q og-omit"><em>這是否就是導致城市被遺棄的災厄？關於此災厄已知什麼，能如何幫助玩家角色逃脫？</em></p>
 			</div>
 		</div>
 	</div>
@@ -18747,23 +18748,23 @@
 				</div>
 				<h6>特性</h6>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>萬路歸廷&mdash;被動：</em></strong> 身處帝國宮廷時，PC 針對不符合帝國生活方式或不支持帝國霸權的行動進行的<a href="#define-trait-roll">風度擲骰</a>會以<a href="#define-advantage">劣勢</a>進行。</p></li>
+					<li><p><strong><em>萬路歸廷&mdash;被動：</em></strong> 身處帝國宮廷時，玩家角色針對不符合帝國生活方式或不支持帝國霸權的行動進行的<a href="#define-trait-roll">風度擲骰</a>會以<a href="#define-advantage">劣勢</a>進行。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>語言的運用如何讓討論其他生活方式變得困難？對忠誠的明顯好處又如何造成討論替代方案時的阻力？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>爭寵封臣&mdash;被動：</em></strong> PC 可在宮廷中遇見帝國的臣屬、封臣與請願者，他們爭奪恩寵、尋求接近權力的機會、以恩惠換取忠誠、並提升自身地位。一些人可能迫切想打擊對手，另一些人甚至可能願意討論近乎叛逆的話題。</p></li>
+					<li><p><strong><em>爭寵封臣&mdash;被動：</em></strong>玩家角色可在宮廷中遇見帝國的臣屬、封臣與請願者，他們爭奪恩寵、尋求接近權力的機會、以恩惠換取忠誠、並提升自身地位。一些人可能迫切想打擊對手，另一些人甚至可能願意討論近乎叛逆的話題。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>他們因封臣身分獲得了什麼？又失去了什麼？何種剝削促使他們考慮反抗這不可撼動的勢力？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>帝國引力&mdash;動作：</em></strong> <strong><a href="#define-fear">花費 1 恐懼點</a></strong>向一名 PC 提供滿足其重大目標的黃金機會，條件是服從或支持帝國。目標必須進行一次<a href="#define-presence">風度</a><a href="#define-reaction-roll">反應擲骰</a>。若失敗，必須標記所有<a href="#define-stress">壓力點</a>或接受提議。若已標記所有<a href="#define-stress">壓力點</a>，則必須將<a href="#define-stress">壓力點</a>上限減少 <strong>1d4</strong>。若成功，則必須標記 <strong>1d4</strong> 個<a href="#define-stress">壓力點</a>，因為在誘惑下精神受損。</p></li>
+					<li><p><strong><em>帝國引力&mdash;動作：</em></strong> <strong><a href="#define-fear">花費 1 恐懼點</a></strong>向一名玩家角色提供滿足其重大目標的黃金機會，條件是服從或支持帝國。目標必須進行一次<a href="#define-presence">風度</a><a href="#define-reaction-roll">反應擲骰</a>。若失敗，必須標記所有<a href="#define-stress">壓力點</a>或接受提議。若已標記所有<a href="#define-stress">壓力點</a>，則必須將<a href="#define-stress">壓力點</a>上限減少 <strong>1d4</strong>。若成功，則必須標記 <strong>1d4</strong> 個<a href="#define-stress">壓力點</a>，因為在誘惑下精神受損。</p></li>
 				</ul>
-				<p class="og-statblock-q og-omit"><em>PC 們有何迫切渴望，使他們可能投向這無情的權力？帝國的特使又是如何得知 PC 最大的渴望？</em></p>
+				<p class="og-statblock-q og-omit"><em>玩家角色們有何迫切渴望，使他們可能投向這無情的權力？帝國的特使又是如何得知玩家角色最大的渴望？</em></p>
 				<ul class="list-unstyled og-list-hang">
 					<li><p><strong><em>帝國詔令&mdash;動作：</em></strong> <strong><a href="#define-fear">花費 1 恐懼點</a></strong>將與帝國議程相關的<a href="#define-countdown">長期倒計時</a>減少 <strong>1d4</strong>。若此舉觸發倒計時，則在宮廷中宣布與該議程相關的詔令，表示計畫已執行。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>為了加速計畫，展現了何種權力或轉移了哪些財富？又有誰的生活因此被顛覆或毀滅？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>無處不在的耳目&mdash;反應：</em></strong> 當出現<a href="#define-action-roll">恐懼結果</a>時，你可<strong><a href="#define-fear">花費 1 恐懼點</a></strong>令帝國的忠實者在宮廷中竊聽到叛逆談話。PC 必須成功進行一次<a href="#define-instinct">本能</a><a href="#define-reaction-roll">反應擲骰</a>，才能察覺自己被偷聽，並嘗試在暴露前攔下此目擊者。</p></li>
+					<li><p><strong><em>無處不在的耳目&mdash;反應：</em></strong> 當出現<a href="#define-action-roll">恐懼結果</a>時，你可<strong><a href="#define-fear">花費 1 恐懼點</a></strong>令帝國的忠實者在宮廷中竊聽到叛逆談話。玩家角色必須成功進行一次<a href="#define-instinct">本能</a><a href="#define-reaction-roll">反應擲骰</a>，才能察覺自己被偷聽，並嘗試在暴露前攔下此目擊者。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>帝國如何收買了這位目擊者？為何他們的第一反應是保護帝國，即便帝國並未善待他們？</em></p>
 			</div>
@@ -18789,30 +18790,30 @@
 				</div>
 				<h6>特性</h6>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>鎮上的話題&mdash;被動：</em></strong> PC 可向酒保、員工或常客打聽本地事件、傳聞與可能的工作，進行一次<a href="#define-trait-roll">風度擲骰</a>。成功時可選擇下列兩項資訊獲得——若關鍵成功則可選三項；失敗則可選一項，並標記<a href="#define-stress">壓力點</a>，因為對方講了一堆無關的事。</p>
+					<li><p><strong><em>鎮上的話題&mdash;被動：</em></strong>玩家角色可向酒保、員工或常客打聽本地事件、傳聞與可能的工作，進行一次<a href="#define-trait-roll">風度擲骰</a>。成功時可選擇下列兩項資訊獲得——若關鍵成功則可選三項；失敗則可選一項，並標記<a href="#define-stress">壓力點</a>，因為對方講了一堆無關的事。</p>
 						<ul class="og-list-disc">
-							<li>與 PC 背景有關的有趣傳聞</li>
+							<li>與玩家角色背景有關的有趣傳聞</li>
 							<li>涉及附近威脅或情況的有利工作</li>
 							<li>與他們見過的事物相關的當地傳說</li>
 							<li>暗示社群問題的鎮上八卦</li>
 						</ul>
 					</li>
 				</ul>
-				<p class="og-statblock-q og-omit"><em>誰掌握著什麼資訊？鎮上的人又開始對 PC 傳什麼八卦？</em></p>
+				<p class="og-statblock-q og-omit"><em>誰掌握著什麼資訊？鎮上的人又開始對玩家角色傳什麼八卦？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>以歌換餐&mdash;被動：</em></strong> PC 可為賓客表演一次，進行一次<a href="#define-trait-roll">風度擲骰</a>。成功時可賺取 <strong>1d4</strong> 把<a href="#define-gold">金幣</a>（關鍵成功則為 <strong>2d4</strong>）；失敗則標記<a href="#define-stress">壓力點</a>。</p></li>
+					<li><p><strong><em>以歌換餐&mdash;被動：</em></strong>玩家角色可為賓客表演一次，進行一次<a href="#define-trait-roll">風度擲骰</a>。成功時可賺取 <strong>1d4</strong> 把<a href="#define-gold">金幣</a>（關鍵成功則為 <strong>2d4</strong>）；失敗則標記<a href="#define-stress">壓力點</a>。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>你表演的是什麼曲目？它對你有何意義？上次在眾人面前演奏是什麼時候？</em></p>
 				<ul class="list-unstyled og-list-hang">
 					<li><p><strong><em>神秘陌生人&mdash;動作：</em></strong> 揭示一位隱匿身份的陌生人，坐在陰暗的隔間中。</p></li>
 				</ul>
-				<p class="og-statblock-q og-omit"><em>他想要什麼？對 PC 的印象是什麼？他有什麼特徵或配件？</em></p>
+				<p class="og-statblock-q og-omit"><em>他想要什麼？對玩家角色的印象是什麼？他有什麼特徵或配件？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>有人進城&mdash;動作：</em></strong> 引入一位重要 NPC，他想雇用隊伍辦事，或與某位 PC 的背景有關。</p></li>
+					<li><p><strong><em>有人進城&mdash;動作：</em></strong> 引入一位重要 NPC，他想雇用隊伍辦事，或與某位玩家角色的背景有關。</p></li>
 				</ul>
-				<p class="og-statblock-q og-omit"><em>他們是否早知 PC 在此？他們想在鎮上達成什麼目的？</em></p>
+				<p class="og-statblock-q og-omit"><em>他們是否早知玩家角色在此？他們想在鎮上達成什麼目的？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>酒館鬥毆&mdash;動作：</em></strong> <strong><a href="#define-fear">花費 1 恐懼點</a></strong>，令酒館中爆發鬥毆。當 PC 嘗試在鬥毆持續期間穿過酒館時，必須成功進行一次<a href="#define-agility">敏捷</a>或<a href="#define-trait-roll">風度擲骰</a>，否則會被亂揮的拳頭或飛擲物擊中，受到 <strong>1d6+2</strong> <a href="#define-damage-type">物理傷害</a>。PC 也可嘗試以一次<a href="#define-action-roll">動作擲骰</a>激起酒館顧客來觸發此特性。</p></li>
+					<li><p><strong><em>酒館鬥毆&mdash;動作：</em></strong> <strong><a href="#define-fear">花費 1 恐懼點</a></strong>，令酒館中爆發鬥毆。當玩家角色嘗試在鬥毆持續期間穿過酒館時，必須成功進行一次<a href="#define-agility">敏捷</a>或<a href="#define-trait-roll">風度擲骰</a>，否則會被亂揮的拳頭或飛擲物擊中，受到 <strong>1d6+2</strong> <a href="#define-damage-type">物理傷害</a>。玩家角色也可嘗試以一次<a href="#define-action-roll">動作擲骰</a>激起酒館顧客來觸發此特性。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>誰引發了這場鬥毆？需要什麼才能制止它？</em></p>
 			</div>
@@ -18838,21 +18839,21 @@
 				</div>
 				<h6>特性</h6>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>雕刻符印&mdash;被動：</em></strong> 山壁上刻有巨大的標記與雕紋。具有相關背景或<a href="#define-experience">經歷</a>的 PC 可辨認出這是強化寒風威力的天氣魔法。成功的<a href="#define-trait-roll">知識擲骰</a>可回想起關於這些符印的資訊、其製作者的可能線索，以及驅散它們的方法。若<a href="#define-action-roll">關鍵成功</a>，則認出這些符印是由<a href="#define-ridgeborne">山嶺之民</a>附魔師所製，並在驅散符印的擲骰上獲得<a href="#define-advantage">優勢</a>。</p></li>
+					<li><p><strong><em>雕刻符印&mdash;被動：</em></strong> 山壁上刻有巨大的標記與雕紋。具有相關背景或<a href="#define-experience">經歷</a>的玩家角色可辨認出這是強化寒風威力的天氣魔法。成功的<a href="#define-trait-roll">知識擲骰</a>可回想起關於這些符印的資訊、其製作者的可能線索，以及驅散它們的方法。若<a href="#define-action-roll">關鍵成功</a>，則認出這些符印是由<a href="#define-ridgeborne">山嶺之民</a>附魔師所製，並在驅散符印的擲骰上獲得<a href="#define-advantage">優勢</a>。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>誰施下了這個魔咒？他們是否仍在附近？為什麼他們想讓天氣變得更加險惡？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>雪崩&mdash;動作：</em></strong> <a href="#define-fear">花費 1 恐懼點</a>以冰雪傾瀉之勢切割山體，引發雪崩。路徑上的所有 PC 必須成功進行一次<a href="#define-agility">敏捷</a>或<a href="#define-strength">力量</a><a href="#define-reaction-roll">反應擲骰</a>，否則將被沖倒並捲落山下。使用繩索、岩釘或其他攀爬裝備的 PC 在此擲骰上獲得<a href="#define-advantage">優勢</a>。失敗的角色會被擊落至<a href="#define-range">遠距離</a>，受到 <strong>2d20</strong> <a href="#define-damage-type">物理傷害</a>，並必須標記<a href="#define-stress">壓力點</a>。成功的角色則必須標記<a href="#define-stress">壓力點</a>。</p></li>
+					<li><p><strong><em>雪崩&mdash;動作：</em></strong> <a href="#define-fear">花費 1 恐懼點</a>以冰雪傾瀉之勢切割山體，引發雪崩。路徑上的所有玩家角色必須成功進行一次<a href="#define-agility">敏捷</a>或<a href="#define-strength">力量</a><a href="#define-reaction-roll">反應擲骰</a>，否則將被沖倒並捲落山下。使用繩索、岩釘或其他攀爬裝備的玩家角色在此擲骰上獲得<a href="#define-advantage">優勢</a>。失敗的角色會被擊落至<a href="#define-range">遠距離</a>，受到 <strong>2d20</strong> <a href="#define-damage-type">物理傷害</a>，並必須標記<a href="#define-stress">壓力點</a>。成功的角色則必須標記<a href="#define-stress">壓力點</a>。</p></li>
 				</ul>
-				<p class="og-statblock-q og-omit"><em>PC 們如何應對雪崩？當同伴被捲落山坡時，他們會採取何種方式尋找彼此？</em></p>
+				<p class="og-statblock-q og-omit"><em>玩家角色們如何應對雪崩？當同伴被捲落山坡時，他們會採取何種方式尋找彼此？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>猛禽巢穴&mdash;反應：</em></strong> 當 PC 進入猛禽的狩獵範圍時，兩隻<a href="#define-adversary-giant-eagle">巨鷹</a>會出現在指定 PC 的<a href="#define-range">極遠距離</a>，並將 PC 視為獵物。</p></li>
+					<li><p><strong><em>猛禽巢穴&mdash;反應：</em></strong> 當玩家角色進入猛禽的狩獵範圍時，兩隻<a href="#define-adversary-giant-eagle">巨鷹</a>會出現在指定玩家角色的<a href="#define-range">極遠距離</a>，並將玩家角色視為獵物。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>巨鷹上次捕獲獵物是多久以前？牠們的巢中是否有蛋或雛鳥？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>寒風&mdash;反應：</em></strong> <em><a href="#define-countdown">倒計時（循環 4）</a></em>。當 PC 進入山間隘口時，啟動此倒計時。當其觸發時，所有穿越隘口的角色必須成功進行一次<a href="#define-strength">力量</a><a href="#define-reaction-roll">反應擲骰</a>，否則標記<a href="#define-stress">壓力點</a>。穿著適合嚴寒環境衣物的 PC 在此擲骰上獲得優勢。</p></li>
+					<li><p><strong><em>寒風&mdash;反應：</em></strong> <em><a href="#define-countdown">倒計時（循環 4）</a></em>。當玩家角色進入山間隘口時，啟動此倒計時。當其觸發時，所有穿越隘口的角色必須成功進行一次<a href="#define-strength">力量</a><a href="#define-reaction-roll">反應擲骰</a>，否則標記<a href="#define-stress">壓力點</a>。穿著適合嚴寒環境衣物的玩家角色在此擲骰上獲得優勢。</p></li>
 				</ul>
-				<p class="og-statblock-q og-omit"><em>PC 的身體哪個部位會最先感到麻木？他們如何在前行途中保持溫暖？</em></p>
+				<p class="og-statblock-q og-omit"><em>玩家角色的身體哪個部位會最先感到麻木？他們如何在前行途中保持溫暖？</em></p>
 			</div>
 		</div>
 	</div>
@@ -18880,7 +18881,7 @@
 				</ul>
 				<p class="og-statblock-q og-omit"><em>在這個與生命格格不入的地方嘗試療癒，是什麼感覺？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>百年知識&mdash;被動：</em></strong> PC 可調查圖書館與實驗室，進行一次<a href="#define-trait-roll">知識擲骰</a>，以獲得與奧術、地方歷史及死靈法師計畫相關的資訊。</p></li>
+					<li><p><strong><em>百年知識&mdash;被動：</em></strong>玩家角色可調查圖書館與實驗室，進行一次<a href="#define-trait-roll">知識擲骰</a>，以獲得與奧術、地方歷史及死靈法師計畫相關的資訊。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>那些典籍的名稱是什麼？死靈法師正在研究什麼計畫，又能透露他們的何種意圖？</em></p>
 				<ul class="list-unstyled og-list-hang">
@@ -18892,7 +18893,7 @@
 				</ul>
 				<p class="og-statblock-q og-omit"><em>這股力量是如何顯現的？亡靈看起來更像生者，還是反而更加腐敗卻充滿活力？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>源源不絕&mdash;動作：</em></strong> <strong><a href="#define-fear">花費 1 恐懼點</a></strong>，召喚 <strong>1d6</strong> 名<a href="#define-adversary-rotted-zombie">腐爛殭屍</a>、兩名<a href="#define-adversary-perfected-zombie">完化殭屍</a>，或一支<a href="#define-adversary-zombie-legion">殭屍軍團</a>，出現在指定 PC 的<a href="#define-range">近距離</a>範圍內。</p></li>
+					<li><p><strong><em>源源不絕&mdash;動作：</em></strong> <strong><a href="#define-fear">花費 1 恐懼點</a></strong>，召喚 <strong>1d6</strong> 名<a href="#define-adversary-rotted-zombie">腐爛殭屍</a>、兩名<a href="#define-adversary-perfected-zombie">完化殭屍</a>，或一支<a href="#define-adversary-zombie-legion">殭屍軍團</a>，出現在指定玩家角色的<a href="#define-range">近距離</a>範圍內。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>這些人在成為死靈法師的傀儡前是誰？他們過去的痕跡中，英雄們又看到了什麼？</em></p>
 			</div>
@@ -18918,30 +18919,30 @@
 				</div>
 				<h6>特性</h6>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>傳言四起&mdash;被動：</em></strong> 在此地，八卦是流傳最快的貨幣。PC 可進行一次<a href="#define-trait-roll">風度擲骰</a>打聽重大事件。依擲骰結果獲得資訊如下：</p>
+					<li><p><strong><em>傳言四起&mdash;被動：</em></strong> 在此地，八卦是流傳最快的貨幣。玩家角色可進行一次<a href="#define-trait-roll">風度擲骰</a>打聽重大事件。依擲骰結果獲得資訊如下：</p>
 						<ul class="og-list-disc">
 							<li><strong>關鍵成功：</strong> 得知兩件重大事件，並可就其中一則傳言提出一個後續問題，獲得真實（但不一定完整）的回答。</li>
 							<li><strong>希望成功：</strong> 得知兩件事件，其中至少一件與角色背景相關。</li>
 							<li><strong>恐懼成功：</strong> 得知與角色背景相關的驚人傳言。</li>
-							<li><strong>任何失敗：</strong> 當地人對詢問反應不佳，PC 必須標記<a href="#define-stress">壓力點</a>才能得知一則相關傳言。</li>
+							<li><strong>任何失敗：</strong> 當地人對詢問反應不佳，玩家角色必須標記<a href="#define-stress">壓力點</a>才能得知一則相關傳言。</li>
 						</ul>
 					</li>
 				</ul>
-				<p class="og-statblock-q og-omit"><em>PC 們聽到什麼消息，可以轉述給好奇的旅人？當地人對這些事件有什麼看法？</em></p>
+				<p class="og-statblock-q og-omit"><em>玩家角色們聽到什麼消息，可以轉述給好奇的旅人？當地人對這些事件有什麼看法？</em></p>
 				<ul class="list-unstyled og-list-hang">
 					<li><p><strong><em>破羅盤協會&mdash;被動：</em></strong> 一個冒險者協會在此設有分會，英雄們在此交換消息與傳言，為想像中的成功舉杯，並密謀打擊對手。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>這些冒險者在此誇下何種海口？你認為哪些是真的？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>競爭隊伍&mdash;被動：</em></strong> 另一支冒險隊伍也在此，尋找與 PC 相同的寶物或線索。</p></li>
+					<li><p><strong><em>競爭隊伍&mdash;被動：</em></strong> 另一支冒險隊伍也在此，尋找與玩家角色相同的寶物或線索。</p></li>
 				</ul>
-				<p class="og-statblock-q og-omit"><em>哪位 PC 與這支隊伍的成員有關？他們會先找上 PC 還是等 PC 主動？</em></p>
+				<p class="og-statblock-q og-omit"><em>哪位玩家角色與這支隊伍的成員有關？他們會先找上玩家角色還是等玩家角色主動？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>要是你店出了什麼事就糟了&mdash;動作：</em></strong> PC 見到當地犯罪頭目的手下正在敲詐一家雜貨店。</p></li>
+					<li><p><strong><em>要是你店出了什麼事就糟了&mdash;動作：</em></strong>玩家角色見到當地犯罪頭目的手下正在敲詐一家雜貨店。</p></li>
 				</ul>
-				<p class="og-statblock-q og-omit"><em>若 PC 介入，會引發什麼麻煩？</em></p>
+				<p class="og-statblock-q og-omit"><em>若玩家角色介入，會引發什麼麻煩？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>誤入危巷&mdash;反應：</em></strong> 在夜晚，或當隊伍獨自在後巷時，你可<strong><a href="#define-fear">花費 1 恐懼點</a></strong>引入一群試圖搶劫他們的盜賊。這些盜賊會出現在指定 PC 的<a href="#define-range">近距離</a>範圍內，包含一名<a href="#define-adversary-jagged-knife-kneebreaker">鋸齒刀碎膝者</a>、與 PC 人數相同的<a href="#define-adversary-jagged-knife-lackey">鋸齒刀嘍囉</a>、以及一名<a href="#define-adversary-jagged-knife-lieutenant">鋸齒刀隊長</a>。若隊伍規模較大，額外加入<a href="#define-adversary-jagged-knife-hexer">鋸齒刀咒術師</a>或<a href="#define-adversary-jagged-knife-sniper">鋸齒刀狙擊手</a>。</p></li>
+					<li><p><strong><em>誤入危巷&mdash;反應：</em></strong> 在夜晚，或當隊伍獨自在後巷時，你可<strong><a href="#define-fear">花費 1 恐懼點</a></strong>引入一群試圖搶劫他們的盜賊。這些盜賊會出現在指定玩家角色的<a href="#define-range">近距離</a>範圍內，包含一名<a href="#define-adversary-jagged-knife-kneebreaker">鋸齒刀碎膝者</a>、與玩家角色人數相同的<a href="#define-adversary-jagged-knife-lackey">鋸齒刀嘍囉</a>、以及一名<a href="#define-adversary-jagged-knife-lieutenant">鋸齒刀隊長</a>。若隊伍規模較大，額外加入<a href="#define-adversary-jagged-knife-hexer">鋸齒刀咒術師</a>或<a href="#define-adversary-jagged-knife-sniper">鋸齒刀狙擊手</a>。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>哪些細節顯示這些人是走投無路的前冒險者？</em></p>
 			</div>
@@ -18967,7 +18968,7 @@
 				</div>
 				<h6>特性</h6>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>鋼鐵之海&mdash;被動：</em></strong> 穿越戰場極其危險。PC 必須成功進行一次<a href="#define-trait-roll">敏捷擲骰</a>才能移動，且成功時最多只能移動至<a href="#define-range">近距離</a>。若有敵人在其<a href="#define-range">近戰範圍</a>內，必須先標記<a href="#define-stress">壓力點</a>才能進行此擲骰。</p></li>
+					<li><p><strong><em>鋼鐵之海&mdash;被動：</em></strong> 穿越戰場極其危險。玩家角色必須成功進行一次<a href="#define-trait-roll">敏捷擲骰</a>才能移動，且成功時最多只能移動至<a href="#define-range">近距離</a>。若有敵人在其<a href="#define-range">近戰範圍</a>內，必須先標記<a href="#define-stress">壓力點</a>才能進行此擲骰。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>戰鬥者會誤認你為敵軍還是視你為闖入者？在混戰中你能分辨敵友嗎？</em></p>
 				<ul class="list-unstyled og-list-hang">
@@ -18979,7 +18980,7 @@
 				</ul>
 				<p class="og-statblock-q og-omit"><em>此攻擊的形式為何——火球、酸雨、刀鋒風暴？戰術目的是什麼，接下來會如何行動？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>援軍&mdash;動作：</em></strong> 召喚一名<a href="#define-adversary-knight-of-the-realm">王國騎士</a>、與 PC 數量相等的位階 3 <a href="#define-adversary-type">雜兵</a>、以及兩名你選擇的敵人，出現在指定 PC 的<a href="#define-range">遠距離</a>內作為援軍。<a href="#define-adversary-knight-of-the-realm">王國騎士</a>立刻<a href="#define-spotlight">獲得聚焦</a>。</p></li>
+					<li><p><strong><em>援軍&mdash;動作：</em></strong> 召喚一名<a href="#define-adversary-knight-of-the-realm">王國騎士</a>、與玩家角色數量相等的位階 3 <a href="#define-adversary-type">雜兵</a>、以及兩名你選擇的敵人，出現在指定玩家角色的<a href="#define-range">遠距離</a>內作為援軍。<a href="#define-adversary-knight-of-the-realm">王國騎士</a>立刻<a href="#define-spotlight">獲得聚焦</a>。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>他們首先鎖定的目標是誰？採取什麼陣型？</em></p>
 			</div>
@@ -19004,15 +19005,15 @@
 				</div>
 				<h6>特性</h6>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>危險渡口&mdash;被動：</em></strong> 渡河需要完成一次<a href="#define-countdown">進展倒計時（4）</a>。若 PC<a href="#define-action-roll">恐懼失敗</a>，立即觸發「回流暗湧」動作，且不需<a href="#define-fear">花費恐懼點</a>。</p></li>
+					<li><p><strong><em>危險渡口&mdash;被動：</em></strong> 渡河需要完成一次<a href="#define-countdown">進展倒計時（4）</a>。若玩家角色<a href="#define-action-roll">恐懼失敗</a>，立即觸發「回流暗湧」動作，且不需<a href="#define-fear">花費恐懼點</a>。</p></li>
 				</ul>
-				<p class="og-statblock-q og-omit"><em>PC 中有人曾涉過這種河嗎？有人害怕溺水嗎？</em></p>
+				<p class="og-statblock-q og-omit"><em>玩家角色中有人曾涉過這種河嗎？有人害怕溺水嗎？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>回流暗湧&mdash;動作：</em></strong> <a href="#define-fear">花費 1 恐懼點</a>，將 PC 捲入回流暗湧。目標必須進行<a href="#define-agility">敏捷</a><a href="#define-reaction-roll">反應擲骰</a>。失敗則受到 <strong>1d6+1</strong> <a href="#define-damage-type">物理傷害</a>，並被沖到下游<a href="#define-range">近距離</a>處，且變為<a href="#define-condition"><em>脆弱</em></a>狀態，直到離開河水。成功則必須標記<a href="#define-stress">壓力點</a>。</p></li>
+					<li><p><strong><em>回流暗湧&mdash;動作：</em></strong> <a href="#define-fear">花費 1 恐懼點</a>，將玩家角色捲入回流暗湧。目標必須進行<a href="#define-agility">敏捷</a><a href="#define-reaction-roll">反應擲骰</a>。失敗則受到 <strong>1d6+1</strong> <a href="#define-damage-type">物理傷害</a>，並被沖到下游<a href="#define-range">近距離</a>處，且變為<a href="#define-condition"><em>脆弱</em></a>狀態，直到離開河水。成功則必須標記<a href="#define-stress">壓力點</a>。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>河底有什麼小飾品與寶物？河中是否潛伏掠食者？</em></p>
 				<ul class="list-unstyled og-list-hang">
-					<li><p><strong><em>耐心的獵手&mdash;動作：</em></strong> <a href="#define-fear">花費 1 恐懼點</a>，在指定 PC 的<a href="#define-range">近距離</a>內召喚一條<a href="#define-adversary-glass-snake">玻璃蛇</a>。牠會出現在河中或河岸附近，並立刻<a href="#define-spotlight">獲得聚焦</a>以使用其「旋身巨蛇」動作。</p></li>
+					<li><p><strong><em>耐心的獵手&mdash;動作：</em></strong> <a href="#define-fear">花費 1 恐懼點</a>，在指定玩家角色的<a href="#define-range">近距離</a>內召喚一條<a href="#define-adversary-glass-snake">玻璃蛇</a>。牠會出現在河中或河岸附近，並立刻<a href="#define-spotlight">獲得聚焦</a>以使用其「旋身巨蛇」動作。</p></li>
 				</ul>
 				<p class="og-statblock-q og-omit"><em>這頭野獸在巢穴中藏有何種寶物？有哪些旅人已成了牠的獵物？</em></p>
 			</div>
