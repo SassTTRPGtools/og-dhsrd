@@ -116,7 +116,7 @@
     <span class="og-title">匕首心</span>
     <span class="og-subtitle">系統參考文件</span>
 </h1>
-<p class="small text-center">version 0.99z (2025-08-17)</p>
+<p class="small text-center">version 1.00a (2025-08-24)</p>
 <ul class="list-inline text-center">
     <li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="https://daggerheart.com">Daggerheart Official</a></li>
     <li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="https://github.com/callmepartario/og-dhsrd">Github</a></li>
@@ -2170,7 +2170,7 @@
             <p>若你想承受沉重打擊並繼續戰鬥，請選擇堅毅鐵衛。</p>
             <h6>基礎特性</h6>
             <ul class="list-unstyled">
-                <li><p><strong><em>堅定不移：</em></strong> 你的<a href="#define-hit-point">傷害閾值</a>永久 +1。</p></li>
+                <li><p><strong><em>百折不撓：</em></strong> 你的<a href="#define-hit-point">傷害閾值</a>永久 +1。</p></li>
                 <li><p><strong><em>鋼鐵意志：</em></strong> 當你受到<a href="#define-damage-type">物理傷害</a>時，你可以<strong><a href="#define-armor">額外標記 1 個護甲槽</a></strong>來降低傷害等級。</p></li>
             </ul>
             <p class="og-tooltip-ed">詳情見全文。</p>
@@ -6549,7 +6549,7 @@
     <h4 class="h6">種族特性</h4>
     <ul class="list-unstyled">
         <li><p><strong><em>衝撞：</em></strong> 當你成功進行一次<a href="#define-trait-roll">敏捷檢定</a>，從遠距離或<a href="#define-range">極遠距離</a>進入一個或多個目標的<a href="#define-range">近戰範圍</a>時，可以<a href="#define-stress"><strong>標記 1 壓力點</strong></a>，對該<a href="#define-range">近戰範圍</a>內的所有目標造成<strong>1d12</strong><a href="#define-damage-type">物理傷害</a>。</p></li>
-        <li><p><strong><em>堅定不移：</em></strong> 當你將標記<a href="#define-stress">壓力點</a>時，擲一顆<strong>d6</strong>，若結果為 6，則不需標記。</p></li>
+        <li><p><strong><em>百折不撓：</em></strong> 當你將標記<a href="#define-stress">壓力點</a>時，擲一顆<strong>d6</strong>，若結果為 6，則不需標記。</p></li>
     </ul>
 </div>
 <hr>
@@ -13476,7 +13476,7 @@
             <ul class="list-unstyled">
                 <li><p><strong><em>重拳擊—動作：</em></strong> 對<a href="#define-range">鄰近範圍</a>內的一個目標進行一次<a href="#define-attack-roll">攻擊擲骰</a>。成功則造成 X 點直接物理傷害。</p></li>
                 <li><p><strong><em>撕裂打擊—動作：</em></strong> 對<a href="#define-range">鄰近範圍</a>內的一個目標進行一次<a href="#define-attack-roll">攻擊擲骰</a>。成功則造成 X 點物理傷害，且目標必須標記一個<a href="#define-armor">護甲槽</a>但不獲得其效果（仍可使用<a href="#define-armor">護甲</a>減傷）。</p></li>
-                <li><p><strong><em>源源不絕—動作：</em></strong> 召喚三名<strong>鋸齒刀遊蕩者</strong>，他們出現在<a href="#define-range">遠距離範圍</a>。</p></li>
+                <li><p><strong><em>源源不絕—動作：</em></strong> 召喚三名<a href="#define-adversary-jagged-knife-lackey">鋸齒刀遊蕩者</a>，他們出現在<a href="#define-range">遠距離範圍</a>。</p></li>
             </ul>
             <div id="define-adversary-feature-reaction">
                 <h5 class="h6">敵人反應範例</h5>
@@ -13639,6 +13639,11 @@
                     <li>降低<a href="#define-attack-roll">攻擊擲骰</a>調整值。</li>
                     <li>提高<a href="#define-damage-roll">傷害擲骰</a>。</li>
                     <li>加入<a href="#define-adversary-feature-reaction">乘勝追擊</a>特性。</li>
+                    <li>考慮新增 <em>席捲</em> 特性：
+                        <ul class="list-unstyled og-list-hang mt-2">
+                            <li><p><strong><em>席捲&mdash;被動：</em></strong> 你必須<a href="#define-fear"><strong>花費 1 點恐懼</strong></a>以<a href="#define-spotlight">聚焦</a>牛頭怪。當牠被<a href="#define-spotlight">聚焦</a>時，可以對範圍內的所有目標進行標準攻擊。</p></li>
+                        </ul>
+                    </li>
                 </ul>
             </td>
         </tr>
@@ -13670,7 +13675,13 @@
                     <li>分配 1 點<a href="#define-hit-point">生命點</a>。</li>
                     <li>分配 1&ndash;2 點<a href="#define-stress">壓力點</a>。</li>
                     <li>使用固定傷害取代<a href="#define-damage-roll">傷害擲骰</a>。</li>
-                    <li>加入<a href="#define-adversary-feature-passive">雜兵</a>特性，並不要分配過多<a href="#define-adversary-feature">敵人特性</a>。</li>
+                    <li>新增 <a href="#define-adversary-feature-passive">雜兵</a> 特性。</li>
+                    <li>新增 <em>群體攻擊</em> 特性，其中 X 為基礎攻擊造成的傷害值：
+                        <ul class="list-unstyled og-list-hang mt-2">
+                            <li><p><strong><em>群體攻擊&mdash;動作：</em></strong> <strong><a href="#define-fear">花費 1 點恐懼</a></strong>以選擇一個目標，並<a href="#define-spotlight">聚焦</a>該目標附近所有於<a href="#define-range">近距離範圍</a>內的[敵人名稱]。這些<a href="#define-adversary-type">雜兵</a>會移動至目標的<a href="#define-range">近戰範圍</a>並進行一次共享的<a href="#define-attack-roll">攻擊擲骰</a>。若成功，每個雜兵造成 X 點<a href="#define-damage-type">物理傷害</a>，將這些傷害合併計算。</p></li>
+                        </ul>
+                    </li>
+                    <li>不要分配過多其他<a href="#define-adversary-feature">敵人特性</a>。</li>
                 </ul>
             </td>
         </tr>
@@ -13687,7 +13698,11 @@
         <tr>
             <th class="fw-normal" scope="row"><a href="#define-adversary-type">潛伏</a></th>
             <td class="text-center">d6&ndash;d8</td>
-            <td>&mdash;</td>
+            <td>
+                <ul class="og-list-disc mb-0">
+                    <li>考慮新增 <a href="#define-adversary-feature-reaction">乘勝追擊</a> 特性。</li>
+                </ul>
+            </td>
         </tr>
         <tr>
             <th class="fw-normal" scope="row"><a href="#define-adversary-type">社交名流</a></th>
@@ -13726,85 +13741,761 @@
         </tr>
     </tbody>
 </table></div>
-
-
-<h5 id="adversary-benchmarks-conditions">施加狀態的敵人<a class="og-h-anchor" href="#adversary-benchmarks-conditions" title="Permalink" aria-hidden="true"></a></h5>
+<h5 id="adversary-benchmarks-conditions">敵人施加狀態<a class="og-h-anchor" href="#adversary-benchmarks-conditions" title="Permalink" aria-hidden="true"></a></h5>
 <ul class="og-list-inline og-ref og-omit"><li>編輯補充</li></ul>
-<p>部分<a href="#define-adversary">敵人</a>會施加<a href="#define-condition">狀態</a>。</p>
+<p>有些<a href="#define-adversary">敵人</a>會施加<a href="#define-condition">狀態</a>。</p>
 <div class="table-responsive"><table class="table table-light table-striped table-sm mb-3">
-    <caption>施加狀態的敵人</caption>
-    <thead>
-        <tr>
-            <th class="text-center" scope="col">位階</th>
-            <th scope="col">敵人</th>
-            <th scope="col">類型</th>
-            <th scope="col">狀態</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th class="fw-normal text-center" scope="row">位階 1</th>
-            <td><a href="#define-adversary-giant-scorpion">巨蠍</a></td>
-            <td><a href="#define-adversary-type">鬥士</a></td>
-            <td><em>中毒</em></td>
-        <tr>
-            <th class="fw-normal text-center" scope="row">位階 1</th>
-            <td><a href="#define-adversary-jagged-knife-hexer">鋸齒刀咒術師</a></td>
-            <td><a href="#define-adversary-type">輔助</a></td>
-            <td><em>詛咒</em></td>
-        </tr>
-        <tr>
-            <th class="fw-normal text-center" scope="row">位階 2</th>
-            <td><a href="#define-adversary-cult-adept">邪教門徒</a></td>
-            <td><a href="#define-adversary-type">輔助</a></td>
-            <td><em>受保護</em></td>
-        </tr>
-        <tr>
-            <th class="fw-normal text-center" scope="row">位階 2</th>
-            <td><a href="#define-adversary-siren">塞壬</a></td>
-            <td><a href="#define-adversary-type">潛伏</a></td>
-            <td><em>著迷</em></td>
-        </tr>
-        <tr>
-            <th class="fw-normal text-center" scope="row">位階 3</th>
-            <td><a href="#define-adversary-huge-green-ooze">巨型綠色軟泥怪</a></td>
-            <td><a href="#define-adversary-type">潛伏</a></td>
-            <td><em>纏覆</em></td>
-        </tr>
-        <tr>
-            <th class="fw-normal text-center" scope="row">位階 3</th>
-            <td><a href="#define-adversary-hydra">多頭蛇</a></td>
-            <td><a href="#define-adversary-type">獨狼</a></td>
-            <td><em>暈眩</em></td>
-        </tr>
-        <tr>
-            <th class="fw-normal text-center" scope="row">位階 3</th>
-            <td><a href="#define-adversary-oak-treant">橡木樹人</a></td>
-            <td><a href="#define-adversary-type">鬥士</a></td>
-            <td><em>紮根</em></td>
-        </tr>
-        <tr>
-            <th class="fw-normal text-center" scope="row">位階 3</th>
-            <td><a href="#define-adversary-vault-guardian-turret">寶庫守衛炮塔</a></td>
-            <td><a href="#define-adversary-type">遠程</a></td>
-            <td><em>標記</em></td>
-        </tr>
-        <tr>
-            <th class="fw-normal text-center" scope="row">位階 3</th>
-            <td><a href="#define-adversary-young-ice-dragon">青年冰龍</a></td>
-            <td><a href="#define-adversary-type">獨狼</a></td>
-            <td><em>冰寒</em></td>
-        </tr>
-        <tr>
-            <th class="fw-normal text-center" scope="row">位階 4</th>
-            <td><a href="#define-adversary-high-seraph">高階神使</a></td>
-            <td><a href="#define-adversary-type">頭目</a></td>
-            <td><em>罪咎</em></td>
-        </tr>
-    </tbody>
+	<caption>敵人施加狀態</caption>
+	<thead>
+		<tr>
+			<th class="w-35" scope="col">敵人</th>
+			<th class="w-15 text-center og-nowrap" scope="col">位階</th>
+			<th class="w-15" scope="col">類型</th>
+			<th class="w-20" scope="col">特性</th>
+			<th class="w-15" scope="col">狀態</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-cult-adept">邪教門徒</a></th>
+			<td class="text-center og-nowrap">位階 2</td>
+			<td><a href="#define-adversary-type">支援</a></td>
+			<td><em>墮落者之幕</em></td>
+			<td><em>受保護</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-giant-scorpion">巨蠍</a></th>
+			<td class="text-center og-nowrap">位階 1</td>
+			<td><a href="#define-adversary-type">鬥士</a></td>
+			<td><em>劇毒螫針</em></td>
+			<td><em>中毒</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-jagged-knife-hexer">鋸齒刀詛咒師</a></th>
+			<td class="text-center og-nowrap">位階 1</td>
+			<td><a href="#define-adversary-type">支援</a></td>
+			<td><em>詛咒</em></td>
+			<td><em>被詛咒</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-high-seraph">高位炽天使</a></th>
+			<td class="text-center og-nowrap">位階 4</td>
+			<td><a href="#define-adversary-type">領袖</a></td>
+			<td><em>懲治有罪者</em></td>
+			<td><em>有罪</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-huge-green-ooze">巨型綠泥怪</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">潛伏者</a></td>
+			<td><em>吞覆</em></td>
+			<td><em>被吞覆</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-hydra">九頭蛇</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>魔法弱點</em></td>
+			<td><em>恍惚</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-oak-treant">橡木樹人</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">鬥士</a></td>
+			<td><em>紮根</em></td>
+			<td><em>被紮根</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-siren">海妖</a></th>
+			<td class="text-center og-nowrap">位階 2</td>
+			<td><a href="#define-adversary-type">潛伏者</a></td>
+			<td><em>俘獲聽眾</em></td>
+			<td><em>著迷</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-vault-guardian-turret">寶庫守衛砲塔</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">遠程</a></td>
+			<td><em>鎖定目標</em></td>
+			<td><em>被鎖定</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-young-ice-dragon">幼冰龍</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>冰霜鱗片</em></td>
+			<td><em>冰冷</em></td>
+		</tr>
+	</tbody>
 </table></div>
+<h5 id="adversary-hope-loss">使玩家角色失去希望的敵人<a class="og-h-anchor" href="#adversary-hope-loss" title="Permalink" aria-hidden="true"></a></h5>
+<ul class="og-list-inline og-ref og-omit"><li>編輯補充</li></ul>
+<p><a href="#define-adversary">敵人</a>可能會使玩家角色失去<a href="#define-hope">希望</a>。<em>驚怖</em>特性同時也會產生<a href="#define-fear">恐懼</a>。</p>
+<div class="table-responsive"><table class="table table-light table-striped table-sm mb-3">
+	<caption>使玩家角色失去希望的敵人</caption>
+	<thead>
+		<tr>
+			<th class="w-35" scope="col">敵人</th>
+			<th class="w-15 text-center og-nowrap" scope="col">位階</th>
+			<th class="w-15" scope="col">類型</th>
+			<th class="w-35" scope="col">特性</th>
+		</tr>
+	</thead>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-demon-of-despair">絕望惡魔</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">潛伏者</a></td>
+			<td><em>你的夥伴將會失敗</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-demon-of-hubris">傲慢惡魔</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">領袖</a></td>
+			<td><em>驚怖</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-demonic-hound-pack">惡魔獵犬群</a></th>
+			<td class="text-center og-nowrap">位階 2</td>
+			<td><a href="#define-adversary-type">集群</a></td>
+			<td><em>恐懼嚎聲</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-fallen-shock-troop">墮落突擊兵</a></th>
+			<td class="text-center og-nowrap">位階 4</td>
+			<td><a href="#define-adversary-type">雜兵</a></td>
+			<td><em>毀滅光環</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-fallen-sorcerer">墮落術士</a></th>
+			<td class="text-center og-nowrap">位階 4</td>
+			<td><a href="#define-adversary-type">支援</a></td>
+			<td><em>罪咎枷鎖</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-fallen-warlord-realm-breaker">墮落軍閥：界域破壞者</a></th>
+			<td class="text-center og-nowrap">位階 4</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>毀滅使者</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-fallen-warlord-undefeated-champion">墮落軍閥：不敗勇士</a></th>
+			<td class="text-center og-nowrap">位階 4</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>毀滅使者</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-juvenile-flickerfly">幼年閃蝶</a></th>
+			<td class="text-center og-nowrap">位階 2</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>幻覺吐息</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-head-vampire">吸血鬼首領</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">領袖</a></td>
+			<td><em>驚怖</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-minor-demon">低階惡魔</a></th>
+			<td class="text-center og-nowrap">位階 1</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>萬物皆亡</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-mortal-hunter">凡人獵手</a></th>
+			<td class="text-center og-nowrap">位階 2</td>
+			<td><a href="#define-adversary-type">領袖</a></td>
+			<td><em>驚怖</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-oracle-of-doom">毀滅神諭者</a></th>
+			<td class="text-center og-nowrap">位階 4</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>驚怖、宣告命運</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-outer-realms-corruptor">外域腐化者</a></th>
+			<td class="text-center og-nowrap">位階 4</td>
+			<td><a href="#define-adversary-type">支援</a></td>
+			<td><em>粉碎意志之觸</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-patchwork-zombie-hulk">縫補殭屍巨怪</a></th>
+			<td class="text-center og-nowrap">位階 1</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>受難哀嚎</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-shark">鯊魚</a></th>
+			<td class="text-center og-nowrap">位階 2</td>
+			<td><a href="#define-adversary-type">鬥士</a></td>
+			<td><em>驚怖</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-skeleton-knight">骷髏騎士</a></th>
+			<td class="text-center og-nowrap">位階 1</td>
+			<td><a href="#define-adversary-type">鬥士</a></td>
+			<td><em>驚怖</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-volcanic-dragon-obsidian-predator">火山巨龍：黑曜捕獵者</a></th>
+			<td class="text-center og-nowrap">位階 4</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>俯衝轟炸</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-volcanic-dragon-ashen-tyrant">火山巨龍：灰燼暴君</a></th>
+			<td class="text-center og-nowrap">位階 4</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>塵歸塵</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-young-ice-dragon">幼冰龍</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>無望</em></td>
+		</tr>
+	</tbody>
+</table></div>
+<h5 id="adversary-generating-fear">敵人產生恐懼<a class="og-h-anchor" href="#adversary-generating-fear" title="Permalink" aria-hidden="true"></a></h5>
+<ul class="og-list-inline og-ref og-omit"><li>編輯補充</li></ul>
+<p>最常見的基於<a href="#define-adversary">敵人</a>的<a href="#define-fear">恐懼</a>產生方式是<a href="#define-adversary-feature-reaction">氣勢</a>被動特性&mdash;事實上，它普遍到其效果在下表中被省略。這些特性最常見於<a href="#define-adversary-type">單獨</a>與<a href="#define-adversary-type">鬥士</a>類型的敵人，但對<a href="#define-adversary-type">領袖</a>與<a href="#define-adversary-type">潛伏者</a>同樣有用。</p>
+<div class="table-responsive"><table class="table table-light table-striped table-sm mb-3">
+	<caption>敵人產生恐懼</caption>
+	<thead>
+		<tr>
+			<th class="w-35" scope="col">敵人</th>
+			<th class="w-15 text-center og-nowrap" scope="col">位階</th>
+			<th class="w-15" scope="col">類型</th>
+			<th class="w-35" scope="col">特性</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-acid-burrower">酸液潛掘獸</a></th>
+			<td class="text-center og-nowrap">位階 1</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>噴吐酸液</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-arch-necromancer">大死靈法師</a></th>
+			<td class="text-center og-nowrap">位階 4</td>
+			<td><a href="#define-adversary-type">領袖</a></td>
+			<td><em>腐朽射線</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-adult-flickerfly">成體閃翼蛾</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>心靈舞步</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-battle-box">戰鬥匣</a></th>
+			<td class="text-center og-nowrap">位階 2</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>超載</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-cave-ogre">洞穴食人魔</a></th>
+			<td class="text-center og-nowrap">位階 1</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>巨石傾瀉</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-demon-of-hubris">傲慢惡魔</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">領袖</a></td>
+			<td><em>恐懼</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-dire-wolf">恐狼</a></th>
+			<td class="text-center og-nowrap">位階 1</td>
+			<td><a href="#define-adversary-type">潛伏者</a></td>
+			<td><em>群體戰術</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-electric-eels">電鰻群</a></th>
+			<td class="text-center og-nowrap">位階 2</td>
+			<td><a href="#define-adversary-type">群體</a></td>
+			<td><em>麻痺電擊</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-fallen-warlord-undefeated-champion">墮落軍閥：無敗勇士</a></th>
+			<td class="text-center og-nowrap">位階 4</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>厄運使者</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-gorgon">蛇髮女妖</a></th>
+			<td class="text-center og-nowrap">位階 2</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>死亡凝視</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-head-vampire">吸血鬼首領</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">領袖</a></td>
+			<td><em>恐懼</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-juvenile-flickerfly">幼年閃翼蛾</a></th>
+			<td class="text-center og-nowrap">位階 2</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>心靈舞步</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-mortal-hunter">凡人獵手</a></th>
+			<td class="text-center og-nowrap">位階 2</td>
+			<td><a href="#define-adversary-type">領袖</a></td>
+			<td><em>恐懼</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-oracle-of-doom">厄運神諭者</a></th>
+			<td class="text-center og-nowrap">位階 4</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>恐懼</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-outer-realms-abomination">外域畸變體</a></th>
+			<td class="text-center og-nowrap">位階 4</td>
+			<td><a href="#define-adversary-type">鬥士</a></td>
+			<td><em>迷亂氣場、真菌化身</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-patchwork-zombie-hulk">拼縫殭屍巨怪</a></th>
+			<td class="text-center og-nowrap">位階 1</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>痛苦哀嚎</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-secret-keeper">秘辛守衛</a></th>
+			<td class="text-center og-nowrap">位階 2</td>
+			<td><a href="#define-adversary-type">領袖</a></td>
+			<td><em>吾主之令</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-shark">鯊魚</a></th>
+			<td class="text-center og-nowrap">位階 2</td>
+			<td><a href="#define-adversary-type">鬥士</a></td>
+			<td><em>恐懼</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-skeleton-knight">骷髏騎士</a></th>
+			<td class="text-center og-nowrap">位階 1</td>
+			<td><a href="#define-adversary-type">鬥士</a></td>
+			<td><em>恐懼</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-spellblade">魔刃師</a></th>
+			<td class="text-center og-nowrap">位階 1</td>
+			<td><a href="#define-adversary-type">領袖</a></td>
+			<td><em>壓制爆擊</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-volcanic-dragon-molten-scourge">火山巨龍：熔災魔鞭</a></th>
+			<td class="text-center og-nowrap">位階 4</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>龜裂鱗片</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-volcanic-dragon-ashen-tyrant">火山巨龍：灰燼暴君</a></th>
+			<td class="text-center og-nowrap">位階 4</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>化為灰燼</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-young-ice-dragon">年幼冰龍</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>雪崩</em></td>
+		</tr>
+	</tbody>
+</table>
+<h5 id="adversary-fear-features">敵人恐懼特性<a class="og-h-anchor" href="#adversary-fear-features" title="Permalink" aria-hidden="true"></a></h5>
+<ul class="og-list-inline og-ref og-omit"><li>編輯補充</li></ul>
+<p>具備<em>群體攻擊</em>特性的<a href="#define-adversary-type">雜兵</a>（見<a href="#adversary-benchmarks-type">敵人類型修正</a>）已自此清單中省略。</p>
+<p><a href="#define-adversary-type">領袖</a> <a href="define-adversary-feature-passive">群體攻擊</a></p>
+<div class="table-responsive"><table class="table table-light table-striped table-sm mb-3">
+	<caption>敵人恐懼特性</caption>
+	<thead>
+		<tr>
+			<th class="w-35" scope="col">敵人</th>
+			<th class="w-15 text-center og-nowrap" scope="col">位階</th>
+			<th class="w-15" scope="col">類型</th>
+			<th class="w-35" scope="col">特性</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-arch-necromancer">大死靈法師</a></th>
+			<td class="text-center og-nowrap">位階 4</td>
+			<td><a href="#define-adversary-type">領袖</a></td>
+			<td><em>死亡之舞、開啟死亡之門、今日不行，我的寶貝們</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-archer-squadron">弓手小隊</a></th>
+			<td class="text-center og-nowrap">位階 2</td>
+			<td><a href="#define-adversary-type">群體</a></td>
+			<td><em>集中箭雨</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-cave-ogre">洞穴食人魔</a></th>
+			<td class="text-center og-nowrap">位階 1</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>蓄力</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-chaos-skull">混沌骷髏</a></th>
+			<td class="text-center og-nowrap">位階 2</td>
+			<td><a href="#define-adversary-type">遠程</a></td>
+			<td><em>虹吸魔力</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-cult-adept">邪教門徒</a></th>
+			<td class="text-center og-nowrap">位階 2</td>
+			<td><a href="#define-adversary-type">支援</a></td>
+			<td><em>衰弱爆擊、暗影枷鎖</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-deeproot-defender">深根守衛</a></th>
+			<td class="text-center og-nowrap">位階 1</td>
+			<td><a href="#define-adversary-type">鬥士</a></td>
+			<td><em>抓取拖拽</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-demon-of-avarice">貪婪惡魔</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">支援</a></td>
+			<td><em>金錢即時間</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-demon-of-despair">絕望惡魔</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">潛伏者</a></td>
+			<td><em>你的掙扎毫無意義</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-demon-of-hubris">傲慢惡魔</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">領袖</a></td>
+			<td><em>邪惡之根</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-demon-of-jealousy">嫉妒惡魔</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">遠程</a></td>
+			<td><em>輪到我了，你的就是我的</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-demon-of-wrath">憤怒惡魔</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">鬥士</a></td>
+			<td><em>戰鬥狂熱</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-dryad">樹精</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">領袖</a></td>
+			<td><em>孕育幼樹，我們同為一體</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-fallen-sorcerer">墮落術士</a></th>
+			<td class="text-center og-nowrap">位階 4</td>
+			<td><a href="#define-adversary-type">支援</a></td>
+			<td><em>大火災</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-fallen-warlord-undefeated-champion">墮落軍閥：無敗勇士</a></th>
+			<td class="text-center og-nowrap">位階 4</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>無盡軍勢</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-giant-scorpion">巨蠍</a></th>
+			<td class="text-center og-nowrap">位階 1</td>
+			<td><a href="#define-adversary-type">鬥士</a></td>
+			<td><em>劇毒尾針</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-glass-snake">玻璃蛇</a></th>
+			<td class="text-center og-nowrap">位階 1</td>
+			<td><a href="#define-adversary-type">標準敵人</a></td>
+			<td><em>噴射</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-gorgon">蛇髮女妖</a></th>
+			<td class="text-center og-nowrap">位階 2</td>
+			<td><a href="#define-adversary-type">單獨</a></td>
+			<td><em>石化凝視</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-greater-water-elemental">高階水元素</a></th>
+			<td class="text-center og-nowrap">位階 3</td>
+			<td><a href="#define-adversary-type">支援</a></td>
+			<td><em>溺水擁抱</em></td>
+		</tr>
+		<tr>
+			<th class="fw-normal" scope="row"><a href="#define-adversary-green-ooze">綠色軟泥怪</a></th>
+			<td class="text-center og-nowrap">位階 1</td>
+			<td><a href="#define-adversary-type">潛伏者</a></td>
+			<td><em>分裂</em></td>
+		</tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-hallowed-soldier">神聖士兵</a></th>
+            <td class="text-center og-nowrap">位階 4</td>
+            <td><a href="#define-adversary-type">手下</a></td>
+            <td><em>神聖飛行</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-head-guard">首席守衛</a></th>
+            <td class="text-center og-nowrap">位階 1</td>
+            <td><a href="#define-adversary-type">首領</a></td>
+            <td><em>集結守衛</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-head-vampire">吸血鬼頭目</a></th>
+            <td class="text-center og-nowrap">位階 3</td>
+            <td><a href="#define-adversary-type">首領</a></td>
+            <td><em>狩獵開始</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-high-seraph">至高神使</a></th>
+            <td class="text-center og-nowrap">位階 4</td>
+            <td><a href="#define-adversary-type">首領</a></td>
+            <td><em>神聖飛行、我們合而為一</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-huge-green-ooze">巨型綠泥怪</a></th>
+            <td class="text-center og-nowrap">位階 3</td>
+            <td><a href="#define-adversary-type">潛伏者</a></td>
+            <td><em>分裂</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-hydra">九頭蛇</a></th>
+            <td class="text-center og-nowrap">位階 3</td>
+            <td><a href="#define-adversary-type">獨戰者</a></td>
+            <td><em>再生</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-jagged-knife-lieutenant">鋸刃匕首副官</a></th>
+            <td class="text-center og-nowrap">位階 1</td>
+            <td><a href="#define-adversary-type">首領</a></td>
+            <td><em>斬首一擊</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-kraken">海怪</a></th>
+            <td class="text-center og-nowrap">位階 4</td>
+            <td><a href="#define-adversary-type">獨戰者</a></td>
+            <td><em>沸騰衝擊</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-master-assassin">大師級刺客</a></th>
+            <td class="text-center og-nowrap">位階 2</td>
+            <td><a href="#define-adversary-type">首領</a></td>
+            <td><em>無聲之刃</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-merchant-baron">商業男爵</a></th>
+            <td class="text-center og-nowrap">位階 2</td>
+            <td><a href="#define-adversary-type">社交</a></td>
+            <td><em>人人皆有價</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-minor-chaos-elemental">低階混沌元素</a></th>
+            <td class="text-center og-nowrap">位階 1</td>
+            <td><a href="#define-adversary-type">獨戰者</a></td>
+            <td><em>重塑現實</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-minor-demon">低階惡魔</a></th>
+            <td class="text-center og-nowrap">位階 1</td>
+            <td><a href="#define-adversary-type">獨戰者</a></td>
+            <td><em>地獄火</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-minor-fire-elemental">低階火元素</a></th>
+            <td class="text-center og-nowrap">位階 1</td>
+            <td><a href="#define-adversary-type">獨戰者</a></td>
+            <td><em>爆裂</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-minotaur-wrecker">米諾陶破壞者</a></th>
+            <td class="text-center og-nowrap">位階 2</td>
+            <td><a href="#define-adversary-type">猛擊者</a></td>
+            <td><em>蓄勢待發</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-monarch">君主</a></th>
+            <td class="text-center og-nowrap">位階 3</td>
+            <td><a href="#define-adversary-type">社交</a></td>
+            <td><em>將他們處決！、戰爭藉口</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-mortal-hunter">凡人獵手</a></th>
+            <td class="text-center og-nowrap">位階 2</td>
+            <td><a href="#define-adversary-type">首領</a></td>
+            <td><em>死亡封鎖</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-oracle-of-doom">末日先知</a></th>
+            <td class="text-center og-nowrap">位階 4</td>
+            <td><a href="#define-adversary-type">獨戰者</a></td>
+            <td><em>宣告命運、召喚折磨者</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-outer-realms-abomination">外域畸變體</a></th>
+            <td class="text-center og-nowrap">位階 4</td>
+            <td><a href="#define-adversary-type">猛擊者</a></td>
+            <td><em>現實震盪</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-perfected-zombie">完化殭屍</a></th>
+            <td class="text-center og-nowrap">位階 4</td>
+            <td><a href="#define-adversary-type">猛擊者</a></td>
+            <td><em>熟練機會主義者</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-petty-noble">小貴族</a></th>
+            <td class="text-center og-nowrap">位階 1</td>
+            <td><a href="#define-adversary-type">社交</a></td>
+            <td><em>放逐</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-pirate-captain">海盜船長</a></th>
+            <td class="text-center og-nowrap">位階 1</td>
+            <td><a href="#define-adversary-type">首領</a></td>
+            <td><em>絕不留情</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-red-ooze">紅泥怪</a></th>
+            <td class="text-center og-nowrap">位階 1</td>
+            <td><a href="#define-adversary-type">潛伏者</a></td>
+            <td><em>分裂</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-royal-advisor">王室顧問</a></th>
+            <td class="text-center og-nowrap">位階 2</td>
+            <td><a href="#define-adversary-type">社交</a></td>
+            <td><em>替罪羊</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-secret-keeper">秘辛守衛</a></th>
+            <td class="text-center og-nowrap">位階 2</td>
+            <td><a href="#define-adversary-type">首領</a></td>
+            <td><em>把握時機</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-siren">塞壬</a></th>
+            <td class="text-center og-nowrap">位階 2</td>
+            <td><a href="#define-adversary-type">潛伏者</a></td>
+            <td><em>魅惑之歌</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-spectral-archer">幽靈弓手</a></th>
+            <td class="text-center og-nowrap">位階 2</td>
+            <td><a href="#define-adversary-type">遠程</a></td>
+            <td><em>鎖定目標</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-spectral-captain">幽靈隊長</a></th>
+            <td class="text-center og-nowrap">位階 2</td>
+            <td><a href="#define-adversary-type">首領</a></td>
+            <td><em>無盡戰鬥</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-spectral-guardian">幽靈守衛</a></th>
+            <td class="text-center og-nowrap">位階 2</td>
+            <td><a href="#define-adversary-type">標準</a></td>
+            <td><em>墓刃</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-spellblade">咒刃戰士</a></th>
+            <td class="text-center og-nowrap">位階 1</td>
+            <td><a href="#define-adversary-type">首領</a></td>
+            <td><em>整體移動</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-spy">間諜</a></th>
+            <td class="text-center og-nowrap">位階 2</td>
+            <td><a href="#define-adversary-type">社交</a></td>
+            <td><em>蒐集祕密</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-stag-knight">雄鹿騎士</a></th>
+            <td class="text-center og-nowrap">位階 2</td>
+            <td><a href="#define-adversary-type">標準</a></td>
+            <td><em>森林之刃</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-stonewraith">石幽靈</a></th>
+            <td class="text-center og-nowrap">位階 2</td>
+            <td><a href="#define-adversary-type">潛伏者</a></td>
+            <td><em>雪崩咆哮</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-sylvan-soldier">林地士兵</a></th>
+            <td class="text-center og-nowrap">位階 1</td>
+            <td><a href="#define-adversary-type">標準</a></td>
+            <td><em>森林掌控</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-vampire">吸血鬼</a></th>
+            <td class="text-center og-nowrap">位階 3</td>
+            <td><a href="#define-adversary-type">標準</a></td>
+            <td><em>霧形化</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-vault-guardian-sentinel">寶庫守衛哨兵</a></th>
+            <td class="text-center og-nowrap">位階 3</td>
+            <td><a href="#define-adversary-type">猛擊者</a></td>
+            <td><em>法力箭</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-vault-guardian-turret">寶庫守衛砲塔</a></th>
+            <td class="text-center og-nowrap">位階 3</td>
+            <td><a href="#define-adversary-type">遠程</a></td>
+            <td><em>標記目標</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-volcanic-dragon-molten-scourge">火山巨龍：熔炎災厄</a></th>
+            <td class="text-center og-nowrap">位階 4</td>
+            <td><a href="#define-adversary-type">獨戰者</a></td>
+            <td><em>爆發</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-volcanic-dragon-ashen-tyrant">火山巨龍：灰燼暴君</a></th>
+            <td class="text-center og-nowrap">位階 4</td>
+            <td><a href="#define-adversary-type">獨戰者</a></td>
+            <td><em>灰燼雲、末日肆虐</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-war-wizard">戰爭法師</a></th>
+            <td class="text-center og-nowrap">位階 3</td>
+            <td><a href="#define-adversary-type">遠程</a></td>
+            <td><em>爆發、奧術火砲</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-weaponmaster">武器大師</a></th>
+            <td class="text-center og-nowrap">位階 1</td>
+            <td><a href="#define-adversary-type">猛擊者</a></td>
+            <td><em>腎上腺素爆發</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-young-dryad">年幼樹精</a></th>
+            <td class="text-center og-nowrap">位階 1</td>
+            <td><a href="#define-adversary-type">首領</a></td>
+            <td><em>荊棘牢籠</em></td>
+        </tr>
+        <tr>
+            <th class="fw-normal" scope="row"><a href="#define-adversary-young-ice-dragon">年幼冰龍</a></th>
+            <td class="text-center og-nowrap">位階 3</td>
+            <td><a href="#define-adversary-type">獨戰者</a></td>
+            <td><em>暴雪吐息、雪崩</em></td>
+        </tr>
+	</tbody>
+</table>
 <div class="og-ed pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
-    <p><strong>編者註 &mdash;</strong> 更多建立敵人資料塊的指引可在 <a href="https://www.daggerheart.com/downloads/">《匕首心》自製內容工具包</a>中找到。像 <a href="https://anydice.com">anydice.com</a> 這類工具可以提供敵人<a href="#define-damage-roll">傷害擲骰</a>的範圍與平均值，方便你與玩家角色的<a href="#define-hit-point">傷害閾值</a>以及他們可施加的<a href="#define-condtion">狀態</a>作比較。</p>
+    <p><strong>編輯註 &mdash;</strong> 你可以在 <a href="https://www.daggerheart.com/downloads/">匕首心自製工具組</a> 中找到更多建立敵人資料塊的指引。像 <a href="https://anydice.com">anydice.com</a> 這樣的工具，可以提供敵人<a href="#define-damage-roll">傷害擲骰</a>的範圍與平均值，方便你與玩家角色的<a href="#define-hit-point">傷害閾值</a>及他們能施加的<a href="#define-condtion">狀態</a>進行比較。</p>
 </div>
 
 <hr>
@@ -14239,7 +14930,7 @@
                             <li><strong><em>踐踏：</em></strong> 戰鬥匣高速亂衝，對<a href="#define-range">近距離範圍</a>內的所有玩家角色進行攻擊，命中者承受<strong>1d6+5</strong><a href="#define-damage-type">物理傷害</a>並陷入<a href="#define-condition"><em>脆弱</em></a>狀態，直到其下一次以<a href="#define-hope">希望</a>擲骰為止。</li>
                             <li><strong><em>電擊氣體：</em></strong> 釋放閃爍銀光的電氣氣體。所有在<a href="#define-range">近距離範圍</a>內的目標必須成功進行一次<a href="#define-finesse">靈巧</a><a href="#define-reaction-roll">反應擲骰</a>，否則標記 3 點<a href="#define-stress">壓力點</a>。</li>
                             <li><strong><em>震擊拍擊：</em></strong> 戰鬥匣跳起並合攏側面，釋放震盪衝擊。所有在<a href="#define-range">鄰近範圍</a>內的目標必須成功進行一次<a href="#define-strength">力量</a><a href="#define-reaction-roll">反應擲骰</a>，否則陷入<a href="#define-condition"><em>脆弱</em></a>狀態直到戰鬥匣被擊敗。</li>
-                            <li><strong><em>靈能嗡鳴：</em></strong> 釋放一群會嗡鳴的機械蜜蜂，干擾凡人心智。所有在<a href="#define-range">近距離範圍</a>內的目標必須成功進行一次<a href="#define-presence">存在感</a><a href="#define-reaction-roll">反應擲骰</a>，否則承受<strong>2d4+9</strong><a href="#define-damage-type">直接魔法傷害</a>。</li>
+                            <li><strong><em>靈能嗡鳴：</em></strong> 釋放一群會嗡鳴的機械蜜蜂，干擾凡人心智。所有在<a href="#define-range">近距離範圍</a>內的目標必須成功進行一次<a href="#define-presence">風度</a><a href="#define-reaction-roll">反應擲骰</a>，否則承受<strong>2d4+9</strong><a href="#define-damage-type">直接魔法傷害</a>。</li>
                         </ol>
                 </p></li>
                 <li><p><strong><em>超載&mdash;反應：</em></strong> 在擲出傷害前，你可以<a href="#define-stress"><strong>標記 1 壓力點</strong></a>為傷害擲骰額外加擲一顆<strong>d6</strong>，並獲得 1 點<a href="#define-fear">恐懼點</a>。</p></li>
@@ -14766,7 +15457,7 @@
             <h6>特性</h6>
             <ul class="list-unstyled og-list-hang">
                 <li><p><strong><em>無防護心靈&mdash;被動：</em></strong>嫉妒惡魔的普通攻擊造成<a href="#define-damage-type">直接傷害</a>。</p></li>
-                <li><p><strong><em>輪到我了&mdash;反應：</em></strong>當嫉妒惡魔因攻擊而標記<a href="#define-hit-point">生命點</a>時，<strong><a href="#define-fear">花費等同於該惡魔標記的生命點數量的恐懼點</a></strong>，令攻擊者標記相同數量的<a href="#define-hit-point">生命點</a>。</p></li>
+                <li><p><strong><em>輪到我了&mdash;反應：</em></strong> 當惡魔因攻擊而標記<a href="#define-hit-point">生命點</a>時，<strong><a href="#define-fear">花費等同於惡魔所標記生命點數量的恐懼點</a></strong>，使攻擊者標記相同數量的<a href="#define-hit-point">生命點</a>。</p></li>
                 <li><p><strong><em>競爭心態&mdash;反應：</em></strong>當<a href="#define-range">近距離</a>內的生物受到其他敵人造成的傷害時，你可以<a href="#define-stress"><strong>標記 1 壓力點</strong></a>，在該次<a href="#define-damage-roll">傷害擲骰</a>中額外加入一顆<strong>d4</strong>。</p></li>
                 <li><p><strong><em>你的就是我的&mdash;反應：</em></strong>當<a href="#define-range">鄰近範圍</a>內的玩家角色受到<a href="#define-hit-point">嚴重</a>傷害時，你可以<strong><a href="#define-fear">花費1恐懼點</a></strong>，迫使該目標進行一次<a href="#define-finesse">靈巧</a><a href="#define-reaction-roll">反應擲骰</a>。若失敗，惡魔奪取該目標物品欄中的一件物品或消耗品（由惡魔選擇）。</p></li>
             </ul>
@@ -15107,7 +15798,7 @@
                 <li><p><strong><em>焚天烈焰&mdash;動作：</em></strong><strong><a href="#define-fear">消耗 1 恐懼點</a></strong>，釋放吞噬一切的火焰風暴，對所有在<a href="#define-range">近距離</a>內的目標進行攻擊。命中的目標承受 <strong>2d10+6</strong> <a href="#define-damage-type">直接魔法傷害</a>。</p></li>
                 <li><p><strong><em>夢魘幻境&mdash;動作：</em></strong><a href="#define-stress"><strong>標記 1 壓力點</strong></a>，將<a href="#define-range">遠距離</a>內的一個目標困於其最深層恐懼的強大幻象中。被困期間，目標陷入<a href="#define-condition"><em>束縛</em></a>與<a href="#define-condition"><em>脆弱</em></a>狀態，直到其成功進行一次<a href="#define-trait-roll">直覺檢定</a>以掙脫，兩種狀態同時解除。</p></li>
                 <li><p><strong><em>滑影遁形&mdash;反應：</em></strong>當術士因攻擊而受傷時，可瞬移至最多<a href="#define-range">遠距離</a>。</p></li>
-                <li><p><strong><em>罪鎖之縛&mdash;反應：</em></strong><em><a href="#define-countdown">倒數（循環 2d6）</a></em>。當術士首次被<a href="#define-spotlight">聚焦</a>時啟動倒數。觸發時，所有在<a href="#define-range">遠距離</a>內的目標變為<a href="#define-condition"><em>脆弱</em></a>並標記 1 點<a href="#define-stress">壓力點</a>，因為他們重溫了自己最深的悔恨。目標可透過成功的<a href="#define-presence">存在感</a>或<a href="#define-trait-roll">力量檢定</a>掙脫。當玩家角色掙脫失敗時，失去 1 點<a href="#define-hope">希望</a>。</p></li>
+                <li><p><strong><em>罪鎖之縛&mdash;反應：</em></strong><em><a href="#define-countdown">倒數（循環 2d6）</a></em>。當術士首次被<a href="#define-spotlight">聚焦</a>時啟動倒數。觸發時，所有在<a href="#define-range">遠距離</a>內的目標變為<a href="#define-condition"><em>脆弱</em></a>並標記 1 點<a href="#define-stress">壓力點</a>，因為他們重溫了自己最深的悔恨。目標可透過成功的<a href="#define-presence">風度</a>或<a href="#define-trait-roll">力量檢定</a>掙脫。當玩家角色掙脫失敗時，失去 1 點<a href="#define-hope">希望</a>。</p></li>
             </ul>
         </div>
     </div>
@@ -15140,7 +15831,7 @@
                 <li><p><strong><em>無情 (2)&mdash;被動：</em></strong>破境者在每回合可被<a href="#define-spotlight">聚焦</a>最多兩次。消耗<a href="#define-fear">恐懼點</a>如常以<a href="#define-spotlight">聚焦</a>他們。</p></li>
                 <li><p><strong><em>火怨板甲&mdash;被動：</em></strong>當破境者受到傷害時，減少<strong>2d10</strong> 點傷害。</p></li>
                 <li><p><strong><em>折磨之鞭&mdash;動作：</em></strong><strong><a href="#define-stress">標記壓力點</a></strong>，對所有在<a href="#define-range">鄰近範圍</a>內的目標進行標準攻擊。若目標使用護甲減免該攻擊的傷害，必須標記 2 格<a href="#define-armor">護甲欄位</a>。</p></li>
-                <li><p><strong><em>滅世之怒&mdash;反應：</em></strong><em><a href="#define-countdown">倒數（遞減 8）</a></em>。當破境者首次被<a href="#define-spotlight">聚焦</a>時啟動倒數。觸發時，釋放化為實體的怒潮，撕裂血肉。所有在<a href="#define-range">遠距離</a>內的目標必須進行<a href="#define-presence">存在感</a> <a href="#define-reaction-roll">反應檢定</a>。失敗者承受 <strong>2d6+10</strong> <a href="#define-damage-type">直接魔法傷害</a>，成功者承受一半傷害。每因該傷害而標記的<a href="#define-hit-point">生命點</a>，會在該目標的<a href="#define-range">鄰近範圍</a>內召喚一名<a href="#define-adversary-fallen-shock-troop">墮落突擊兵</a>。若倒數的最大值減至 0，破境者標記所有剩餘<a href="#define-hit-point">生命點</a>，且所有在<a href="#define-range">遠距離</a>內的目標必須標記所有剩餘<a href="#define-hit-point">生命點</a>並進行<a href="#define-death">死亡動作</a>。</p></li>
+                <li><p><strong><em>滅世之怒&mdash;反應：</em></strong><em><a href="#define-countdown">倒數（遞減 8）</a></em>。當破境者首次被<a href="#define-spotlight">聚焦</a>時啟動倒數。觸發時，釋放化為實體的怒潮，撕裂血肉。所有在<a href="#define-range">遠距離</a>內的目標必須進行<a href="#define-presence">風度</a> <a href="#define-reaction-roll">反應檢定</a>。失敗者承受 <strong>2d6+10</strong> <a href="#define-damage-type">直接魔法傷害</a>，成功者承受一半傷害。每因該傷害而標記的<a href="#define-hit-point">生命點</a>，會在該目標的<a href="#define-range">鄰近範圍</a>內召喚一名<a href="#define-adversary-fallen-shock-troop">墮落突擊兵</a>。若倒數的最大值減至 0，破境者標記所有剩餘<a href="#define-hit-point">生命點</a>，且所有在<a href="#define-range">遠距離</a>內的目標必須標記所有剩餘<a href="#define-hit-point">生命點</a>並進行<a href="#define-death">死亡動作</a>。</p></li>
                 <li><p><strong><em>厄運使者&mdash;反應：</em></strong>當目標因破境者的攻擊而標記<a href="#define-hit-point">生命點</a>時，所有在該目標<a href="#define-range">遠距離</a>內的玩家角色失去 1 點<a href="#define-hope">希望</a>。</p></li>
                 <li><p><strong><em>我從未嚐敗（階段轉換）&mdash;反應：</em></strong>當破境者標記最後 1 點<a href="#define-hit-point">生命點</a>時，將其替換為<a href="#define-adversary-fallen-warlord-undefeated-champion">無敗冠軍</a>並立刻<a href="#define-spotlight">聚焦</a>他們。</p></li>
             </ul>
@@ -15796,7 +16487,7 @@
                 <li><p><strong><em>緩慢&mdash;被動：</em></strong> 當你<a href="#define-spotlight">聚焦</a>巨型綠色軟泥怪且其屬性欄上沒有指示物時，牠不能行動。放置一個指示物並描述牠正在準備的行動。當再次<a href="#define-spotlight">聚焦</a>且已有指示物時，移除該指示物並讓牠行動。</p></li>
                 <li><p><strong><em>酸性形態&mdash;被動：</em></strong> 當巨型綠色軟泥怪攻擊成功時，目標必須標記一個<a href="#define-armor">護甲槽</a>且不獲得其防護效果（仍可用<a href="#define-armor">護甲</a>減少傷害）。若無法標記<a href="#define-armor">護甲槽</a>，則必須額外標記 1 點<a href="#define-hit-point">生命點</a>。</p></li>
                 <li><p><strong><em>包覆&mdash;動作：</em></strong> 攻擊<a href="#define-range">近戰範圍</a>內的一個目標。成功時，牠會將目標<strong>包覆</strong>，迫使目標標記 2 點<a href="#define-stress">壓力點</a>。在<strong>被包覆</strong>狀態下，目標每次進行<a href="#define-action-roll">動作擲骰</a>時必須額外標記 1 點<a href="#define-stress">壓力點</a>。當巨型綠色軟泥怪受到<a href="#define-hit-point">嚴重</a>傷害時，所有<strong>被包覆</strong>的目標會被釋放並解除該狀態。</p></li>
-                <li><p><strong><em>分裂&mdash;反應：</em></strong> 當巨型綠色軟泥怪已標記 4 點或更多<a href="#define-hit-point">生命點</a>時，你可以<strong><a href="#define-fear">花費 1 恐懼點</a></strong>將其分裂為兩個綠色軟泥怪（沒有標記的<a href="#define-hit-point">生命點</a>與<a href="#define-stress">壓力點</a>）。立即<a href="#define-spotlight">聚焦</a>牠們。</p></li>
+                <li><p><strong><em>分裂&mdash;反應：</em></strong> 當巨型綠色軟泥怪已標記 4 點或更多<a href="#define-hit-point">生命點</a>時，你可以<strong><a href="#define-fear">花費 1 恐懼點</a></strong>將其分裂為兩個<a href="#define-adversary-green-ooze">綠色軟泥怪</a>（沒有標記的<a href="#define-hit-point">生命點</a>與<a href="#define-stress">壓力點</a>）。立即<a href="#define-spotlight">聚焦</a>牠們。</p></li>
             </ul>
         </div>
     </div>
@@ -16576,7 +17267,7 @@
             <h6>特性</h6>
             <ul class="list-unstyled og-list-hang">
                 <li><p><strong><em>混沌形態&mdash;被動：</em></strong> 當憎惡體攻擊時，擲<strong>2d4</strong>，將結果作為其攻擊<a href="#define-procedure">調整值</a>。</p></li>
-                <li><p><strong><em>迷亂<a href="#define-presence">氣場</a>&mdash;被動：</em></strong> 當目標受到憎惡體的傷害時，必須進行<a href="#define-instinct">本能</a><a href="#define-reaction-roll">反應擲骰</a>。若失敗，他們在下一次<a href="#define-action-roll">動作擲骰</a>時獲得<a href="#define-advantage">劣勢</a>，且你獲得 1 點<a href="#define-fear">恐懼</a>。</p></li>
+                <li><p><strong><em>迷亂<a href="#define-presence">風度</a>&mdash;被動：</em></strong> 當目標受到憎惡體的傷害時，必須進行<a href="#define-instinct">本能</a><a href="#define-reaction-roll">反應擲骰</a>。若失敗，他們在下一次<a href="#define-action-roll">動作擲骰</a>時獲得<a href="#define-advantage">劣勢</a>，且你獲得 1 點<a href="#define-fear">恐懼</a>。</p></li>
                 <li><p><strong><em>現實震盪&mdash;動作：</em></strong> <strong><a href="#define-fear">花費1恐懼點</a></strong>，震撼憎惡體<a href="#define-range">遠距離範圍</a>內的現實邊界。該區域內的所有目標必須成功進行<a href="#define-knowledge">知識</a><a href="#define-reaction-roll">反應擲骰</a>，否則將變為<em>脫離現實</em>狀態直到場景結束。當<em>脫離現實</em>的目標花費<a href="#define-hope">希望</a>或標記<a href="#define-armor">護甲槽</a>、<a href="#define-hit-point">生命點</a>或<a href="#define-stress">壓力點</a>時，必須加倍花費或標記的數量。</p></li>
                 <li><p><strong><em>真菌形態&mdash;反應：</em></strong> 當憎惡體受到傷害時，減少該傷害<strong>1d20</strong>點。若該攻擊使其<a href="#define-hit-point">標記生命點</a>不超過 1 點，你獲得 1 點<a href="#define-fear">恐懼</a>。</p></li>
             </ul>
@@ -16696,7 +17387,7 @@
             <h6>特性</h6>
             <ul class="list-unstyled og-list-hang">
                 <li><p><strong><em>驚怖&mdash;被動：</em></strong> 成功攻擊時，所有在<a href="#define-range">極遠範圍</a>內的玩家角色失去<a href="#define-hope">希望</a>，你獲得<a href="#define-fear">恐懼</a>。</p></li>
-                <li><p><strong><em>威懾<a href="#define-presence">氣場</a>&mdash;被動：</em></strong> 玩家角色不能花費<a href="#define-hope">希望</a>對殭屍使用特性。</p></li>
+                <li><p><strong><em>威懾氣場&mdash;被動：</em></strong> 玩家角色不能花費<a href="#define-hope">希望</a>對殭屍使用特性。</p></li>
                 <li><p><strong><em>完美一擊&mdash;動作：</em></strong> <a href="#define-stress"><strong>標記 1 壓力點</strong></a>攻擊所有<a href="#define-range">鄰近範圍</a>內的目標；若成功，目標在下次休息前處於<a href="#define-condition"><em>脆弱</em></a>狀態。</p></li>
                 <li><p><strong><em>老練的伺機者&mdash;反應：</em></strong> 當另一名敵人在<a href="#define-range">鄰近範圍</a>內對目標造成傷害時，<strong><a href="#define-fear">花費1恐懼點</a></strong>，將殭屍的普通攻擊傷害加入該<a href="#define-damage-roll">傷害擲骰</a>。</p></li>
             </ul>
@@ -17866,7 +18557,7 @@
             <h6>特性</h6>
             <ul class="list-unstyled og-list-hang">
                 <li><p><strong><em>挑釁打擊—動作：</em></strong> 對一個目標進行普通攻擊。若成功，<a href="#define-stress"><strong>標記 1 壓力點</strong></a>以嘲諷該目標直到其下一次成功的<a href="#define-attack-roll">攻擊</a>為止。在嘲諷期間，該目標對非武器大師的攻擊具有<a href="#define-advantage">劣勢</a>。</p></li>
-                <li><p><strong><em>腎上腺素爆發—動作：</em></strong> 每場戰鬥一次，<a href="#define-fear">花費 1 恐懼點</a>以恢復 2 點<a href="#define-hit-point">生命點</a>與 2<a href="#define-stress">壓力點</a>。</p></li>
+                <li><p><strong><em>腎上腺素爆發—動作：</em></strong> 每場戰鬥一次，<a href="#define-fear">花費 1 恐懼點</a>以恢復 2 點<a href="#define-hit-point">生命</a>與清除 2 點<a href="#define-stress">壓力</a>。</p></li>
                 <li><p><strong><em>乘勝追擊—反應：</em></strong> 當武器大師對玩家角色造成一次成功攻擊時，你獲得 1<a href="#define-fear">恐懼點</a>。</p></li>
             </ul>
         </div>
