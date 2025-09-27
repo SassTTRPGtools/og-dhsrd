@@ -116,7 +116,7 @@
     <span class="og-title">匕首心</span>
     <span class="og-subtitle">系統參考文件</span>
 </h1>
-<p class="small text-center">version 1.02j (2025-09-24)</p>
+<p class="small text-center">version 1.02k (2025-09-24)</p>
 <ul class="list-inline text-center">
     <li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="https://daggerheart.com">Daggerheart Official</a></li>
     <li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="https://github.com/callmepartario/og-dhsrd">Github</a></li>
@@ -7141,18 +7141,16 @@
     <div id="define-multiclass">
         <h4 id="multiclassing">兼職<a class="og-h-anchor" href="#multiclassing" title="Permalink" aria-hidden="true"></a></h4>
         <ul class="og-list-inline og-ref og-omit"><li>第 111 頁</li></ul>
-        <p>從<a href="#define-tier">位階 3</a>開始，你可以選擇<strong>兼職</strong>作為一項<a href="#define-advancement">升級選項</a>。</p>
+        <p>從<a href="#define-tier">位階 3</a>開始，你可以選擇<strong>兼職</strong>作為一項<a href="#define-advancement">升級選項</a>。你只能兼職一次。</p>
         <dl>
             <dt>選擇兼職</dt>
             <dd>選擇一個 <a href="#define-class">職業</a>。你將獲得其中一個 <a href="#define-domain">領域</a> 以及該職業的職業特性。你不會獲得其職業的 <a href="#define-hope">希望</a> 特性。接著，為你的新職業選擇一個 <a href="#define-subclass">子職業</a>。你將獲得其基礎特性。</dd>
             <dt>施法屬性</dt>
             <dd>如果你的新<a href="#define-subclass">子職業</a>給予你第二個<a href="#define-subclass">施法屬性</a>，你可以選擇在進行<a href="#define-spellcast-roll">施法擲骰</a>時使用哪個<a href="#define-procedure">調整值</a>。</dd>
             <dt>特性</dt>
-            <dd>攻擊、法術與其他<a href="#define-action">行動</a>使用你的<a href="#define-level">等級</a>與<a href="#define-tier">位階</a>計算。例如，若你在<a href="#define-level">等級 5</a>時兼職<a href="#define-rogue">遊蕩者</a>，你的<strong><em>偷襲</em></strong>傷害為<strong>2d6</strong>，因為你的<a href="#define-level">等級</a>使你處於<a href="#define-tier">位階 2</a>。</dd>
+            <dd>攻擊、法術與其他<a href="#define-action">行動</a>使用你的<a href="#define-level">等級</a>與<a href="#define-tier">位階</a>計算。例如，若你在<a href="#define-level">等級 5</a>時兼職<a href="#define-rogue">遊蕩者</a>，你的<em>偷襲</em>特性的傷害為<strong>2d6</strong>，因為你的<a href="#define-level">等級</a>使你處於<a href="#define-tier">位階 2</a>。</dd>
             <dt>領域卡</dt>
             <dd>當你選擇一張新的 <a href="#define-domain-card">領域卡</a>時，你可以從你的兼職 <a href="#define-domain">領域</a>中，選擇等級上限為你 <a href="#define-level">等級</a> 一半的卡牌。舉例來說，如果你在 <a href="#define-level">5 級</a>時兼職 <a href="#define-rogue">遊蕩者</a>，並選擇其 <a href="#define-midnight">子夜</a>領域，那麼你可以從 <a href="#define-midnight">子夜</a>領域牌庫中選擇最高至 3 級的 <a href="#define-domain-card">領域卡</a>。</dd>
-            <dt>兼職限制</dt>
-            <dd>你只能兼職一次。</dd>
         </dl>
     </div>
 </div>
@@ -9239,7 +9237,11 @@
         <dd>你可以在<a href="#define-downtime">休整</a>期間修復護甲來清除已標記的護甲槽。</dd>
     </dl>
     <div class="og-sidebar pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
-        <p>某些特性能為你的<a href="#define-hit-point">傷害閾值</a>提供加值──例如，<a href="#define-galapa">龜人</a>種族的<em>龜甲</em>特性，或<a href="#define-guardian">守護者</a>（<a href="#define-guardian-stalwart">堅毅鐵衛</a>）的<em>百折不撓</em>特性。無論你是否穿戴護甲，這些加值皆會生效。</p>
+        <p>有些特性能為你的<a href="#define-hit-point">傷害閾值</a>提供加值──例如<a href="#define-galapa">龜人</a>種族的<em>龜甲</em>特性，或<a href="#define-guardian-stalwart">堅毅鐵衛</a><a href="#define-guardian">守護者</a>的<em>堅定不移</em>特性。這些加值無論你是否裝備<a href="#define-armor">護甲</a>都能生效。</p>
+        </div>
+        <div class="og-ed pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
+            <p><strong>編者註 &mdash;</strong> 盾牌不是<a href="#define-armor">護甲</a>，它們屬於<a href="#weapons-secondary-tier-1">副武器</a>。</p>
+        </div>        
     </div>
 </div>
 <h4 id="armor-tables">護甲表<a class="og-h-anchor" href="#armor-tables" title="Permalink" aria-hidden="true"></a></h4>
@@ -10057,19 +10059,25 @@
         <div id="define-gold">
             <h3 id="gold">金幣<a class="og-h-anchor" href="#gold" title="Permalink" aria-hidden="true"></a></h3>
             <ul class="og-list-inline og-ref og-omit"><li>第 104 頁</li><li>第 165 頁</li></ul>
-            <p><strong>金幣</strong>是一種抽象化的財富計量方式，以把、袋與箱來衡量：</p>
-            <ul class="og-list-disc">
-                <li>10 把金幣等於 1 袋</li>
-                <li>10 袋金幣等於 1 箱</li>
-            </ul>
-            <p>你不能攜帶超過 1 箱，因此在獲得更多之前，你必須先花掉一些，或將其存放在某處。</p>
-            <p>是否要追蹤金幣的細節，由遊戲主持人與玩家共同決定。若你不想追蹤金幣，在玩家角色（PC）購買新物品時，主持人可以允許他們從事先準備好的適合物品清單中挑選一至兩樣。</p>
+            <p><strong>金幣</strong>是一種抽象化的財富計量方式，以把、袋與箱為單位。追蹤金幣的重要性取決於遊戲主持人與玩家的決定。若你不想追蹤金幣，遊戲主持人可以允許玩家角色從準備好的商販清單中選擇物品與服務。</p>
+            <dl>
+                <dt>把</dt>
+                <dd>10 把金幣等於 1 袋。</dd>
+                <dt>袋</dt>
+                <dd>10 袋金幣等於 1 箱。</dd>
+                <dt>箱</dt>
+                <dd>你無法攜帶超過 1 箱，因此必須在獲得更多之前先花掉部分金幣，或將其存放在某處。</dd>
+            </dl>            
         </div>
         <div class="og-topbar">
-            <div id="define-optional-rule-gold">
+            <div id="define-optional-rule-gold-coins">
                 <h4 id="optional-rule-gold-coins">可選規則：金幣硬幣<a class="og-h-anchor" href="#optional-rule-gold-coins" title="Permalink" aria-hidden="true"></a></h4>
                 <ul class="og-list-inline og-ref og-omit"><li>第 104 頁</li></ul>
-                <p>如果你的團隊想更細緻地追蹤金幣，可以加入硬幣作為最小的單位。依照既定比例，10 枚硬幣等於 1 把。</p>
+                <p>你也可以新增錢幣作為更低的單位：</p>
+                <dl>
+                    <dt>錢幣</dt>
+                    <dd>10 枚錢幣等於 1 把。</dd>
+                </dl>
             </div>
         </div>
     </div>
@@ -10182,11 +10190,13 @@
         <li><a href="#define-condition">狀態</a></li>
         <li><a href="#define-pvp">玩家角色間衝突（PVP）</a>&dagger;</li>
         <li><a href="#define-consumable">消耗品</a></li>
+        <li><a href="#define-core-gameplay-loop">核心遊戲循環</a>
         <li><a href="#define-countdown">倒計時</a></li>
         <li><a href="#define-attack-roll">掩蔽</a></li>
         <li><a href="#define-temporary">生物</a></li>
         <li><a href="#define-damage-roll">致命傷害</a></li>
         <li><a href="#define-action-roll">關鍵成功（爆擊）</a></li>
+        <li><a href="#define-flow-of-the-game">遊戲流程</a>
         <li><a href="#define-hit-point">傷害閾值</a></li>
         <li><a href="#define-damage-roll">傷害</a></li>
         <li><a href="#define-damage-roll">傷害骰</a></li>
@@ -10229,6 +10239,7 @@
         <li><a href="#define-spotlight">主持人輪次</a></li>
         <li><a href="#define-action-roll">主持人擲骰</a></li>
         <li><a href="#define-gold">金幣</a></li>
+        <li><a href="#define-optional-rule-gold-coins">錢幣</a>&dagger;</li>
         <li><a href="#define-grace">優雅</a></li>
         <li><a href="#define-group-action-roll">團隊動作擲骰</a></li>
         <li><a href="#define-guardian">守護者</a></li>
@@ -10344,11 +10355,22 @@
         <div id="define-flow-of-the-game">
             <h3 id="flow-of-the-game">遊戲流程<a class="og-h-anchor" href="#flow-of-the-game" title="Permalink" aria-hidden="true"></a></h3>
             <ul class="og-list-inline og-ref og-omit"><li>第 87 頁</li></ul>
-            <p><a href="#define-daggerheart">《匕首心》</a>是一場對話。目標是基於每個人的想法，共同講述一個令人滿意的故事。規則為對話提供結構，並提供機制來解決命運或機遇對結果的影響。</p>
+            <p><a href="#define-daggerheart">《匕首心》</a>是一場對話。其目標是建立在所有人的想法之上，共同講述一個令人滿意的故事。<a href="#define-core-gameplay-loop">核心遊戲循環</a>為這場對話提供結構，並提供機制來處理命運或機運對結果的影響。</p>
+            <p><a href="#define-hope">希望點</a>與<a href="#define-fear">恐懼點</a>代表塑造故事事件的宇宙力量。希望點驅動玩家角色的能力與特性，而恐懼點則驅動<a href="#define-gm-move">遊戲主持人行動</a>，包括<a href="#define-adversary">敵人</a>與<a href="#define-environment">環境</a>所採取的行動。</p>
+            <p>在像<a href="#define-combat">戰鬥</a>這樣的高壓情境中，<a href="#define-spotlight">聚焦</a>決定由誰來決策接下來的發展──玩家，或是遊戲主持人。擲出希望點或恐懼點也會影響遊戲主持人如何<a href="#define-resolving">結算</a>結果。</p>
+            <div class="og-topbar text-center">
+                <img class="og-fig-lg mb-2 d-light" src="images/dh-flowchart-light.svg" alt="遊戲流程" aria-hidden="true">
+                <img class="og-fig-lg mb-2 d-dark" src="images/dh-flowchart-dark.svg" alt="遊戲流程" aria-hidden="true">
+            </div>
+            </div>
+            <div class="og-sidebar pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
+                <p><a href="#define-gm-move">遊戲主持人行動</a>幾乎可以是任何推動故事的行動──參見<a href="#define-gm-move-examples">遊戲主持人行動範例</a>。</p>
+            </div>
         </div>
+        <div class="col-12 col-md-6">
         <div id="define-core-gameplay-loop">
             <h4 id="core-gameplay-loop">核心遊戲循環<a class="og-h-anchor" href="#core-gameplay-loop" title="Permalink" aria-hidden="true"></a></h4>
-            <ul class="og-list-inline og-ref og-omit"><li>頁碼 88</li></ul>
+            <ul class="og-list-inline og-ref og-omit"><li>頁碼 88</li><li>頁碼 90</li><li>編者註譯</li></ul>
             <p><strong>核心遊戲循環</strong>是推動每個場景（無論在<a href="#define-combat">戰鬥</a>內外）的流程。</p>
             <h4 class="h6">步驟 1：設定場景</h4>
             <p>主持人描述情境，建立周遭環境，以及任何危險、<a href="#define-npc">非玩家角色</a>或玩家角色（PC）會注意到的重要細節。</p>
@@ -10358,21 +10380,6 @@
             <p>隨著場景推進，玩家角色會採取<a href="#define-action">行動</a>──解決問題、克服障礙並揭開謎團。若某個行動不可能失敗（或失敗會顯得乏味），則自動成功。若行動結果尚未可知，遊戲主持人會要求進行<a href="#define-action-roll">動作擲骰</a>。無論哪種情況，結果都會成為故事的一部分。遊戲主持人會<a href="#define-resolving">結算</a>結果，敘述玩家角色的行動如何改變局勢。</p>
             <h4 class="h6">步驟 4：回到步驟 1</h4>
             <p>此流程重複進行，直到由機制觸發場景結束，或自然地結束。</p>
-        </div>
-    </div>
-    <div class="col-12 col-md-6">
-        <div id="define-hope-and-fear">
-            <h4 id="hope-and-fear">希望與恐懼<a class="og-h-anchor" href="#hope-and-fear" title="Permalink" aria-hidden="true"></a></h4>
-            <ul class="og-list-inline og-ref og-omit"><li>第 90 頁</li><li>編輯補充</li></ul>
-            <p><a href="#define-hope">希望</a>與<a href="#define-fear">恐懼</a>代表塑造故事事件的宇宙力量。希望驅動玩家角色（PC）的能力與特性，而恐懼則驅動<a href="#define-gm-move">遊戲主持人行動</a>，包含<a href="#define-adversary">敵人</a>與<a href="#define-environment">環境</a>的行動。</p>
-            <p>在像<a href="#define-combat">戰鬥</a>這樣的高壓情境中，<a href="#define-spotlight">聚焦</a>決定下一步由誰來敘述——玩家或遊戲主持人。當擲出希望結果或擲出恐懼結果時，也會影響遊戲主持人如何<a href="#define-resolving">結算</a>結果。</p>
-            <div class="og-topbar text-center">
-                <img class="og-fig-lg mb-2 d-light" src="images/dh-flowchart-light.svg" alt="遊戲流程圖" aria-hidden="true">
-                <img class="og-fig-lg mb-2 d-dark" src="images/dh-flowchart-dark.svg" alt="遊戲流程圖" aria-hidden="true">
-            </div>
-        </div>
-        <div class="og-sidebar pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
-            <p><a href="#define-gm-move">遊戲主持人行動</a>幾乎可以是任何推動故事發展的內容──參見<a href="#define-gm-move-examples">遊戲主持人行動範例</a>。</p>
         </div>
     </div>
 </div>
@@ -13172,15 +13179,15 @@
                 <dd>額外的<a href="#define-adversary-feature">敵人特性</a>。</dd>
             </dl>
         </div>
-        <div class="og-ed pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
-            <p><strong>編者註 &mdash;</strong> 如同玩家角色在<a href="#define-action-roll">動作擲骰</a>前必須先<a href="#define-experience">運用經歷</a>作為<a href="#define-procedure">流程</a>的一部分，敵人在運用經歷提升針對他們的擲骰<a href="#define-difficulty">難度</a>時，也應在擲骰前宣告。</p>
-            <p>同樣地，若敵人標記了最後一格<a href="#define-stress">壓力點</a>，他們會進入<a href="#define-condition"><em>脆弱</em></a>狀態。</p>
+        <div class="og-sidebar pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
+            <p>就像玩家角色必須在<a href="#define-action-roll">動作擲骰</a>前<a href="#define-experience">運用經歷</a>，作為<a href="#define-procedure">流程</a>的一部分一樣，敵人若要運用經歷來提高針對他們進行的擲骰<a href="#define-difficulty">難度</a>，也必須在擲骰前這麼做。</p>
         </div>
     </div>
     <div class="col-12 col-md-6">
         <div id="define-adversary-type">
             <h4 id="adversary-types">敵人類型<a class="og-h-anchor" href="#adversary-types" title="Permalink" aria-hidden="true"></a></h4>
             <ul class="og-list-inline og-ref og-omit"><li>第 194 頁</li></ul>
+            <p>想了解各類型的更多細節，請參見<a href="#define-adversary-benchmarks">敵人基準</a>。</p>
             <dl>
                 <dt>鬥士</dt>
                 <dd>耐打；能造成強力攻擊。</dd>
@@ -13205,7 +13212,7 @@
             </dl>
         </div>
         <div class="og-sidebar pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
-            <p>敵人類型決定了他們在<a href="#define-adversary-feature">敵人特性</a>中如何與<a href="#define-spotlight">聚焦</a>互動。例如，大多數<strong>雜兵</strong>（如<a href="#define-adversary-jagged-knife-lackey">鋸齒刀雜兵</a>）會以群體攻擊，並依據彼此的<a href="#define-range">距離</a>成群受傷；另一些（如<a href="#define-adversary-cave-ogre">洞穴巨魔</a>）則會進行多次攻擊，或在受傷時做出反應。</p>
+            <p><a href="#define-adversary-type">敵人類型</a>會因其<a href="#define-adversary-feature">敵人特性</a>而有所不同，影響他們與<a href="#define-spotlight">聚焦</a>的關聯方式──例如，<strong>雜兵</strong>如<a href="#define-adversary-jagged-knife-lackey">鋸齒刀嘍囉</a>會依彼此的<a href="#define-range">範圍</a>，以集體方式進行攻擊與承受傷害。而<strong>獨狼</strong>如<a href="#define-adversary-cave-ogre">洞穴食人魔</a>──則能進行多次攻擊，或在受到傷害時發動攻擊，甚至不需要依賴<a href="#define-spotlight">聚焦</a>。</p>
         </div>
     </div>
 
@@ -13311,46 +13318,47 @@
         </div>
     </div>
 </div>
-
-<h4 id="adversary-benchmarks">敵人基準<a class="og-h-anchor" href="#adversary-benchmarks" title="Permalink" aria-hidden="true"></a></h4>
-<ul class="og-list-inline og-ref og-omit"><li>第 208 頁</li><li>編輯補充</li></ul>
-<div class="alert ps-4 pb-0 og-omit">
-	<ul class="list-unstyled og-qr">
-        <li><a href="#define-adversary-benchmarks-hit-points">生命值</a></li>
-		<li><a href="#define-adversary-benchmarks-type-bruiser">鬥士</a></li>
-		<li><a href="#define-adversary-benchmarks-type-horde">集群</a></li>
-		<li><a href="#define-adversary-benchmarks-type-leader">頭目</a></li>
-		<li><a href="#define-adversary-benchmarks-type-minion">雜兵</a></li>
-		<li><a href="#define-adversary-benchmarks-type-ranged">遠程</a></li>
-		<li><a href="#define-adversary-benchmarks-type-skulk">潛伏</a></li>
-		<li><a href="#define-adversary-benchmarks-type-social">社交</a></li>
-		<li><a href="#define-adversary-benchmarks-type-solo">獨狼</a></li>
-		<li><a href="#define-adversary-benchmarks-type-standard">標準</a></li>
-		<li><a href="#define-adversary-benchmarks-type-support">輔助</a></li>
-		<li><a href="#define-adversary-conditions">應用狀態</a></li>
-        <li><a href="#define-adversary-passives">被動</a></li>
-        <li><a href="#define-adversary-reactions">反應</a></li>
-		<li><a href="#define-adversary-hope-loss">失去希望</a></li>
-		<li><a href="#define-adversary-fear-gain">獲得恐懼</a></li>
-		<li><a href="#define-pc-benchmark-defense">PC 防禦</a></li>
-		<li><a href="#define-pc-benchmark-damage">PC 傷害</a></li>
-	</ul>
+<div id="define-adversary-benchmarks">
+    <h4 id="adversary-benchmarks">敵人基準<a class="og-h-anchor" href="#adversary-benchmarks" title="Permalink" aria-hidden="true"></a></h4>
+    <ul class="og-list-inline og-ref og-omit"><li>第 208 頁</li><li>編輯補充</li></ul>
+    <div class="alert ps-4 pb-0 og-omit">
+        <ul class="list-unstyled og-qr">
+            <li><a href="#define-adversary-benchmarks-hit-points">生命值</a></li>
+            <li><a href="#define-adversary-benchmarks-type-bruiser">鬥士</a></li>
+            <li><a href="#define-adversary-benchmarks-type-horde">集群</a></li>
+            <li><a href="#define-adversary-benchmarks-type-leader">頭目</a></li>
+            <li><a href="#define-adversary-benchmarks-type-minion">雜兵</a></li>
+            <li><a href="#define-adversary-benchmarks-type-ranged">遠程</a></li>
+            <li><a href="#define-adversary-benchmarks-type-skulk">潛伏</a></li>
+            <li><a href="#define-adversary-benchmarks-type-social">社交</a></li>
+            <li><a href="#define-adversary-benchmarks-type-solo">獨狼</a></li>
+            <li><a href="#define-adversary-benchmarks-type-standard">標準</a></li>
+            <li><a href="#define-adversary-benchmarks-type-support">輔助</a></li>
+            <li><a href="#define-adversary-conditions">應用狀態</a></li>
+            <li><a href="#define-adversary-passives">被動</a></li>
+            <li><a href="#define-adversary-reactions">反應</a></li>
+            <li><a href="#define-adversary-hope-loss">失去希望</a></li>
+            <li><a href="#define-adversary-fear-gain">獲得恐懼</a></li>
+            <li><a href="#define-pc-benchmark-defense">PC 防禦</a></li>
+            <li><a href="#define-pc-benchmark-damage">PC 傷害</a></li>
+        </ul>
+    </div>
+    <p>下列表格顯示了依照<a href="#define-adversary-type">敵人類型</a>區分的各種<a href="#define-adversary">敵人</a>數值範圍與平均值。</p>
+    <dl>
+        <dt>難度</dt>
+        <dd><a href="#define-difficulty">難度</a>決定玩家角色<a href="#define-attack-roll">攻擊擲骰</a>成功的機率，也決定玩家角色在應對由<a href="#define-adversary-feature">敵人特性</a>觸發的<a href="#define-reaction-roll">反應擲骰</a>時的成功機率（除非該特性另有說明）。相關資訊請參見<a href="#duality-dice-benchmark">二元骰基準</a>。</dd>
+        <dt>傷害閾值</dt>
+        <dd>重度與嚴重<a href="#define-hit-point">傷害閾值</a>決定玩家角色的<a href="#define-damage-roll">傷害擲骰</a>會讓敵人標記多少<a href="#define-hit-point">生命點</a>。相關資訊請參見<a href="#pc-benchmark-damage">玩家角色傷害基準</a>。</dd>
+        <dt>生命點</dt>
+        <dd><a href="#define-hit-point">生命點</a>決定了玩家角色必須成功進行多少次<a href="#define-attack-roll">攻擊擲骰</a>才能擊敗一個<a href="#define-adversary">敵人</a>。擁有<a href="#define-hit-points">傷害閾值</a>的敵人會更頻繁地標記生命點。</dd>
+        <dt>壓力點</dt>
+        <dd><a href="#define-stress">壓力點</a>可用於啟動<a href="#define-adversary-feature">敵人特性</a>，並延緩<a href="#define-condition"><em>脆弱</em></a>狀態的觸發。</dd>
+        <dt>攻擊調整值</dt>
+        <dd>將敵人的攻擊調整值提高或降低最多 &plusmn;4，以使<a href="#define-attack-roll">攻擊擲骰</a>更容易或更難成功。相關資訊請參見<a href="#adversary-benchmark-success">敵人成功率基準</a>。</dd>
+        <dt>傷害</dt>
+        <dd>提高<a href="#define-damage-roll">傷害骰</a>會增加平均傷害，但同時增加隨機性——尤其是在高面數傷害骰時。提高傷害調整值則會以穩定的方式增加傷害擲骰結果。記得將<a href="#define-attack-roll">攻擊擲骰</a>的調整值納入考量。相關資訊請參見<a href="#pc-benchmark-defense">玩家角色防禦基準</a>。</dd>
+    </dl>
 </div>
-<p>下列表格顯示了依照<a href="#define-adversary-type">敵人類型</a>區分的各種<a href="#define-adversary">敵人</a>數值範圍與平均值。</p>
-<dl>
-    <dt>難度</dt>
-    <dd><a href="#define-difficulty">難度</a>決定玩家角色<a href="#define-attack-roll">攻擊擲骰</a>成功的機率，也決定玩家角色在應對由<a href="#define-adversary-feature">敵人特性</a>觸發的<a href="#define-reaction-roll">反應擲骰</a>時的成功機率（除非該特性另有說明）。相關資訊請參見<a href="#duality-dice-benchmark">二元骰基準</a>。</dd>
-    <dt>傷害閾值</dt>
-    <dd>重度與嚴重<a href="#define-hit-point">傷害閾值</a>決定玩家角色的<a href="#define-damage-roll">傷害擲骰</a>會讓敵人標記多少<a href="#define-hit-point">生命點</a>。相關資訊請參見<a href="#pc-benchmark-damage">玩家角色傷害基準</a>。</dd>
-    <dt>生命點</dt>
-    <dd><a href="#define-hit-point">生命點</a>決定了玩家角色必須成功進行多少次<a href="#define-attack-roll">攻擊擲骰</a>才能擊敗一個<a href="#define-adversary">敵人</a>。擁有<a href="#define-hit-points">傷害閾值</a>的敵人會更頻繁地標記生命點。</dd>
-    <dt>壓力點</dt>
-    <dd><a href="#define-stress">壓力點</a>可用於啟動<a href="#define-adversary-feature">敵人特性</a>，並延緩<a href="#define-condition"><em>脆弱</em></a>狀態的觸發。</dd>
-    <dt>攻擊調整值</dt>
-    <dd>將敵人的攻擊調整值提高或降低最多 &plusmn;4，以使<a href="#define-attack-roll">攻擊擲骰</a>更容易或更難成功。相關資訊請參見<a href="#adversary-benchmark-success">敵人成功率基準</a>。</dd>
-    <dt>傷害</dt>
-    <dd>提高<a href="#define-damage-roll">傷害骰</a>會增加平均傷害，但同時增加隨機性——尤其是在高面數傷害骰時。提高傷害調整值則會以穩定的方式增加傷害擲骰結果。記得將<a href="#define-attack-roll">攻擊擲骰</a>的調整值納入考量。相關資訊請參見<a href="#pc-benchmark-defense">玩家角色防禦基準</a>。</dd>
-</dl>
 <div class="og-ed pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
 	<p><strong>編者註 &mdash;</strong> 更多建立敵人資料塊的指引可參見<a href="https://www.daggerheart.com/downloads/">《匕首心》自製套件</a>。像 <a href="https://anydice.com">anydice.com</a> 這樣的工具能提供敵人<a href="#define-damage-roll">傷害骰</a>的範圍與平均值，方便與玩家角色的<a href="#define-hit-point">傷害閾值</a>以及可施加的<a href="#define-condtion">狀態</a>作比較。</p>
 </div>
