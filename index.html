@@ -13351,6 +13351,9 @@
     <dt>傷害</dt>
     <dd>提高<a href="#define-damage-roll">傷害骰</a>會增加平均傷害，但同時增加隨機性——尤其是在高面數傷害骰時。提高傷害調整值則會以穩定的方式增加傷害擲骰結果。記得將<a href="#define-attack-roll">攻擊擲骰</a>的調整值納入考量。相關資訊請參見<a href="#pc-benchmark-defense">玩家角色防禦基準</a>。</dd>
 </dl>
+<div class="og-ed pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
+	<p><strong>編者註 &mdash;</strong> 更多建立敵人資料塊的指引可參見<a href="https://www.daggerheart.com/downloads/">《匕首心》自製套件</a>。像 <a href="https://anydice.com">anydice.com</a> 這樣的工具能提供敵人<a href="#define-damage-roll">傷害骰</a>的範圍與平均值，方便與玩家角色的<a href="#define-hit-point">傷害閾值</a>以及可施加的<a href="#define-condtion">狀態</a>作比較。</p>
+</div>
 <div id="define-adversary-benchmarks-hit-points">
 	<h5 id="adversary-benchmarks-hit-points">敵人生命點<a class="og-h-anchor" href="#adversary-benchmarks-hit-points" title="Permalink" aria-hidden="true"></a></h5>
 	<ul class="og-list-inline og-ref og-omit"><li>編輯補充</li></ul>
@@ -16001,8 +16004,100 @@
         </tr>
 	</tbody>
 </table></div>
-<div class="og-ed pt-3 pb-1 ps-3 pe-3 mt-3 mb-3 og-omit">
-    <p><strong>編輯註 &mdash;</strong> 你可以在 <a href="https://www.daggerheart.com/downloads/">匕首心自製工具組</a> 中找到更多建立敵人資料塊的指引。像 <a href="https://anydice.com">anydice.com</a> 這樣的工具，可以提供敵人<a href="#define-damage-roll">傷害擲骰</a>的範圍與平均值，方便你與玩家角色的<a href="#define-hit-point">傷害閾值</a>及他們能施加的<a href="#define-condtion">狀態</a>進行比較。</p>
+<div id="define-pc-benchmark-defense">
+	<h5 id="pc-benchmark-defense">玩家角色防禦基準<a class="og-h-anchor" href="#pc-benchmark-defense" title="Permalink" aria-hidden="true"></a></h5>
+	<ul class="og-list-inline og-ref og-omit"><li>編輯補充</li></ul>
+	<p>使用下列表格來判斷一次成功<a href="#define-attack-roll">攻擊</a>通常會讓玩家角色標記的平均<a href="#define-hit-point">生命點</a>或<a href="#define-armor">護甲槽</a>數量。所列的最低與最高<a href="#define-hit-point">傷害閾值</a>假設玩家角色穿戴符合位階的<a href="#define-armor">護甲</a>，並計入玩家角色增加的<a href="#define-level">等級</a>，但不包含其他對閾值或<a href="#define-armor">護甲槽</a>的加值──例如<a href="#define-galapa">龜人</a>種族的<em>龜甲</em>特性，或<a href="#define-domain-card">領域卡</a>如<a href="#define-domain-card-valor-touched">勇氣恩澤</a>。</p>
+	<div class="table-responsive"><table class="table table-light table-striped table-sm mb-3">
+		<caption>玩家角色防禦成長</caption>
+		<thead>
+			<tr>
+				<th class="text-center og-nowrap" scope="col">位階</th>
+				<th class="text-center" scope="col">最低閾值</th>
+				<th class="text-center" scope="col">最高閾值</th>
+				<th class="text-center" scope="col">護甲基礎值</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th class="fw-normal text-center og-nowrap" scope="row">位階 1</th>
+				<td class="text-center og-nowrap">6/12</td>
+				<td class="text-center og-nowrap">9/18</td>
+				<td class="text-center og-nowrap">3&ndash;4</td>
+			</tr>
+			<tr>
+				<th class="fw-normal text-center og-nowrap" scope="row">位階 2</th>
+				<td class="text-center og-nowrap">9/18</td>
+				<td class="text-center og-nowrap">17/32</td>
+				<td class="text-center og-nowrap">4&ndash;5</td>
+			</tr>
+			<tr>
+				<th class="fw-normal text-center og-nowrap" scope="row">位階 3</th>
+				<td class="text-center og-nowrap">14/28</td>
+				<td class="text-center og-nowrap">24/50</td>
+				<td class="text-center og-nowrap">5&ndash;6</td>
+			</tr>
+			<tr>
+				<th class="fw-normal text-center og-nowrap" scope="row">位階 4</th>
+				<td class="text-center og-nowrap">19/40</td>
+				<td class="text-center og-nowrap">28/58</td>
+				<td class="text-center og-nowrap">6&ndash;8</td>
+			</tr>
+		</tbody>
+	</table></div>
+</div>
+<div id="define-pc-benchmark-damage">
+	<h5 id="pc-benchmark-damage">玩家角色傷害基準<a class="og-h-anchor" href="#pc-benchmark-damage" title="Permalink" aria-hidden="true"></a></h5>
+	<ul class="og-list-inline og-ref og-omit"><li>編輯補充</li></ul>
+	<p>下列表格顯示使用<a href="#define-weapon">武器</a>時的<a href="#define-damage-roll">傷害骰</a>平均值。實際的平均傷害更為複雜，需依靠成功的<a href="#define-attack-roll">攻擊擲骰</a>。隨著<a href="#define-level">等級</a>提升，玩家角色會選擇<a href="#define-advancement">升級選項</a>以增加其<a href="#define-trait">屬性</a>與<a href="#define-damage-roll">熟練值</a>，從而提升命中率與傷害。</p>
+	<dl>
+		<dt>近程</dt>
+		<dd>近戰、臨近範圍或近距離<a href="#define-range">範圍</a>。</dd>
+		<dt>遠程</dt>
+		<dd>遠距或極遠<a href="#define-range">範圍</a>。</dd>
+	</dl>
+	<div class="table-responsive"><table class="table table-light table-striped table-sm mb-3">
+		<caption>玩家角色傷害成長</caption>
+		<thead>
+			<tr>
+				<th class="text-center og-nowrap" scope="col">位階</th>
+				<th class="text-center" scope="col"><span class="og-nowrap">近程</span> <span class="d-block og-nowrap"><em>單手</em></span></th>
+				<th class="text-center" scope="col"><span class="og-nowrap">近程</span> <span class="d-block og-nowrap"><em>雙手</em></span></th>
+				<th class="text-center" scope="col"><span class="og-nowrap">遠程</span> <span class="d-block og-nowrap"><em>單手</em></span></th>
+				<th class="text-center" scope="col"><span class="og-nowrap">遠程</span> <span class="d-block og-nowrap"><em>雙手</em></span></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th class="fw-normal og-nowrap text-center">位階 1</th>
+				<td class="text-center"><span class="og-nowrap">1d8+1</span> <span class="d-block og-nowrap small"><em>（平均 6）</em></span></td>
+				<td class="text-center"><span class="og-nowrap">1d10+3</span> <span class="d-block og-nowrap small"><em>（平均 9）</em></span></td>
+				<td class="text-center"><span class="og-nowrap">1d6+1</span> <span class="d-block og-nowrap small"><em>（平均 5）</em></span></td>
+				<td class="text-center"><span class="og-nowrap">1d6+3</span> <span class="d-block og-nowrap small"><em>（平均 7）</em></span></td>
+			</tr>
+			<tr>
+				<th class="fw-normal og-nowrap text-center">位階 2</th>
+				<td class="text-center"><span class="og-nowrap">2d8+3</span> <span class="d-block og-nowrap small"><em>（平均 12）</em></span></td>
+				<td class="text-center"><span class="og-nowrap">2d10+6</span> <span class="d-block og-nowrap small"><em>（平均 17）</em></span></td>
+				<td class="text-center"><span class="og-nowrap">2d6+3</span> <span class="d-block og-nowrap small"><em>（平均 10）</em></span></td>
+				<td class="text-center"><span class="og-nowrap">2d6+6</span> <span class="d-block og-nowrap small"><em>（平均 13）</em></span></td>
+			</tr>
+			<tr>
+				<th class="fw-normal og-nowrap text-center">位階 3</th>
+				<td class="text-center"><span class="og-nowrap">3d8+6 至 4d8+6</span> <span class="d-block og-nowrap small"><em>（平均 20&ndash;24）</em></span></td>
+				<td class="text-center"><span class="og-nowrap">3d10+9 至 4d10+9</span> <span class="d-block og-nowrap small"><em>（平均 26&ndash;31）</em></span></td>
+				<td class="text-center"><span class="og-nowrap">3d6+6 至 4d6+6</span> <span class="d-block og-nowrap small"><em>（平均 17&ndash;20）</em></span></td>
+				<td class="text-center"><span class="og-nowrap">3d6+9 至 4d6+9</span> <span class="d-block og-nowrap small"><em>（平均 20&ndash;23）</em></span></td>
+			</tr>
+			<tr>
+				<th class="fw-normal og-nowrap text-center">位階 4</th>
+				<td class="text-center"><span class="og-nowrap">4d8+9 至 6d8+9</span> <span class="d-block og-nowrap small"><em>（平均 27&ndash;36）</em></span></td>
+				<td class="text-center"><span class="og-nowrap">4d10+12 至 6d10+12</span> <span class="d-block og-nowrap small"><em>（平均 34&ndash;45）</em></span></td>
+				<td class="text-center"><span class="og-nowrap">4d6+9 至 6d6+9</span> <span class="d-block og-nowrap small"><em>（平均 23&ndash;30）</em></span></td>
+				<td class="text-center"><span class="og-nowrap">4d6+12 至 6d6+12</span> <span class="d-block og-nowrap small"><em>（平均 26&ndash;33）</em></span></td>
+			</tr>
+		</tbody>
+	</table></div>
 </div>
 <hr>
 <h3 id="adversary-stat-blocks">敵人資料塊<a class="og-h-anchor" href="#adversary-stat-blocks" title="Permalink" aria-hidden="true"></a></h3>
@@ -16178,101 +16273,6 @@
         <li><a href="#define-adversary-perfected-zombie">完化殭屍</a> <em>（鬥士）</em></li>
         <li><a href="#define-adversary-zombie-legion">殭屍軍團</a> <em>（集群）</em></li>
     </ul>
-</div>
-<div id="define-pc-benchmark-defense">
-	<h5 id="pc-benchmark-defense">玩家角色防禦基準<a class="og-h-anchor" href="#pc-benchmark-defense" title="Permalink" aria-hidden="true"></a></h5>
-	<ul class="og-list-inline og-ref og-omit"><li>編輯補充</li></ul>
-	<p>使用下列表格來判斷一次成功<a href="#define-attack-roll">攻擊</a>通常會讓玩家角色標記的平均<a href="#define-hit-point">生命點</a>或<a href="#define-armor">護甲槽</a>數量。所列的最低與最高<a href="#define-hit-point">傷害閾值</a>假設玩家角色穿戴符合位階的<a href="#define-armor">護甲</a>，並計入玩家角色增加的<a href="#define-level">等級</a>，但不包含其他對閾值或<a href="#define-armor">護甲槽</a>的加值──例如<a href="#define-galapa">龜人</a>種族的<em>龜甲</em>特性，或<a href="#define-domain-card">領域卡</a>如<a href="#define-domain-card-valor-touched">勇氣恩澤</a>。</p>
-	<div class="table-responsive"><table class="table table-light table-striped table-sm mb-3">
-		<caption>玩家角色防禦成長</caption>
-		<thead>
-			<tr>
-				<th class="text-center og-nowrap" scope="col">位階</th>
-				<th class="text-center" scope="col">最低閾值</th>
-				<th class="text-center" scope="col">最高閾值</th>
-				<th class="text-center" scope="col">護甲基礎值</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<th class="fw-normal text-center og-nowrap" scope="row">位階 1</th>
-				<td class="text-center og-nowrap">6/12</td>
-				<td class="text-center og-nowrap">9/18</td>
-				<td class="text-center og-nowrap">3&ndash;4</td>
-			</tr>
-			<tr>
-				<th class="fw-normal text-center og-nowrap" scope="row">位階 2</th>
-				<td class="text-center og-nowrap">9/18</td>
-				<td class="text-center og-nowrap">17/32</td>
-				<td class="text-center og-nowrap">4&ndash;5</td>
-			</tr>
-			<tr>
-				<th class="fw-normal text-center og-nowrap" scope="row">位階 3</th>
-				<td class="text-center og-nowrap">14/28</td>
-				<td class="text-center og-nowrap">24/50</td>
-				<td class="text-center og-nowrap">5&ndash;6</td>
-			</tr>
-			<tr>
-				<th class="fw-normal text-center og-nowrap" scope="row">位階 4</th>
-				<td class="text-center og-nowrap">19/40</td>
-				<td class="text-center og-nowrap">28/58</td>
-				<td class="text-center og-nowrap">6&ndash;8</td>
-			</tr>
-		</tbody>
-	</table></div>
-</div>
-<div id="define-pc-benchmark-damage">
-	<h5 id="pc-benchmark-damage">玩家角色傷害基準<a class="og-h-anchor" href="#pc-benchmark-damage" title="Permalink" aria-hidden="true"></a></h5>
-	<ul class="og-list-inline og-ref og-omit"><li>編輯補充</li></ul>
-	<p>下列表格顯示使用<a href="#define-weapon">武器</a>時的<a href="#define-damage-roll">傷害骰</a>平均值。實際的平均傷害更為複雜，需依靠成功的<a href="#define-attack-roll">攻擊擲骰</a>。隨著<a href="#define-level">等級</a>提升，玩家角色會選擇<a href="#define-advancement">升級選項</a>以增加其<a href="#define-trait">屬性</a>與<a href="#define-damage-roll">熟練值</a>，從而提升命中率與傷害。</p>
-	<dl>
-		<dt>近程</dt>
-		<dd>近戰、臨近範圍或近距離<a href="#define-range">範圍</a>。</dd>
-		<dt>遠程</dt>
-		<dd>遠距或極遠<a href="#define-range">範圍</a>。</dd>
-	</dl>
-	<div class="table-responsive"><table class="table table-light table-striped table-sm mb-3">
-		<caption>玩家角色傷害成長</caption>
-		<thead>
-			<tr>
-				<th class="text-center og-nowrap" scope="col">位階</th>
-				<th class="text-center" scope="col"><span class="og-nowrap">近程</span> <span class="d-block og-nowrap"><em>單手</em></span></th>
-				<th class="text-center" scope="col"><span class="og-nowrap">近程</span> <span class="d-block og-nowrap"><em>雙手</em></span></th>
-				<th class="text-center" scope="col"><span class="og-nowrap">遠程</span> <span class="d-block og-nowrap"><em>單手</em></span></th>
-				<th class="text-center" scope="col"><span class="og-nowrap">遠程</span> <span class="d-block og-nowrap"><em>雙手</em></span></th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<th class="fw-normal og-nowrap text-center">位階 1</th>
-				<td class="text-center"><span class="og-nowrap">1d8+1</span> <span class="d-block og-nowrap small"><em>（平均 6）</em></span></td>
-				<td class="text-center"><span class="og-nowrap">1d10+3</span> <span class="d-block og-nowrap small"><em>（平均 9）</em></span></td>
-				<td class="text-center"><span class="og-nowrap">1d6+1</span> <span class="d-block og-nowrap small"><em>（平均 5）</em></span></td>
-				<td class="text-center"><span class="og-nowrap">1d6+3</span> <span class="d-block og-nowrap small"><em>（平均 7）</em></span></td>
-			</tr>
-			<tr>
-				<th class="fw-normal og-nowrap text-center">位階 2</th>
-				<td class="text-center"><span class="og-nowrap">2d8+3</span> <span class="d-block og-nowrap small"><em>（平均 12）</em></span></td>
-				<td class="text-center"><span class="og-nowrap">2d10+6</span> <span class="d-block og-nowrap small"><em>（平均 17）</em></span></td>
-				<td class="text-center"><span class="og-nowrap">2d6+3</span> <span class="d-block og-nowrap small"><em>（平均 10）</em></span></td>
-				<td class="text-center"><span class="og-nowrap">2d6+6</span> <span class="d-block og-nowrap small"><em>（平均 13）</em></span></td>
-			</tr>
-			<tr>
-				<th class="fw-normal og-nowrap text-center">位階 3</th>
-				<td class="text-center"><span class="og-nowrap">3d8+6 至 4d8+6</span> <span class="d-block og-nowrap small"><em>（平均 20&ndash;24）</em></span></td>
-				<td class="text-center"><span class="og-nowrap">3d10+9 至 4d10+9</span> <span class="d-block og-nowrap small"><em>（平均 26&ndash;31）</em></span></td>
-				<td class="text-center"><span class="og-nowrap">3d6+6 至 4d6+6</span> <span class="d-block og-nowrap small"><em>（平均 17&ndash;20）</em></span></td>
-				<td class="text-center"><span class="og-nowrap">3d6+9 至 4d6+9</span> <span class="d-block og-nowrap small"><em>（平均 20&ndash;23）</em></span></td>
-			</tr>
-			<tr>
-				<th class="fw-normal og-nowrap text-center">位階 4</th>
-				<td class="text-center"><span class="og-nowrap">4d8+9 至 6d8+9</span> <span class="d-block og-nowrap small"><em>（平均 27&ndash;36）</em></span></td>
-				<td class="text-center"><span class="og-nowrap">4d10+12 至 6d10+12</span> <span class="d-block og-nowrap small"><em>（平均 34&ndash;45）</em></span></td>
-				<td class="text-center"><span class="og-nowrap">4d6+9 至 6d6+9</span> <span class="d-block og-nowrap small"><em>（平均 23&ndash;30）</em></span></td>
-				<td class="text-center"><span class="og-nowrap">4d6+12 至 6d6+12</span> <span class="d-block og-nowrap small"><em>（平均 26&ndash;33）</em></span></td>
-			</tr>
-		</tbody>
-	</table></div>
 </div>
 <hr>
 <h4 id="adversaries-by-alphabetical-order">敵人資料塊（依字母順序排列）<a class="og-h-anchor" href="#adversaries-by-alphabetical-order" title="Permalink" aria-hidden="true"></a></h4>
